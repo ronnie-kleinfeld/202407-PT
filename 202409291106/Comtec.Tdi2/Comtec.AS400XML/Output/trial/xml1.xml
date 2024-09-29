@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen>
+	<s fil="HFSCREEN  " rec="PEMAINKRN " fpc="0001" flib="CRMKRNTST " cli="134" fsid="M" ver="003" fnn=" 1 111111111 1111111 111  " adr="R"/>
+	<cmd>
+		<c fk="02" ft="F2  =רושיא         " len="00014"/>
+		<c fk="06" ft="F6  =היבגב תוארוה   " len="00015"/>
+		<c fk="05" ft="F5  =הקידב          " cgr="0!" len="00015"/>
+		<c fk="20" ft="F20 =הארוה תחיתפ    " fbua="              הארוה תחיתפ                                                  " len="00015"/>
+		<c fk="10" ft="F10 =תויצפוא        " len="00015"/>
+		<c fk="12" ft="F12 =רוזח           " len="00015"/>
+		<c fk="OR" ft="Ovrheb       " cgr="1A" len="00013"/>
+	</cmd>
+	<folder>
+		<l lk="31" ltr="Y" lon="Y" ln="             םייללכ םיטרפ"/>
+		<l lk="30" ltr="N" lon="N" ln="            םייפנע םינותנ"/>
+		<l lk="32" ltr="N" lon="Y" ln="          םייחוטיב םינותנ"/>
+		<l lk="33" ltr="N" lon="Y" ln="                    םיקרפ"/>
+		<l lk="35" ltr="N" lon="Y" ln="                   םיפיעס"/>
+		<l lk="36" ltr="N" lon="Y" ln="                 םימוימרפ"/>
+		<l lk="37" ltr="N" lon="Y" ln="                     םימד"/>
+		<l lk="38" ltr="N" lon="Y" ln="                 ישפח ללמ"/>
+		<l lk="39" ltr="N" lon="Y" ln="                   תובחרה"/>
+		<l lk="40" ltr="N" lon="Y" ln="                    ףתושמ"/>
+		<l lk="41" ltr="N" lon="Y" ln="                     הנשמ"/>
+		<l lk="50" ltr="N" lon="Y" ln="                 ישאר ךסמ"/>
+	</folder>
+	<rct>
+		<r rx1="001" ry1="02" rx2="080" ry2="05" rcl="034" ficn="000" ftit="    הסילופ יטרפ     "/>
+		<r rx1="001" ry1="06" rx2="080" ry2="10" rcl="000" ficn="000" ftit="   םייללכ םיטרפ     "/>
+		<r rx1="001" ry1="11" rx2="080" ry2="21" rcl="000" ficn="000" ftit="      היבג יטרפ     "/>
+		<r rx1="001" ry1="22" rx2="080" ry2="24" rcl="000" ficn="000" ftit="     םוכיס תרוש     "/>
+	</rct>
+	<fields>
+		<f num="KHEVRA    " lin="01" col="052" typ="A" len="00028" phi="Y" val="EVGENYT       *** טנק טסט **"/>
+		<f num="KPEILT    " lin="01" col="031" typ="A" len="00020" phi="Y" val="ה ק פ ה   ת כ ר ע מ "/>
+		<f num="KDATE     " lin="01" col="002" typ="A" len="00028" phi="Y" val="19/09/2024        K1095164AP"/>
+		<f num="$000000131" lin="02" col="070" typ="A" len="00004" phi="Y" pcl="008" rtp="Y" val=" ףנע"/>
+		<f num="ANAFNU    " lin="02" col="068" typ="N" len="00003" inp="P" pcl="008" val="061"/>
+		<f num="ANAFNM    " lin="02" col="065" typ="A" len="00015" inp="P" pcl="008" alias="ףנע םש" val="    2022 סיבאנק"/>
+		<f num="KOTERET   " lin="02" col="060" typ="A" len="00030" inp="P" alias="לדגמ םש" val="                  ילארשי לארשי"/>
+		<f num="TEUR      " lin="02" col="055" typ="A" len="00021" inp="P" pcl="008" wd="010" alias="תבותכ" val=" הברעה תיב"/>
+		<f num="$000000137" lin="03" col="070" typ="A" len="00007" rtp="Y" val="הסילופ "/>
+		<f num="POLISA    " lin="03" col="068" typ="N" len="00012" inp="P" pcl="008" val="006100001421"/>
+		<f num="$000000135" lin="03" col="060" typ="A" len="00006" phi="Y" pcl="008" rtp="Y" val=" תפסות"/>
+		<f num="TOSEFE    " lin="03" col="058" typ="N" len="00006" inp="P" pcl="008" val="000000"/>
+		<f num="$000000133" lin="03" col="055" typ="A" len="00007" phi="Y" pcl="008" rtp="Y" val=" ךיראתמ"/>
+		<f num="DATEOP    " lin="03" col="053" typ="Y" len="00008" inp="P" pcl="008" val="19122021"/>
+		<f num="$000000132" lin="03" col="045" typ="A" len="00010" pcl="008" rtp="Y" val="עבטמ דוק  "/>
+		<f num="MATBEA    " lin="03" col="043" typ="N" len="00002" inp="P" pcl="008" val="01"/>
+		<f num="MATNAM    " lin="03" col="040" typ="A" len="00005" inp="P" pcl="008" alias="עבטמ רואת" val="ח לקש"/>
+		<f num="$000000281" lin="23" col="071" typ="A" len="00009" phi="Y" pcl="008" rtp="Y" psz="016" val="וטנ הימרפ"/>
+		<f num="PRNET     " lin="23" col="060" typ="S" len="00008" pcl="008" rtp="Y" sgn="+" val="00060527"/>
+		<f num="$000000283" lin="23" col="055" typ="A" len="00004" phi="Y" pcl="008" rtp="Y" psz="016" val="םימד"/>
+		<f num="PRDAM     " lin="23" col="055" typ="S" len="00007" pcl="008" rtp="Y" sgn="+" val="0000000"/>
+		<f num="$000000284" lin="23" col="040" typ="A" len="00004" phi="Y" pcl="008" rtp="Y" psz="016" val="החנה"/>
+		<f num="PRHAN     " lin="23" col="040" typ="S" len="00006" pcl="008" rtp="Y" sgn="+" edt="J" val="000000"/>
+		<f num="$000000285" lin="23" col="025" typ="A" len="00005" phi="Y" pcl="008" rtp="Y" psz="016" val="היבגל"/>
+		<f num="PRGVI     " lin="23" col="014" typ="S" len="00008" pcl="008" rtp="Y" sgn="+" val="00060527"/>
+		<f num="$000000286" lin="23" col="009" typ="A" len="00004" phi="Y" pcl="008" rtp="Y" psz="016" val="םימי"/>
+		<f num="PRDAYS    " lin="23" col="004" typ="A" len="00004" pcl="008" rtp="Y" val=" 365"/>
+		<f num="$000001095" lin="07" col="060" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="םלשמ םרוג רפסמ "/>
+		<f num="SOCENA    " lin="07" col="058" typ="N" len="00006" inp="P" val="724631"/>
+		<f num="SHEMA     " lin="07" col="055" typ="A" len="00020" inp="P" alias="םלשמ םרוג םש" val="    ילארשי          "/>
+		<f num="$000001097" lin="07" col="048" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="      לדגמ רפסמ"/>
+		<f num="IDENT     " lin="07" col="048" typ="N" len="00009" inp="I" ind="0001" pf4="Y" tab="08512" wd="010" val="357120000"/>
+		<f num="$000001096" lin="07" col="045" typ="A" len="00010" phi="Y" pcl="008" rtp="Y" val="לדגמ םש   "/>
+		<f num="SHEM      " lin="07" col="045" typ="A" len="00040" inp="I" ind="0002" tab="08515" wd="010" val="              ילארשי               לארשי"/>
+		<f num="STREET    " lin="08" col="060" typ="A" len="00025" inp="I" ind="0003" tab="08580" alias="תבותכ" val="                         "/>
+		<f num="$000001103" lin="10" col="040" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="     בושיח ןפוא"/>
+		<f num="OFENCSV   " lin="10" col="038" typ="N" len="00001" inp="I" ind="0004" pf4="C" tab="08762" wd="001" val="2">
+			<b op="001" nm="         הטרורפ"/>
+			<b op="002" nm="     הרצק הפוקת"/>
+			<b op="003" nm="      בושיח אלל"/>
+		</f>
+		<f num="$000001132" lin="08" col="055" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="       בושי/ריע"/>
+		<f num="TOWN      " lin="08" col="053" typ="A" len="00015" inp="I" ind="0005" tab="08587" val="      הברעה תיב"/>
+		<f num="$000001125" lin="08" col="050" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="          דוקימ"/>
+		<f num="MIKUD     " lin="08" col="048" typ="N" len="00005" inp="I" ind="0006" pf4="Y" tab="08592" val="90687"/>
+		<f num="MKDNAME   " lin="08" col="045" typ="A" len="00009" inp="P" alias="דוקימ רוזא" val="     יללכ"/>
+		<f num="$000001108" lin="09" col="060" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="    הליחת ךיראת"/>
+		<f num="BGNDAT    " lin="09" col="058" typ="Y" len="00008" inp="Q" val="19122021"/>
+		<f num="$000001106" lin="09" col="055" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="     םויס ךיראת"/>
+		<f num="ENDDAT    " lin="09" col="053" typ="Y" len="00008" inp="I" ind="0007" tab="08667" val="18122022"/>
+		<f num="$000001104" lin="09" col="040" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="     העצה ךיראת"/>
+		<f num="SUGDAT    " lin="09" col="038" typ="Y" len="00008" inp="I" ind="0008" tab="08682" val="00000000"/>
+		<f num="$000001116" lin="12" col="060" typ="A" len="00015" pcl="008" rtp="Y" val="      היבג ןפוא"/>
+		<f num="GVIA      " lin="12" col="058" typ="A" len="00001" inp="I" ind="0009" pf4="Y" tab="12902" wd="005" val="ר"/>
+		<f num="$000001120" lin="07" col="040" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="     תוהז תדועת"/>
+		<f num="TZNUM     " lin="07" col="038" typ="N" len="00009" inp="I" ind="0010" tab="08522" val="570029785"/>
+		<f num="$000001118" lin="12" col="055" typ="A" len="00015" phi="Y" pcl="008" rtp="Y" val="   םימולשת רפסמ"/>
+		<f num="TASNO     " lin="12" col="053" typ="N" len="00003" inp="I" ind="0011" tab="12907" val="001"/>
+		<f num="$000001130" lin="12" col="045" typ="A" len="00011" phi="Y" pcl="008" rtp="Y" val="טידרק םולשת"/>
+		<f num="KOD2      " lin="12" col="043" typ="N" len="00004" inp="I" ind="0012" tab="12917" val="0000"/>
+		<f num="$000001129" lin="10" col="060" typ="A" len="00010" pcl="008" rtp="Y" val="הטילקל הנמ"/>
+		<f num="KODMIUHD  " lin="10" col="058" typ="N" len="00003" inp="I" ind="0013" pf4="Y" tab="08742" wd="005" val="002"/>
+		<f num="ISKNAM    " lin="10" col="055" typ="A" len="00015" inp="P" alias="הטילקל הנמ רואת" val="              B"/>
+		<f num="$000001134" lin="12" col="040" typ="A" len="00015" pcl="008" rtp="Y" val="          הארוה"/>
+		<f num="CSBON     " lin="12" col="040" typ="N" len="00011" inp="I" ind="0014" pf4="Y" tab="12920" val="00000000000"/>
+		<f num="$000001131" lin="10" col="045" typ="A" len="00004" rtp="Y" val="הנוע"/>
+		<f num="KOD3      " lin="10" col="043" typ="N" len="00004" inp="I" ind="0015" tab="08757" val="2022"/>
+		<f num="$000001115" lin="12" col="035" typ="A" len="00015" pcl="008" rtp="Y" val="           דומצ"/>
+		<f num="ZAMUD     " lin="12" col="033" typ="A" len="00001" inp="I" ind="0016" pf4="C" tab="12927" wd="003" val="כ">
+			<b op="כ" nm="             ןכ"/>
+			<b op="ל" nm="             אל"/>
+		</f>
+		<f num="$000001112" lin="03" col="050" typ="A" len="00015" pcl="008" rtp="Y" val="   תרשקמ הסילופ"/>
+		<f num="POLNO     " lin="03" col="048" typ="N" len="00012" inp="P" val="000000000000"/>
+	</fields>
+</screen>

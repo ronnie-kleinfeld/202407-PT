@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<screen attr1="nan">
+	<singleElement1 attr1="nan"/>
+
+	<singleElement2 attr1="nan"></singleElement2>
+
+	<listOfElements attr1="nan"></listOfElements>
+	<listOfElements attr1="nan"></listOfElements>
+
+	<parentElementEmpty1 attr1="nan"></parentElementEmpty1>
+
+	<parentElementW1Element1 attr1="nan">
+		<singleChildElement1 attr1="nan"/>
+	</parentElementW1Element1>
+
+	<parentElementW1Element2 attr1="nan">
+		<singleChildElement2 attr1="nan"></singleChildElement2>
+	</parentElementW1Element2>
+
+	<parentElementW1Element3 attr1="nan">
+		<listOfChildElements attr1="nan"></listOfChildElements>
+		<listOfChildElements attr1="nan"></listOfChildElements>
+	</parentElementW1Element3>
+
+	<listOfParentElementWElement1 attr1="nan">
+		<singleChildElement1 attr1="nan"/>
+	</listOfParentElementWElement1>
+	<listOfParentElementWElement1 attr1="nan">
+		<singleChildElement1 attr1="nan"/>
+	</listOfParentElementWElement1>
+
+	<listOfParentElementWElement2 attr1="nan">
+		<singleChildElement attr1="nan"></singleChildElement>
+	</listOfParentElementWElement2>
+	<listOfParentElementWElement2 attr1="nan">
+		<singleChildElement attr1="nan"></singleChildElement>
+	</listOfParentElementWElement2>
+
+	<listOfParentElementWElement3 attr1="nan">
+		<listOfChildElements attr1="nan"></listOfChildElements>
+		<listOfChildElements attr1="nan"></listOfChildElements>
+	</listOfParentElementWElement3>
+	<listOfParentElementWElement3 attr1="nan">
+		<listOfChildElements attr1="nan"></listOfChildElements>
+		<listOfChildElements attr1="nan"></listOfChildElements>
+	</listOfParentElementWElement3>
+</screen>
