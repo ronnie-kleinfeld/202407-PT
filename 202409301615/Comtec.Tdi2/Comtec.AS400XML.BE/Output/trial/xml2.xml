@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<screen>
+	<s fil="HFSCREEN  " rec="PETOKFHZ  " fpc="0001" flib="CRMKRNTST " cli="134" fsid="M" ver="003" fnn="   1       1              " adr="R" win="R" wsml=" " wlst="07" wlin="05" wcst="014" wcol="046"/>
+	<cmd>
+		<c fk="12" ft="F12 =האיצי      " len="00011"/>
+		<c fk="00" ft="    ךשמה      "/>
+		<c fk="OR" ft="Ovrheb       " cgr="1A" len="00013"/>
+	</cmd>
+	<folder></folder>
+	<rct>
+		<r rx1="014" ry1="07" rx2="059" ry2="11" rcl="034"/>
+	</rct>
+	<rct_bkg>
+		<r rx1="001" ry1="01" rx2="080" ry2="05" rcl="000" bkg="B" ficn="000" ftit="   הסילופה יטרפ     "/>
+	</rct_bkg>
+	<fields>
+		<f num="KHEVRA    " lin="01" col="052" typ="A" len="00028" phi="Y" rtp="Y" bkg="B" val="EVGENYT       *** טנק טסט **"/>
+		<f num="KPEILT    " lin="01" col="031" typ="A" len="00020" phi="Y" rtp="Y" bkg="B" val="ה ק פ ה   ת כ ר ע מ "/>
+		<f num="KDATE     " lin="01" col="002" typ="A" len="00028" phi="Y" rtp="Y" bkg="B" val="19/09/2024        K1095164AP"/>
+		<f num="$000000131" lin="02" col="070" typ="A" len="00004" phi="Y" pcl="008" rtp="Y" bkg="B" val=" ףנע"/>
+		<f num="ANAFNU    " lin="02" col="068" typ="N" len="00003" inp="P" pcl="008" bkg="B" val="061"/>
+		<f num="ANAFNM    " lin="02" col="065" typ="A" len="00015" inp="P" pcl="008" bkg="B" alias="ףנע םש" val="    2022 סיבאנק"/>
+		<f num="KOTERET   " lin="02" col="060" typ="A" len="00030" inp="P" bkg="B" alias="לדגמ םש" val="                  ילארשי לארשי"/>
+		<f num="TEUR      " lin="02" col="055" typ="A" len="00021" inp="P" pcl="008" wd="010" bkg="B" alias="תבותכ" val="            הברעה תיב"/>
+		<f num="$000000137" lin="03" col="070" typ="A" len="00007" rtp="Y" bkg="B" val="הסילופ "/>
+		<f num="POLISA    " lin="03" col="068" typ="N" len="00012" inp="P" pcl="008" bkg="B" val="006100001421"/>
+		<f num="$000000135" lin="03" col="060" typ="A" len="00006" phi="Y" pcl="008" rtp="Y" bkg="B" val=" תפסות"/>
+		<f num="TOSEFE    " lin="03" col="058" typ="N" len="00006" inp="P" pcl="008" bkg="B" val="000000"/>
+		<f num="$000000133" lin="03" col="055" typ="A" len="00007" phi="Y" pcl="008" rtp="Y" bkg="B" val=" ךיראתמ"/>
+		<f num="DATEOP    " lin="03" col="053" typ="Y" len="00008" inp="P" pcl="008" bkg="B" val="19122021"/>
+		<f num="$000000132" lin="03" col="045" typ="A" len="00010" pcl="008" rtp="Y" bkg="B" val="עבטמ דוק  "/>
+		<f num="MATBEA    " lin="03" col="043" typ="N" len="00002" inp="P" pcl="008" bkg="B" val="01"/>
+		<f num="MATNAM    " lin="03" col="040" typ="A" len="00005" inp="P" pcl="008" bkg="B" alias="עבטמ רואת" val="ח לקש"/>
+		<f num="$000002713" lin="09" col="013" typ="A" len="00028" phi="Y" pcl="003" psz="014" val="  ךישמהל םאה ,ףקותב אל העצהה"/>
+		<f num="SELECT    " lin="09" col="010" typ="A" len="00001" inp="I" ind="0001" pf4="C" tab="00710" wd="003" val="כ">
+			<b op="כ" nm="             ןכ"/>
+			<b op="ל" nm="             אל"/>
+		</f>
+	</fields>
+</screen>

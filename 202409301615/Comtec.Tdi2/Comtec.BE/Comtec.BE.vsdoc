@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <!--   VSdocman config file for current project/solution.-->
+  <activeProfile>default</activeProfile>
+  <appSettings>
+    <add key="VBdocman_comNonCommented"><![CDATA[-1]]></add>
+    <add key="VBdocman_regexFilters"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<filters />]]></add>
+    <add key="VBdocman_customVar1"><![CDATA[]]></add>
+    <add key="VBdocman_comInterface"><![CDATA[-1]]></add>
+    <add key="VBdocman_outputPath"><![CDATA[$(ProjectDir)VSdoc]]></add>
+    <add key="VBdocman_useConditionalCompilation"><![CDATA[0]]></add>
+    <add key="VBdocman_customVar2"><![CDATA[]]></add>
+    <add key="VBdocman_SupportedXamarinIos"><![CDATA[]]></add>
+    <add key="VBdocman_generateJscriptSyntax"><![CDATA[-1]]></add>
+    <add key="VBdocman_enumSorting"><![CDATA[1]]></add>
+    <add key="VBdocman_comPrivateProtected"><![CDATA[0]]></add>
+    <add key="VBdocman_comStdModule"><![CDATA[-1]]></add>
+    <add key="VBdocman_ListNamespacesWithShortNames"><![CDATA[0]]></add>
+    <add key="VBdocman_comPublic"><![CDATA[-1]]></add>
+    <add key="VBdocman_supportedPlatforms"><![CDATA[]]></add>
+    <add key="VBdocman_comVariable"><![CDATA[-1]]></add>
+    <add key="VBdocman_comProtected"><![CDATA[-1]]></add>
+    <add key="VBdocman_supportedNetFrameworkClientProfile"><![CDATA[]]></add>
+    <add key="VBdocman_comPrivate"><![CDATA[0]]></add>
+    <add key="VBdocman_comWriteDescription"><![CDATA[0]]></add>
+    <add key="VBdocman_comProtectedFriend"><![CDATA[-1]]></add>
+    <add key="VBdocman_comObject"><![CDATA[-1]]></add>
+    <add key="VBdocman_comDelegate"><![CDATA[-1]]></add>
+    <add key="VBdocman_supportedXnaFramework"><![CDATA[]]></add>
+    <add key="VBdocman_emptyOutputFolder"><![CDATA[0]]></add>
+    <add key="VBdocman_rootNamespaceCommentStyle"><![CDATA[2]]></add>
+    <add key="VBdocman_comEnumeration"><![CDATA[-1]]></add>
+    <add key="VBdocman_comMethod"><![CDATA[-1]]></add>
+    <add key="VBdocman_comProperty"><![CDATA[-1]]></add>
+    <add key="VBdocman_supportedNetCompactFramework"><![CDATA[]]></add>
+    <add key="VBdocman_removeAttributes"><![CDATA[0]]></add>
+    <add key="VBdocman_externalFilesFolder"><![CDATA[]]></add>
+    <add key="VBdocman_showFormsSeparate"><![CDATA[0]]></add>
+    <add key="VBdocman_generateCsharpSyntax"><![CDATA[-1]]></add>
+    <add key="VBdocman_allowMacrosInComments"><![CDATA[0]]></add>
+    <add key="VBdocman_linkForExternalNotInFramework"><![CDATA[0]]></add>
+    <add key="VBdocman_showInherited"><![CDATA[-1]]></add>
+    <add key="VBdocman_templateLocale"><![CDATA[en-US]]></add>
+    <add key="VBdocman_SupportedNetCore"><![CDATA[]]></add>
+    <add key="VBdocman_customVar3"><![CDATA[]]></add>
+    <add key="VBdocman_unbreakSourceLines"><![CDATA[0]]></add>
+    <add key="VBdocman_supportedNetFramework"><![CDATA[4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8]]></add>
+    <add key="VBdocman_pageFooterText"><![CDATA[Generated with <see href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</see>]]></add>
+    <add key="VBdocman_comConstant"><![CDATA[-1]]></add>
+    <add key="VBdocman_supportedOthers"><![CDATA[]]></add>
+    <add key="VBdocman_comForm"><![CDATA[-1]]></add>
+    <add key="VBdocman_comStructure"><![CDATA[-1]]></add>
+    <add key="VBdocman_dontSortSeeAlsoList"><![CDATA[0]]></add>
+    <add key="VBdocman_templateFolder"><![CDATA[$(VSdocmanDir)Templates]]></add>
+    <add key="VBdocman_ConstantValueDisplay"><![CDATA[1]]></add>
+    <add key="VBdocman_helpTitle"><![CDATA[Comtec.BE Reference]]></add>
+    <add key="VBdocman_insertSourceGlobal"><![CDATA[0]]></add>
+    <add key="VBdocman_SupportedNetStandard"><![CDATA[]]></add>
+    <add key="VBdocman_SupportedXamarinMac"><![CDATA[]]></add>
+    <add key="VBdocman_comFriend"><![CDATA[0]]></add>
+    <add key="VBdocman_templatePath"><![CDATA[html_msdn2019.vbdt]]></add>
+    <add key="VBdocman_comDeclare"><![CDATA[-1]]></add>
+    <add key="VBdocman_conditionalConstants"><![CDATA[]]></add>
+    <add key="VBdocman_SupportedXamarinAndroid"><![CDATA[]]></add>
+    <add key="VBdocman_supportedNetForWindowsStoreApps"><![CDATA[]]></add>
+    <add key="VBdocman_ShowExtensionMethods"><![CDATA[-1]]></add>
+    <add key="VBdocman_supportedPortableClassLibrary"><![CDATA[]]></add>
+    <add key="VBdocman_generateCppSyntax"><![CDATA[-1]]></add>
+    <add key="VBdocman_customTopics"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<topics>
+  <topic>
+    <type>normal</type>
+    <is-default>yes</is-default>
+    <name>Comtec.BE Reference</name>
+    <id>comtecbe_reference</id>
+    <comment><![CDATA[<summary></summary>vsdocman_escaped_]_]_></comment>
+    <namespaces />
+    <topics>
+      <topic>
+        <type>placeholder</type>
+        <is-default>no</is-default>
+        <name />
+        <id>fbaa9811ecd7482f91b9a46573d5d453</id>
+        <comment><![CDATA[vsdocman_escaped_]_]_></comment>
+        <namespaces />
+        <topics />
+      </topic>
+    </topics>
+  </topic>
+</topics>]]></add>
+    <add key="VBdocman_generateVbSyntax"><![CDATA[-1]]></add>
+    <add key="VBdocman_generateFsharpSyntax"><![CDATA[0]]></add>
+    <add key="VBdocman_comEventDecl"><![CDATA[-1]]></add>
+    <add key="VBdocman_GenerateReportFile"><![CDATA[0]]></add>
+    <add key="VBdocman_comEvent"><![CDATA[-1]]></add>
+    <add key="VBdocman_rootNamespaceText"><![CDATA[]]></add>
+    <add key="VBdocman_comModulesSaveExcluded"><![CDATA[-1]]></add>
+    <add key="VBdocman_comModules_Config...AppConfigHandler.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Consts.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Enum...DateTimeSpanFormatTypeEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Enum...Device...DeviceTypeEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Enum...Device...OSTypeEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Enum...GenderTypeEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Enum...OrderByTypeEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Exceptions...ExceptionEx.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Exceptions...SwitchOutOfRangeException.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...DateTimeFormatHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...DateTimeHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...DateTimeSpanHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...DeviceHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...DistanceConversionHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...DistanceFormatHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...EnumHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...GuidHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...HashHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...NetworkHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...NumberFormatHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...ReflectionHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...SecurityHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...StringHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Helpers...ToVisibleHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_IO...File...HashFile.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_IO...File...Writer.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_LogEx...LogHelper.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_LogEx...LogLevelEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Object...BaseObject.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Object...IgnoreToCsvAttribute.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Result...ResultCodeTypeEnum.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_comModules_Result...ResultData.cs"><![CDATA[Off]]></add>
+    <add key="VBdocman_fileNamingConvention"><![CDATA[1]]></add>
+  </appSettings>
+</configuration>
