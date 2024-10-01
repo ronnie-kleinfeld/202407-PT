@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+    function thefunction() {
+        window.parent.document.getElementById("Hv1_value").value = "999";
+        window.parent.document.getElementById("Hv2_value").value = "הפעולה נעצרה מיוזמתך, אנא חזור למסך ראשי!";
+        window.parent.document.getElementById("txtResultCG").disabled = false;
+        window.parent.document.getElementById("txtResultCG").value = 'ERROR';
+        window.parent.CG2();
+    }
+    </script>
+</head>
+<body onload="thefunction();">
+</body>
+</html>

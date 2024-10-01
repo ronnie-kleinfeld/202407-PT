@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link href='css/TDI.css' rel='stylesheet'>
+					<link rel="stylesheet" href="./assets/bootstrap5/css/bootstrap.css"/>
+					<link rel="stylesheet" href="./assets/styles/fa-pro-6.1.2/fa-pro-6.1.2/css/all.css" />"
+					<script src="./assets/scripts/jquery-3.3.1.slim.min.js"> </script>
+					<SCRIPT LANGUAGE='JAVASCRIPT' SRC='js/dds.js'> </script>
+					<SCRIPT LANGUAGE='JAVASCRIPT' SRC='js/ddsSubmit.js'> </script>
+					<title>Error</title>
+					<script>
+						function xxx(p){
+						document.getElementById("Herr").value = p;
+						gIsEnable=true;
+						bInPing=false;
+						//GetResol(document.getElementById("HresMethod"),document.getElementById("HresW"),document.getElementById("HresH"));
+						doSubmit();
+					}</script>
+				</head>
+				<body style="overflow:hidden;">
+					<div class="container" align="center" dir="rtl" style="background-color:WhiteSmoke">
+						<H3> <i class="fas fa-info-circle" style="color:CornflowerBlue" ></i> @@  </H3>
+						<form method='post' action='screen.aspx'>
+							<input name='Herr' id='Herr' type='hidden' value=''>
+								<input name='Hcur' id='Hcur' type='hidden' value=''>
+									<input name='Hx' id='Hx' type='hidden' value='x'>
+										<button type=button class="btn btn-outline-info" onClick='xxx("**");' style ="margin: 0.5rem;"  >Exit to menu</button>
+											<button type=button class="btn btn-outline-danger" onClick='xxx("++");' style ="margin: 0.5rem;" >Logout</button>
+												<IFRAME id='ifrRefresh' name='ifrRefresh' src='Refresh.aspx' width='0' height='0'>
+											     </IFRAME>
+						</form>
+					</div>
+				</body>
+</html>

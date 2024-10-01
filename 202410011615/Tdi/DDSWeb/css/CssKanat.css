@@ -1,0 +1,210 @@
+﻿.accordion-button:not(.collapsed) {
+    background-color: #00b07a !important;
+}
+
+    .accordion-button:not(.collapsed):not(.Menu-accordion-button) {
+        background-color: #00b07a !important;
+    }
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+
+    .accordion-button:not(.collapsed):not(.Menu-accordion-button)::before { /*arrow of card header is red when card is open*/
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        transform: rotate(0deg);
+    }
+
+.accordion-button:not(.Menu-accordion-button)::before { /*arrow of card header is black when card is closed*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.Menu-accordion-button.collapsed {
+    background-color: lightgray !important;
+}
+
+#offcanvas {
+    /*    background-color: #440099 !important;*/
+    background-color: rgb(68 0 153/ 10%) !important;
+}
+
+.grid-item > button {
+    background-color: #f8f4f4 !important;
+}
+
+    .grid-item > button:hover > .grid-title {
+        background-color: rgb(68 0 153/ 10%) !important;
+        color: white !important;
+    }
+
+    .grid-item > button:hover {
+        /*        border-radius: 0px !important;*/
+        background-color: rgb(68 0 153/ 80%) !important;
+    }
+
+.btn-primary, .duet-date__toggle, .footerButton {
+    background-color: #440099a3;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #440099a3;
+    }
+
+#HeaderUserIcon {
+    color: #440099;
+}
+
+.nav-item.active, .nav-item:focus {
+    background-color: #F7F8FF !important;
+}
+
+
+    .nav-item.active .nav-link {
+        color: rgb(68 0 153) !important;
+        opacity: 1 !important;
+    }
+
+.nav-item:not(.active) .nav-link:hover {
+    background-color: #F7F8FF !important;
+    color: #440099 !important;
+}
+
+.badgeScreenName {
+    color: #440099 !important;
+    background-color: rgb(68 0 153/ 10%) !important;
+}
+
+.accordion-button .collapsed {
+    background-color: #f8f4f4;
+}
+
+#ActionChooseBtn {
+    background-color: #00b07a !important;
+}
+
+.nav-link {
+    color: rgb(68 0 153) !important;
+}
+
+#HeaderUserInfo {
+    color: rgb(68 0 153);
+}
+
+.btn:hover {
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.footerButton:hover {
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
+    color: rgb(68 0 153);
+    background-color: rgb(68 0 153 / 10%);
+}
+
+.accordion-button-modal {
+    background-color: #00b07a !important;
+    color: white;
+}
+
+.fa-times-circle {
+    background-color: #00b07a !important;
+}
+
+.sortable th {
+    background-color: rgb(68 0 153/50%) !important;
+}
+
+tr:hover {
+    background-color: rgb(68 0 153 / 10%) !important;
+    color: rgb(68 0 153);
+}
+
+.trSelected {
+    background-color: rgb(68 0 153 / 50%) !important;
+}
+
+.popOverItem:hover {
+    Color: white !important;
+    background-color: rgb(0 176 122 / 50%) !important;
+}
+
+.tooltip-inner {
+    background-color: rgb(0 176 122 / 80%) !important;
+}
+
+.input-group-text { /*ntg 05.02.24 color of the @ icon in the fields*/
+    background-color: #440099a3;
+    color: white;
+}
+
+.IconForMode, #StatusOfPolicy, .CopyRightLink {
+    color: #440099 !important;
+}
+
+.form-check-input:checked[type=checkbox] { /* ntg 28.02.24 changes in the switch button appearence*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3crect x='2' y='2' width='20' height='20' fill='%2300b07a' rx='3' ry='3'/%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 12l4 4 8-8'/%3e%3c/svg%3e");
+    border-color: #00b07a;
+}
+
+.form-check-input[type=checkbox] {
+    background-color: white;
+    border: 1px solid rgb(27 27 29 / 0.15);
+}
+
+.footerButton:hover {
+    background-color: #440099a3 !important;
+}
+
+.btn-dots:focus, .btn-dots:active {
+    border-color: #e8e4f4 !important;
+    box-shadow: 0 0 0 0.25rem #e8e4f4 !important;
+    background-color: #440099a3 !important;
+}
+
+#showXmlBtnModal {
+    background-color: white !important;
+    color: #00b07a !important;
+}
+
+#exitBtnModal {
+    background-color: #00b07a !important;
+    color: white !important;
+}
+
+.HelpLink {
+    color: #440099a3;
+}
+
+body {
+    background-color: rgb(163 201 255 / 15%) !important;
+}
+
+#MainRow {
+    background-color: transparent !important;
+}
+
+.exitModal:hover {
+    background-color:transparent !important;
+}
+#GoToTopBtn:hover{
+    background-color:transparent !important;
+}
+
+.list-group::-webkit-scrollbar-thumb, .select2-results__options::-webkit-scrollbar-thumb { /*scroll bar of buttonList - the color of the scrollbar itsel*/
+    /*        background: #bad3eb;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    background: #e8e4f4; /*ntg 19.03.24 rebranding vanila*/
+    border-radius: 10px;
+}
+.nav-link:focus {
+    border-radius: 0 !important;
+    color: rgb(68 0 153) !important;
+}
+
+.page-title {
+    color: rgb(68 0 153 / 80%) !important;
+}

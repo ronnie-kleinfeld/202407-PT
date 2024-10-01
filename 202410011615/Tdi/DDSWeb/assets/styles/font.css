@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Rubik";
+
+  src: url("../fonts/Rubik-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Rubik-Light.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Rubik-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Rubik";
+
+  src: url("../fonts/Rubik-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Rubik-Medium.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Rubik-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Rubik";
+
+  src: url("../fonts/Rubik-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Rubik-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Rubik-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AssistantFont";
+  src: url("../fonts/Assistant/Assistant-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ericasansfot";
+  src: url("../fonts/ericasansfot-regular-webfont.woff2") format("woff2");
+  font-weight: 400 !important;
+}
+
+body {
+  font-family: "Tahoma" !important;
+}
+
+.nav-item {
+  font-family: "Tahoma" !important;
+  font-size: inherit;
+}
+
+.btn {
+  font-family: "Tahoma" !important;
+}
+
+.card-title {
+  font-family: "Tahoma" !important;
+}
+
+input, button, select, optgroup, textarea, label{
+  font-family: "Tahoma" !important;
+}

@@ -1,0 +1,81 @@
+BODY {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 12px; BACKGROUND: transparent; PADDING-BOTTOM: 1px; MARGIN: 0px; PADDING-TOP: 4px; FONT-FAMILY: Arial
+}
+#page {
+	WIDTH: 100%
+}
+A {
+	FONT-SIZE: 12px; COLOR: #ad6c12; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #5a5b55; TEXT-DECORATION: underline
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial
+}
+#top_h_bk {
+	BACKGROUND: url(../Pics/top_h_bk.gif) repeat-x
+}
+#top_ht_bk {
+	BACKGROUND: url(../Pics/top_h_bk.gif) repeat-x
+}
+#cr_l_bk {
+	BACKGROUND: url(../Pics/cr_l_bk.gif) repeat-y
+}
+#cr_r_bk {
+	BACKGROUND: url(../Pics/cr_r_bk.gif) repeat-y
+}
+#bottom_line {
+	BACKGROUND: #66a0bd
+}
+#top_nav_border {
+	BORDER-RIGHT: #4d68d5 2px solid; BORDER-TOP: #4d68d5 2px solid; BACKGROUND: url(../Pics/top_nav_border.jpg) no-repeat left 50%; BORDER-LEFT: #4d68d5 2px solid; BORDER-BOTTOM: #b6b6b6 2px solid; HEIGHT: 49px
+}
+#top_balck_title {
+	BORDER-RIGHT: #b6b6b6 1px solid; PADDING-LEFT: 13px; FONT-SIZE: 14px; BACKGROUND: url(../Pics/top_balck_title.gif) repeat-x left 50%; BORDER-LEFT: #b6b6b6 1px solid; COLOR: #fff; LINE-HEIGHT: 27px; BORDER-BOTTOM: #b6b6b6 1px solid; HEIGHT: 30px; TEXT-ALIGN: left
+}
+#main_content_bk {
+	BACKGROUND: url(../Pics/main_content_bk.gif) #fff repeat-y left 50%
+}
+#main_frame {
+	PADDING-RIGHT: 50px; PADDING-LEFT: 112px; PADDING-BOTTOM: 10px; COLOR: #56555c; PADDING-TOP: 45px
+}
+#bk_sep1 {
+	BACKGROUND: #aacae5; WIDTH: 1px
+}
+#bk_sep2 {
+	BACKGROUND: #aacae5; HEIGHT: 1px
+}
+#sep {
+	BACKGROUND: #b8c2c9; HEIGHT: 1px
+}
+.input1 {
+	BORDER-RIGHT: #c7c7c7 1px solid; BORDER-TOP: #c7c7c7 1px solid; FONT-SIZE: 13px; BACKGROUND: #fefefe; BORDER-LEFT: #c7c7c7 1px solid; COLOR: #000; BORDER-BOTTOM: #c7c7c7 1px solid
+}
+.submit1 {
+	BORDER-TOP-WIDTH: 0px; PADDING-LEFT: 7px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BACKGROUND: url(../Pics/submit1.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 110px; cursor: pointer; COLOR: #fff; HEIGHT: 20px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.submit2 {
+	BORDER-TOP-WIDTH: 0px; PADDING-LEFT: 21px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BACKGROUND: url(../Pics/submit2.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 110px; cursor: pointer; COLOR: #fff; HEIGHT: 20px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.submit3 {
+	BORDER-TOP-WIDTH: 0px; PADDING-LEFT: 21px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BACKGROUND: url(../Pics/submit3.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 110px; cursor: pointer; COLOR: #3f52d9; HEIGHT: 20px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.submit4 {
+	BORDER-TOP-WIDTH: 0px; PADDING-LEFT: 21px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BACKGROUND: url(../Pics/submit4.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 110px; cursor: pointer; COLOR: #fff; HEIGHT: 20px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.submit5 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; BACKGROUND: url(../Pics/submit5.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 128px; cursor: pointer; COLOR: #10215b; HEIGHT: 18px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+.submit6 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; BACKGROUND: url(../Pics/submit6.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 128px; cursor: pointer; COLOR: #10215b; HEIGHT: 18px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+.submit7 {
+	BORDER-TOP-WIDTH: 0px; PADDING-LEFT: 26px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BACKGROUND: url(../Pics/submit7.gif) repeat-x center 50%; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 110px; cursor: pointer; COLOR: #211383; HEIGHT: 20px; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+#fott1 {
+	BACKGROUND: #006295; HEIGHT: 17px
+}
+#fott2 {
+	PADDING-LEFT: 28px; FONT-SIZE: 11px; BACKGROUND: #5178a2; COLOR: #10215b; HEIGHT: 17px; TEXT-ALIGN: left
+}

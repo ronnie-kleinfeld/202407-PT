@@ -1,0 +1,2615 @@
+:root {
+    --ComtecLogo-Dark-Blue: rgb(0,29,57);
+    --ComtecLgog-Light-Blue: rgb(67,115,161);
+}
+
+html {
+    scroll-behavior: auto !important;
+    font-size: 0.95rem;
+}
+
+body {
+    /*    background-color: rgb(163 201 255 / 15%) !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+}
+
+@media (max-width: 992px) {
+    /*@media (max-width: 400px) {*/
+    body {
+        background-color: rgb(163 201 255 / 15%) !important;
+        padding-right: 0px !important;
+    }
+
+    #BodyDiv { /*this makes tables in smartphone mode to be scrolled to the sides - ntg 16.04.23 */
+        overflow-x: auto;
+        margin-bottom: 2rem;
+        width: 200px;
+        height: 700px;
+        background-color: rgb(73 141 179 / 5%);
+        border-radius: 8px;
+    }
+
+    #ShowXmlElem {
+        display: none;
+    }
+
+    .exitModal {
+        margin-left: 0rem !important;
+        margin-bottom: -0.5rem !important;
+    }
+}
+
+.header {
+    margin-right: auto !important;
+    border-bottom: none;
+    box-shadow: 0 0 5px 2px rgb(73 141 179 / 20%);
+}
+
+.ShortHeader {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+
+.WideHeader {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+label.required::before {
+    content: " * ";
+    color: red;
+}
+
+label.required {
+    padding-right: 1rem !important /*ntg 02.07.23 - was 0.25rem - the label was a little hidden the warning exclamation point*/
+}
+
+label > img {
+    height: 32px;
+    display: flex;
+}
+
+.HelpLink {
+    /*    color: var( --ComtecLgog-Light-Blue);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    color: rgb(86,186,234); /*ntg 19.03.24 rebranding vanila*/
+    /* font-size: smaller; */
+    /* vertical-align: super; */
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#headerMenuCollapse {
+    border-bottom: 0px !important;
+}
+
+.nav-item {
+    width: 100% !important;
+    color: white !important;
+}
+
+    .nav-item.active .nav-link {
+        Color: var(--ComtecLogo-Dark-Blue) !important;
+        opacity: 1 !important;
+    }
+
+.sidebar {
+    padding: 0px !important;
+    margin-top: -0.3rem; /*ntg 16.07.24 changes regarding sidebar fields */
+}
+
+.nav-item.active,
+.nav-item:focus {
+    Color: var(--ComtecLogo-Dark-Blue) !important;
+    background-color: white !important;
+    /*margin-left: 1px  ntg 5.1.23*/
+}
+
+.btnIcon.active,
+.btnIcon:focus {
+    Color: var(--ComtecLogo-Dark-Blue) !important;
+    background-color: white !important;
+    /*margin-left: 1px  ntg 5.1.23*/
+}
+
+.nav-item:not(.active) .nav-link:hover {
+    border-radius: 10px !important;
+    /*    background-color: #275cab !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    /*background-color: rgb(182,209,225) !important;*/ /*ntg 19.03.24 rebranding vanila*/
+    /*border-radius: 0px !important;*/
+    background-color: rgb(255 255 255/50%) !important; /*ntg 17.07.24 changes regarding sidebar fields*/
+    border-radius: 5px !important; /*ntg 17.07.24 changes regarding sidebar fields*/
+}
+
+.nav-item > .btn, .nav-item > .nav-link { /*ntg 19.03.24 rebranding vanila - fixing transition during hover on sidebar btns*/
+    transition: none !important;
+}
+
+.nav-item button:focus {
+    /* Color: DarkSlateBlue !important; */
+}
+
+.NavFixedButtonsList {
+    margin-top: auto !important;
+    /*    margin-bottom: 8rem !important;*/
+    padding-right: 0px !important; /*ntg 5.1.23*/
+}
+
+
+/* .nav-item:not(.active)::after{ */
+/* content: ''; */
+/* position: absolute; */
+/* width: 0px; */
+/* height: 3px; */
+/* left: 50%; */
+/* bottom:0; */
+/* background-color: rgb(91 155 213); */
+/* transition: all ease-in-out .4s; */
+/* } */
+/* .nav-item:not(.active):hover::after{ */
+/* /* width: 80%; */ */
+/* /* left: 10%; */ */
+/* } */
+.nav-link.btn-sm {
+    color: white !important;
+}
+
+.nav-link {
+    width: 95%;
+    color: white !important;
+    /* font-weight: bold !important; */
+    font-size: 1rem !important;
+    padding: 0.25rem 0.25rem !important;
+    text-align: right;
+}
+
+    .nav-link:focus {
+        box-shadow: none !important;
+    }
+
+.navFolderIcon {
+    margin-right: 0.3rem;
+    padding-right: 0px !important;
+    width: 32px !important;
+}
+
+.form-check {
+    padding-left: 0; /*ntg 25.06.23 making the radio btns that have no img closer*/
+}
+
+.GroupRadioButtonsNoImages > .form-check {
+    width: 50%; /* ntg 26.06.23 making the radio btns spread evenly in the field area*/
+    /*    background-color: #fff;*/
+    border-radius: 6rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    /*border: 1px solid;*/ /*rgba(0, 0, 0, 0.125)*/
+    justify-content: center;
+}
+.GroupRadioButtonsNoImagesV > .form-check {
+    margin:5px;
+    border-radius: 6rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    justify-content: center;
+    /* margin-bottom: initial !important; */
+    position:relative;
+}
+
+.GroupRadioButtonsNoImages > .form-check:hover { /* ntg 26.06.23 changing the radio btns hover color*/
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+.GroupRadioButtonsNoImagesV > .form-check:hover { /* ntg 26.06.23 changing the radio btns hover color*/
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+
+/*    .GroupRadioButtonsNoImages > .form-check > .form-check-input:checked {
+        background-color: var(--ComtecLogo-Dark-Blue);
+        font-weight: bold;
+    }*/
+
+
+.form-check-input {
+    margin-left: 0.3125rem !important;
+    margin-right: 0.3125rem !important;
+    cursor: pointer;
+    position: relative !important;
+    float: right !important;
+}
+
+.form-check-input { /*ntg 03.07.23 now the radio buttons dont show the radio circle + have a new shape and color*/
+    /*    background-color: rgb(67,115,161);*/
+    /*    border: 1px solid rgba(0, 0, 0, 0.125);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    border: none;
+    /*    z-index: 9999;*/
+    background-color: rgb(86 186 234 / 30%); /*ntg 19.03.24 rebranding vanila*/
+}
+
+    .form-check-input:checked[type=radio] { /*ntg 03.07.23 now the radio buttons dont show the radio circle + have a new shape and color*/
+        background-image: none !important;
+        /*background-color: #56baea66;*/ /* white; ntg 11.12.23 new colors by anastasia*/ /*rem ntg 19.03.24 rebranding vanila*/
+        background-color: rgb(86 186 234 / 70%); /*ntg 19.03.24 rebranding vanila*/
+        /*border: 2px solid #498db3;*/ /* var(--ComtecLgog-Light-Blue); ntg 11.12.23 new colors by anastasia*/
+        border: 3px solid rgb(73 141 179) !important; /*ntg 08.04.24 changing appearence of radio btns as a solid group*/
+    }
+
+    .form-check-input[type=radio]:not([name="R"]) { /* ntg 03.07.23 now the radio buttons dont show the radio circle + have a new shape and color  ntg 14.09.23 added :not([name="R"]) for multiple radio btns +ntg 29.02.24 changed some parameters
+        /*        display: none;*/
+        /*        opacity: 0;*/
+        position: absolute !important;
+        width: 48%;
+        height: 2.2rem; /*ntg 21.04.24 changes in appearence*/
+        /*border-radius: 0.5rem;*/ /*rem ntg 19.03.24 rebranding vanila*/
+        /*border-radius: 1.5rem;*/ /*ntg 19.03.24 rebranding vanila*/
+        border-radius: 0rem; /*ntg 08.04.24 changing appearence of radio btns as a solid group*/
+        /*        top: 0;*/
+        bottom: 0.15rem;
+        background-image: none !important;
+    }
+
+    .form-check-input:focus {
+        box-shadow: 0 0 0 0.2rem rgba(86, 186, 234, 0.6) !important; /* ntg 11.12.23 new colors by anastasia*/
+    }
+
+
+.form-check-label {
+    cursor: pointer;
+    z-index: 1; /*ntg 03.07.23 the footerDiv was under the text of the fields, and this fixed it*/
+}
+
+.form-check {
+    margin-bottom: 0px;
+    display: flex !important;
+}
+
+
+.duet-date__cell, .duet-date__table-header {
+    padding: 1px !important;
+}
+
+
+.duet-date__table td, .duet-date__table th {
+    padding: 1px !important;
+}
+
+.duet-date__dialog {
+    z-index: 9999 !important;
+}
+
+.duet-date__dialog-content {
+    background: #fff;
+}
+
+.duet-date__input {
+    padding-right: 1rem !important;
+}
+
+    .duet-date__input:invalid ~ .invalid-feedback,
+    .duet-date__input.is-invalid ~ .invalid-feedback {
+        display: block;
+    }
+
+.duet-date__toggle {
+    color: white;
+    /*    background-color: rgb(67 115 161);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    background-color: rgb(73 141 179); /*ntg 19.03.24 rebranding vanila*/
+    left: 0px;
+    right: auto;
+    border-radius: var(--duet-radius) 0px 0px var(--duet-radius) !important;
+}
+
+button.duet-date__toggle {
+    /*	right:auto;*/
+}
+
+.PencilColor {
+    color: purple;
+    cursor: pointer;
+}
+
+.Pencil {
+    pointer-events: all;
+}
+
+.PencilBlack {
+    cursor: pointer;
+}
+
+.popover {
+    min-width: 8rem !important;
+    /*    border-radius: 10px;*/ /*rem ntg 19.03.24 rebranding vanila*/
+}
+
+.bs-popover-top {
+    margin-bottom: 0.5rem !important;
+}
+
+.popOverItem {
+    text-align: right;
+    color: var(--ComtecLogo-Dark-Blue);
+    /* border:0 !important; */
+    border-width: 1px;
+    /*    border-radius: 0px !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    background: none;
+}
+
+    .popOverItem:hover {
+        /*        Color: white !important;*/ /* rem ntg 19.03.24 rebranding vanila*/
+        /*        background-color: #5d9beb !important;*/ /* rem ntg 19.03.24 rebranding vanila*/
+        color: rgb(27,27,29) !important; /*ntg 19.03.24 rebranding vanila*/
+        background-color: rgb(27,27,29,0.15) !important; /*ntg 19.03.24 rebranding vanila*/
+        font-weight: normal !important; /*ntg 19.03.24 rebranding vanila*/
+    }
+
+.popOverItemEnglish { /*ntg 14.06.23 aligned text of items inside (...) in floating menu to the left*/
+    text-align: left;
+    color: var(--ComtecLogo-Dark-Blue);
+    /* border:0 !important; */
+    border-width: 1px;
+    /*    border-radius: 0px !important;*/
+    background: none;
+}
+
+    .popOverItemEnglish:hover {
+        Color: white !important;
+        background-color: #5d9beb !important;
+    }
+
+.popover-header {
+    text-align: center !important;
+}
+
+.popover-body {
+    /*    background-color: #f0f0f0;*/ /* rem ntg 19.03.24 rebranding vanila*/
+    padding: 0px;
+    /*    border-radius: 10px;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    box-shadow: rgba(73,141,179,0.25) 2px 2px 5px 0px; /*ntg 19.03.24 rebranding vanila*/
+}
+
+.popover
+.nav-link .fas,
+.nav-link .far,
+.popOverItem .fas,
+.nav-link {
+    /*    margin-right: .3rem;
+    padding-right: 0px !important; ntg 27.02.23 */
+    width: 32px !important;
+}
+
+.footer {
+    /* opacity: 0.8;  */
+    z-index: 1080;
+}
+
+.footerRow > * {
+    width: auto !important;
+}
+
+.footerRow {
+    flex-wrap: nowrap !important;
+}
+
+@keyframes blink {
+    0% {
+        border-color: #ffffff;
+    }
+
+    50% {
+        border-color: #2570be;
+    }
+
+    100% {
+        border-color: #ffffff;
+    }
+}
+
+.C90 {
+    animation: blink 1.5s infinite;
+    border-width: 2px;
+}
+
+.footerButton {
+    width: 100%;
+    font-size: 1rem !important;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+    .footerButton > i {
+        font-size: 1.45em;
+        margin-top: 0.2em;
+    }
+
+
+
+    .footerButton:hover {
+        font-weight: bold !important;
+        /*        border-color: var(--ComtecLgog-Light-Blue);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    }
+
+    .footerButton:focus {
+        box-shadow: none;
+    }
+
+    .CommandButtonInMenu > img,
+    .footerButton > img {
+        width: 2.5rem !important;
+    }
+
+.CommandButtonInMenu > img {
+    margin-right: 0.3rem;
+    margin-left: 0rem;
+    padding-right: 0px !important;
+    width: 32px !important;
+}
+
+@media (max-width: 992px) {
+    .CommandButtonInMenu {
+        text-align: right !important;
+        /*        font-size: 1.7rem !important; ntg 17.05.23 commented bc it made some side folders to look bigger than others*/
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+
+.CommandButtonInMenu:disabled, .CommandButtonInMenu.disabled {
+    opacity: 0.45;
+}
+
+#DevToolsSpan {
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    /*top: -0.5rem; /*ntg 12.09.23 fixing position*/
+    position: relative /*ntg 12.09.23 fixing position*/
+}
+
+
+.FooterDiv {
+    margin-right: auto;
+}
+
+#FooterButtonsDiv {
+    cursor: move;
+    position: absolute;
+    top: -3.5rem;
+    padding: 2px 2px 2px 2px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px rgba(73, 141, 179, 0.3);
+    /* background-color: rgb(255 255 255 / 20%); */
+}
+
+.FooterElement {
+    min-width: 8rem;
+    padding: 2px 60px 2px 2px;
+    /* border-radius: 30px; */
+    /* border: 1px solid #d7d7d7; */
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+@media (max-width: 992px) {
+    .FooterElement {
+        min-width: 3.5rem;
+        padding: 2px 2px 2px 2px;
+        width: 55px;
+        height: 55px;
+        border-radius: 10px;
+    }
+
+    .footerButton {
+        border-radius: 50% !important;
+        font-size: 1.1rem !important;
+    }
+}
+
+.FooterElement:hover {
+    /* border-color:var(--ComtecLgog-Light-Blue); */
+}
+
+.ExtraButtonsContent {
+    width: 50%;
+}
+
+.WideFooter {
+    width: 96% !important;
+}
+
+.modal-footer {
+    /* justify-content: space-evenly !important; */
+}
+
+.YesButton {
+    background-color: #1dd794;
+}
+
+.NoButton {
+    background-color: #EC808D;
+}
+
+.modal-header .btn-close {
+    margin-right: auto !important;
+    margin-left: 0.5rem !important;
+}
+
+#ShowXmlDiv {
+    margin-left: 1rem;
+}
+
+#topButtonDiv {
+    /*bottom: 2.5rem;*/ /*ntg 23.01.24 moved it upwards so it looks good with the copyright*/
+    bottom: -1rem; /*ntg 17.04.24 changes for scrollable sidebar*/
+    position: absolute;
+    left: -1rem; /*ntg 17.04.24 changes for scrollable sidebar*/
+    /*    right: 0;*/ /*rem ntg 17.04.24 changes for scrollable sidebar*/
+    text-align: center;
+}
+
+#GoToTopBtn {
+    display: none;
+    z-index: 99;
+    font-family: Arial;
+    padding: 0.3rem 0.3rem !important;
+    border: none;
+    /*    color: #232873 !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    color: white !important; /*ntg 19.03.24 rebranding vanila*/
+}
+
+.NarrowSideBar #topButtonDiv { /*ntg 27.05.24 fixing go to top btn location in case of narrow side bar*/
+    /*    left: -3rem; */
+    display: none;
+}
+
+.NarrowSideBar #UpIcon { /*ntg 27.05.24 fixing go to top btn location in case of narrow side bar*/
+    color: gray !important;
+}
+
+#UpIcon {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+#CopyRightDiv { /*ntg 23.01.24 changed appearence of the copyright*/
+    /*    position: absolute;
+    bottom: 0.1rem;
+    direction: ltr;
+    left: 1.5rem;*/
+    /*    bottom: 0;*/ /*rem ntg 17.04.24 changes for scrollable sidebar*/
+    /*    position: absolute; /* rem ntg 17.04.24 changes for scrollable sidebar 
+    left: 0; /*rem ntg 17.04.24 changes for scrollable sidebar
+    right: 0; /* rem ntg 17.04.24 changes for scrollable sidebar
+    */
+    text-align: center;
+    margin-bottom: -1.7rem !important;
+}
+
+.UpArrow {
+    width: 25px;
+}
+
+.custom-switch-indicator {
+    cursor: pointer;
+}
+
+.invalid-feedback {
+    font-family: sans-serif !important;
+    text-align: right
+}
+
+.table-first-fit th:first-child {
+    width: 1% !important;
+}
+
+.tableFitContent {
+    width: fit-content !important;
+}
+
+.table {
+    /* table-layout:fixed; */
+    vertical-align: middle !important;
+}
+
+/*.trSelected {
+    background-color: var(--ComtecLgog-Light-Blue);
+}
+
+    .trSelected > * {
+        Color: white !important;
+    }
+
+tr:not(.trSelected):hover {
+    Background-color: #badce3;*/
+/*Font-weight: bold;   ----------------------------------------------------- table problem    */
+/*opacity: 0.6;
+}*/
+
+.trDbclick {
+    background-color: var(--ComtecLgog-Light-Blue);
+}
+
+
+/* Remove arrows from number input fields */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.badge.badge-info {
+    font-size: 100%;
+}
+
+.badgeScreenName {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border: none;
+    /*    font-size: 1.5rem !important;*/
+    font-size: 1.3rem !important; /*ntg 21.04.24 changes in appearence*/
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /*    color: #001d3ba6;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    /*    background-color: rgb(163 201 255 / 40%) !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    color: rgba(29,29,27,0.7) !important; /*ntg 19.03.24 rebranding vanila*/
+    background-color: rgba(27,27,29,0.05) !important; /*ntg 19.03.24 rebranding vanila*/
+}
+
+@media (max-width: 992px) {
+    .badgeScreenName {
+        font-size: 16px !important;
+    }
+}
+
+
+#MDExtraButtons {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.hidden {
+    display: none !important
+}
+
+.card {
+    /*border-radius: 0.6rem !important;*/ /*ntg 28.06.23*/ /*rem ntg 19.03.24 rebranding vanila*/
+    /*box-shadow: 2px 1px 6px 2px #dee2e6 !important;*/
+    /*	margin-bottom:5px;*/
+}
+
+.card-header {
+    background-color: #f2f9fe;
+}
+
+.card-title {
+    font-weight: bold !important;
+}
+
+input[type=text], input[type=number] {
+    border-radius: 6px !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(50%);
+}
+
+select {
+    border-radius: 7px !important;
+    cursor: pointer;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.4;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='4'><path d='M4 4L0 0h8z' fill='gray' /></svg>");
+    background-repeat: no-repeat;
+    background-position: left 0.5rem center;
+    background-size: 8px 4px;
+}
+
+
+    select::-ms-expand {
+        display: none;
+    }
+
+    select option {
+        padding: 10px !important;
+        border-radius: 5px !important;
+    }
+
+        select option:checked {
+            background-color: rgb(136, 183, 227); /*rgb(67,115,161); ntg 20.06.23 color was too dark*/
+            color: white;
+            font-weight: bold;
+        }
+
+.option {
+    border-radius: 7px !important;
+    padding: 0.375rem 0.75rem 0.375rem 2.25rem !important;
+}
+
+.form-select {
+    padding: 0.375rem 0.75rem 0.375rem 2.25rem !important;
+    background-position: left 0.75rem center;
+}
+
+.btn {
+    border-radius: 10px !important;
+}
+
+    .btn:hover {
+        color: rgb(73,141,179); /*ntg 19.03.24 rebranding vanila*/
+        background-color: rgba(73,141,179,0.4); /*ntg 19.03.24 rebranding vanila*/
+    }
+
+
+.modalFooterButtons {
+    width: 8rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    border-radius: 30rem !important;
+    border: none;
+}
+
+.btn-info {
+    color: white !important;
+}
+
+.btn-dots {
+    /*    background-color: var(--ComtecLgog-Light-Blue);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    background-color: rgb(73,141,179); /*ntg 19.03.24 rebranding vanila*/
+    border: 0px solid #ced4da;
+    border-radius: 6px 0px 0px 6px !important; /* change by tami from 0.3rem 26.09.24 */
+    /*margin-right: 0.2rem !important;*/ /* tami 26.09.24 */
+    margin-left: 2px !important; /* tami 26.09.24 */
+    padding: 0.25rem 0.5rem !important;
+}
+
+    .btn-dots:focus, .btn-dots:active {
+        border-color: rgb( 86 186 234) !important; /*ntg 19.03.24 rebranding vanila*/
+    box-shadow: 0 0 0 0.25rem rgb(86 186 234 / 40%) !important; /*ntg 19.03.24 rebranding vanila*/
+    background-color: rgb(73,141,179) !important; /*ntg 19.03.24 rebranding vanila*/
+}
+
+.btnOpenActionButtons {
+    border-radius: 50% !important;
+    color: lightgrey !important; /*changed from light blue*/
+    border-color: #dee2e6 !important;
+    border: 2px solid; /*changed from 1px to 2px*/
+}
+
+/*.btnOpenActionButtons:hover {
+        border: 3px solid var(--ComtecLgog-Light-Blue) !important;*/ /*changed from 2px to 3px*/
+/*}*/
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+button.btn-info.nav-link {
+    /* width:9rem; */
+}
+
+.rotate-icon {
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.flip {
+    transform: rotate(-180deg);
+}
+
+.accordion-button {
+    font-weight: bold;
+    font-size: 1.2rem !important;
+    /*    padding: 1rem 1rem !important;*/
+    padding: 0.7rem 0.7rem !important; /*ntg 21.04.24 changes in appearence*/
+    border-top-left-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+    border-top-right-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+}
+
+    .accordion-button:focus {
+        border-color: rgb(86 186 234);
+        box-shadow: 0 0 0 0.25rem rgb(86 186 234 / 40%);
+    }
+
+    .accordion-button::after {
+        margin-right: 1rem;
+        content: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        /*        background-color: rgb(163 201 255 / 40%) !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+        background-color: rgb(73 141 179 / 25%); /*ntg 19.03.24 rebranding vanila*/
+        box-shadow: none !important;
+        color: rgb(29 29 27);
+    }
+
+        .accordion-button:not(.collapsed):not(.Menu-accordion-button)::before { /**/
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231d1d1b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transform: rotate(0deg);
+        }
+
+    .accordion-button:not(.Menu-accordion-button)::before { /**/
+        flex-shrink: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        /* margin-left: auto; */
+        content: "";
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231d1d1b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(90deg);
+        margin-left: 1rem;
+    }
+
+.accordion-button-modal {
+    background-image: none;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    /*    background-color: rgb(163 201 255 / 40%) !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    background-color: rgb(73 141 179 / 40%) !important; /* ntg 19.03.24 rebranding vanila*/
+    /*    color: #0c63e4;*/ /*rem ntg 19.03.24 rebranding vanila*/
+    color: rgb(27,27,29); /* ntg 19.03.24 rebranding vanila*/
+    /*    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    box-shadow: none; /*ntg 19.03.24 rebranding vanila*/
+    font-size: 1.2rem !important;
+    padding: 1rem 1rem !important;
+    width: -webkit-fill-available;
+    text-align-last: right;
+    border: none;
+    border-top-left-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+    border-top-right-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+}
+
+.Menu-accordion-button {
+    /*    background-color: white !important;*/ /*rem ntg 19.03.24 rebranding vanila*/
+}
+
+.accordion-item {
+    /*    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 15%);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    box-shadow: 2px 2px 5px 0px rgb(73 141 179 / 25%); /*ntg 19.03.24 rebranding vanila*/
+    border: none !important;
+    padding: 0px;
+    /*background-color:  #f1f6ff*/
+    border-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+    border-style: outset; /*ntg 19.03.24 rebranding vanila*/
+}
+
+/* vk 09.24 */
+.border2 {
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-color: rgba(17, 28, 63, 1) !important;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 26, 0.2980392156862745);
+}
+
+.accordion-body {
+    border-bottom-left-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+    border-bottom-right-radius: 0.6rem; /*ntg 22.06.23 rounding the corners in modal window*/
+}
+
+@media (min-width: 992px) {
+    .accordion {
+        margin-right: 2%;
+        margin-bottom: 3rem; /*ntg 17.04.24 changes for scrollable sidebar*/
+    }
+}
+
+.form-floating {
+    margin-top: 0.5rem !important;
+}
+
+    .form-floating > label {
+        opacity: 0.7;
+        left: auto;
+        transition-duration: 0.4S;
+    }
+
+    .form-floating > .form-control {
+        border-style: outset;
+        font-weight: 500;
+    }
+
+
+        .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+            opacity: 0.7;
+            transform: translateY(-1rem) translateX(0.1rem);
+            color: #0d6efd;
+        }
+
+.form-control:focus {
+    border-color: rgb(86,186,234); /*ntg 19.03.24 rebranding vanila*/
+    box-shadow: 0 0 0 0.25rem rgb(86,186,234,0.4); /*ntg 19.03.24 rebranding vanila*/
+}
+
+.form-label {
+    display: block;
+    width: fit-content;
+    margin-bottom: 0.2rem !important;
+}
+
+.navbar {
+    background-color: rgb(163 201 255 / 20%);
+}
+
+.navbar-toggler {
+    background-color: white !important;
+    color: #4373A1 !important;
+    border: none !important;
+    font-size: 2rem;
+}
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.05rem !important;
+    }
+
+.imageButton {
+    border: 4px solid GhostWhite;
+    box-shadow: 5px -5px 12px 0px #c7c7c7;
+}
+
+.pchlButtons {
+    width: 100%;
+}
+
+.tooltip-inner {
+    background-color: rgb(91 155 213);
+}
+
+.labelOverflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+
+.list-group, .select2-results__options {
+    max-height: 300px;
+    max-width: none !important;
+    margin-right: 0px !important;
+    overflow: overlay;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0 !important;
+    direction: initial;
+    text-align: end;
+}
+
+    .list-group::-webkit-scrollbar, .select2-results__options::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    .list-group::-webkit-scrollbar-thumb, .select2-results__options::-webkit-scrollbar-thumb { /*scroll bar of buttonList - the color of the scrollbar itsel*/
+        /*        background: #bad3eb;*/ /*rem ntg 19.03.24 rebranding vanila*/
+        background: rgb(73 141 179 / 40% ); /*ntg 19.03.24 rebranding vanila*/
+        border-radius: 10px;
+    }
+
+    .list-group::-webkit-scrollbar-track, .select2-results__options::-webkit-scrollbar-track { /*scroll bar of buttonList - the border of all of it*/
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px grey;
+        background-color: white;
+    }
+
+    .list-group::-webkit-scrollbar-thumb:hover, .select2-results__options::-webkit-scrollbar-thumb:hover {
+        /*        background: #9db4c9;*/ /*rem ntg 19.03.24 rebranding vanila*/
+        background: rgb(73 141 179 / 70% ); /*ntg 19.03.24 rebranding vanila*/
+    }
+
+
+.list-group-item {
+    background-color: white;
+    /* padding-right: 1.5rem; */
+    width: 100%; /*ntg 26.06.23 making the radio btns spread evenly in the field area*/
+}
+
+    .list-group-item img {
+        margin: 0 auto;
+    }
+
+    .list-group-item:hover {
+        /*        opacity: 0.6;*/
+        font-weight: bold;
+        background-color: #f0ecec;
+    }
+
+.list-group-item-info.list-group-item-action:hover {
+    /* background-color: var(--ComtecLgog-Light-Blue); */
+    opacity: 0.6;
+    /* color:white; */
+    font-weight: bold;
+    color: rgb(29 29 27);
+    background-color: rgb(27 27 29 / 10%);
+}
+
+.list-group-item-action:active {
+    background-color: rgb(86 186 234 / 50%);
+}
+
+.list-group-item-info.list-group-item-action:focus {
+    background-color: rgb(86 186 234 / 50%);
+    /* opacity:0.8; */
+    /*    color: white;*/
+}
+
+.list-group-item-check:checked + .list-group-item {
+    border: 2px solid rgb(73, 141, 179) !important;
+}
+
+.list-group-checkable {
+    justify-content: start; /*was space-around; ntg 25.06.23*/
+    /* border: none;  */
+    border: 1px solid #ced4da;
+    border-radius: 6px !important;
+    gap: 0;
+}
+
+    .list-group-checkable.GroupImagesRadioButtons {
+        border: none !important;
+        margin-top: 0.6rem;
+    }
+
+    /*.list-group-checkable.GroupRadioButtonsNoImages {*/ /*ntg 25.06.23 new class .GroupRadioButtonsNoImages for radio btns with no image*/
+    /*padding: 0;
+        margin-top: 0.6rem;
+        margin-bottom: 0.2rem;
+    }*/
+    .list-group-checkable.GroupRadioButtonsNoImages, .list-group-checkable.GroupRadioButtonsNoImagesV { /*ntg 08.04.24 changing appearence of radio btns as a solid group*/
+        padding: 0.3rem;
+        /*        margin-top: 0.6rem;
+        margin-bottom: 0.2rem;*/
+    }
+
+.BigImageDiv {
+    padding-left: inherit;
+}
+
+    .BigImageDiv label {
+        width: 100%;
+        height: 13rem;
+        font-size: large;
+    }
+
+    .BigImageDiv img {
+        height: 10rem;
+        margin-bottom: 0.5rem;
+    }
+
+.SideMenu { /*ntg 16.07.24 changes regarding sidebar fields */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 992px) {
+    .SideMenu {
+        width: 15% !important;
+    }
+}
+
+#offcanvas {
+    /*    background-color: rgb(67,115,161);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    background-color: rgb(73 141 179) !important; /*ntg 19.03.24 rebranding vanila*/
+}
+
+.offcanvas-header {
+    background-color: white !important;
+}
+
+.offcanvas-body {
+    position: relative;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    /*    padding-top: 1rem;*/
+    padding-top: 0rem; /*ntg 16.07.24 changes regarding sidebar fields */
+    padding-bottom: 0rem; /*ntg 16.07.24 changes regarding sidebar fields */
+    /*    overflow-y: inherit !important;---- ntg 17.05.23 removed because scrolling on sidebar in smartphone mode didnt work     */
+}
+
+#CanvasCloseButton {
+    font-size: 2rem;
+}
+
+#SideMenuTitle {
+    color: cornflowerblue;
+}
+
+ul.nav {
+    /*    padding-inline-start: 0.5rem; -----ntg 14.06.23 removed bc in gic it was too much to the right*/
+}
+
+.modal-sm {
+    max-width: 250px;
+}
+
+#HeaderUserIcon, #StatusOfPolicy { /*ntg 24.01.24 design #StatusOfPolicy*/
+    /*    color: var(--ComtecLgog-Light-Blue)*/ /*rem ntg 19.03.24 rebranding vanila*/
+    color: rgb(29, 29,27); /*ntg 19.03.24 rebranding vanila*/
+}
+
+/*#StatusOfPolicy {*/ /*ntg 24.01.24 design #StatusOfPolicy*/
+/*margin-right: 2rem !important;
+}*/
+
+#HeaderCompanyName {
+    position: relative;
+}
+
+    #HeaderCompanyName::before {
+        content: "";
+        position: absolute;
+        height: 70%;
+        width: 1px;
+        background-color: lightblue;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+    }
+
+/*#HeaderUserName, #StatusOfPolicyName { rem ntg 21.04.24 changes in appearence
+    font-weight: bold
+}*/
+
+#HeaderUserFullInfo, #NavBurger {
+    /*    margin-right: 3%; ntg 24.01.24 appearence change*/
+    margin-left: auto;
+}
+
+#HeaderUserFullInfo {
+    flex-direction: row-reverse;
+    margin-right: 1rem; /*ntg 19.03.24 rebranding vanila*/
+}
+
+#CompanyNameWithLogo {
+    margin-right: auto;
+    margin-left: 3%;
+}
+
+.HeaderLine {
+    /* width: 95% !important; */
+    position: relative;
+}
+
+#ifr100 {
+    /*    height: 3rem !important;*/ /*ntg 18.05.23 no more fixed size. the height is determined in NoPopups.htm as <script<*/
+    /*    height: auto;*/
+}
+
+
+.warningHeaderError {
+    background-color: #dc3545;
+    color: white;
+    width: -webkit-fill-available;
+    justify-content: center;
+}
+
+.warningHeaderAlert {
+    background-color: #ffc107;
+    color: white;
+    width: -webkit-fill-available;
+    justify-content: center;
+}
+
+
+#warningModalButtons .modal-content {
+    border: none;
+}
+
+.modal-content { /*ntg 22.06.23 rounding the corners in modal info window*/
+    border-radius: 0.6rem;
+}
+
+#ActionChooseBtn {
+    background-color: rgb(73 141 179);
+    border: none !important;
+    border-radius: 30px !important;
+    /*    display: none;*/
+}
+
+    #ActionChooseBtn:focus {
+        border-color: rgb( 86 186 234);
+        box-shadow: 0 0 0 0.25rem rgb(86 186 234 / 40%);
+    }
+
+@media (min-width: 992px) {
+    .NarrowSideBar {
+        width: 4% !important;
+    }
+}
+
+/* @media (max-width: 992px) { */
+/* .SideMenu { */
+/* width:75% !important;  */
+/* height: 100vh; */
+/* position: fixed !important; */
+/* right: 0; */
+/* top: 0; */
+/* z-index: 9999; */
+/* transition: 1s; */
+/* } */
+/* } */
+
+
+.WideGrapDiv {
+    width: 85% !important;
+}
+
+#FullBodyDiv {
+    /* width: 85% !important; */
+    padding-right: 5rem !important;
+}
+
+#BodyDiv {
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+#NarrowBodyDiv {
+    /* width: 85% !important; */
+    padding-right: 18rem !important;
+}
+
+/* .container-fluid .SideMenu { */
+/* position: inherit; */
+/* } */
+
+@media (min-width: 992px) {
+    .container-fluid #BodyDiv,
+    .container-fluid .menu-container {
+        flex: 0 0 83%;
+        width: 83%;
+        /* margin-right: auto !important; */
+        /* margin-left: 0 !important; */
+    }
+
+    .container-fluid .NarrowSideBar ~ #BodyDiv {
+        flex: 0 0 95%;
+        width: 95%;
+    }
+
+    .menu-container {
+        flex: 0 0 95% !important;
+        width: 95% !important;
+    }
+}
+
+
+.footerButton {
+    border-radius: 30px !important;
+    /* border: 1px solid #d7d7d7; */
+    /*    background-color: #5d9beb;*/ /* rem ntg 19.03.24 rebranding vanila*/
+    background-color: rgb(73,141,179); /*ntg 19.03.24 rebranding vanila*/
+    color: white;
+}
+
+    .footerButton.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+
+.datepicker-wrap {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    #DivButtonChoose {
+        width: 13%;
+    }
+}
+
+.form-select,
+.form-select option {
+    color: #000000;
+}
+
+    .form-select option:first-child,
+    .form-select option.firstOption {
+        color: rgb(0 0 0 / 30%);
+    }
+
+        .form-select option:first-child:checked, /*ntg 20.06.23 changed the color to white when checked bc thr background is blue*/
+        .form-select option.firstOption:checked {
+            background-color: rgb(136, 183, 227);
+            color: white;
+            font-weight: bold;
+        }
+
+
+.firstOption {
+    color: rgb(0 0 0 / 30%);
+}
+
+#MainRow {
+    height: 93vh;
+}
+
+@media (min-width: 992px) {
+    .alert-dismissible {
+        margin-right: 2%;
+    }
+}
+
+.alertCloseButton {
+    left: 0 !important;
+    right: auto !important;
+}
+
+.OrangeAlert {
+    background-color: #ffaf7a;
+    position: fixed;
+    top: 4.1rem;
+    right: 35%;
+    width: 30%;
+    z-index: 9999;
+}
+
+@media (max-width: 992px) {
+    .OrangeAlert {
+        background-color: #ffaf7a;
+        position: fixed;
+        top: 4.1rem;
+        right: 2.5%;
+        width: 95%;
+        z-index: 9999;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+#OrangeAlert + #OrangeAlert {
+    position: fixed;
+    top: 9.5rem; /* set this to the height of the first div */
+    right: 35%;
+    width: 30%;
+    z-index: 9999;
+}
+
+@media (max-width: 992px) {
+    #OrangeAlert + #OrangeAlert {
+        position: fixed;
+        top: 9.5rem; /* set this to the height of the first div */
+        right: 2.5%;
+        width: 95%;
+        z-index: 9999;
+    }
+}
+
+.widthTrial { /*ntg 09.01.23*/
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.CardNumberOnScreen {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.btnIcon {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-align: inherit;
+}
+
+
+    .btnIcon > i {
+        font-size: 1.45em;
+        margin-top: 0.2em;
+    }
+
+.leftAlign {
+    text-align: left;
+}
+
+.rowStart .accordion-item:not(:last-child) {
+    margin-left: 1rem;
+}
+
+.rowStart {
+    display: flex;
+    justify-content: space-between;
+    padding: inherit;
+}
+
+#card-heading21 {
+    display: flex;
+}
+
+
+
+.selectedOption {
+    background-color: rgb(163 201 255 / 40%);
+}
+
+.hide-menu {
+    margin-top: -100%;
+}
+
+.show-modal-smartphone {
+    margin-top: 100%;
+}
+
+.exitModal {
+    background-image: none;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    background-color: rgb(194 217 250/0%) !important;
+    color: #0c63e4;
+    /*    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);*/
+    font-size: 1.2rem !important;
+    /*    padding: 1rem 1rem !important;*/
+    width: -webkit-fill-available;
+    /*    text-align-last: right;*/
+    border: none;
+    width: fit-content;
+    border-radius: 100px;
+    /*    border-color: #0c63e4;*/
+    margin-left: -2rem;
+    margin-bottom: -1rem
+}
+
+@keyframes fadeBlink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#PleaseWait { /*ntg 22.06.23 blinking gif that appears in between pages while loading*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    animation: fadeBlink 1.5s infinite;
+}
+
+.accordion-item:last-of-type .accordion-collapse { /*ntg 22.06.23 rounding the corners in modal window*/
+    border-bottom-right-radius: 0.6rem !important;
+    border-bottom-left-radius: 0.6rem !important;
+}
+
+.accordion-item:last-of-type { /*ntg 22.06.23 rounding the corners in modal window*/
+    border-bottom-right-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    /*margin-bottom: 2rem !important;*/ /*ntg 30.04.24 the spaces between cards got smaller so we need to add extra space in the last card so the footer looks good*/
+}
+
+div:not(.rowStart) > .accordion-item:last-of-type {
+    margin-bottom: 2rem !important; /* ntg 30.04.24 the spaces between cards got smaller so we need to add extra space in the last card so the footer looks good */
+}
+
+.accordion-item:first-of-type { /*ntg 22.06.23 rounding the corners in modal window*/
+    border-top-left-radius: 0.6rem !important;
+    border-top-right-radius: 0.6rem !important;
+}
+
+    .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: 0.6rem !important;
+        border-top-right-radius: 0.6rem !important;
+    }
+
+.page-header { /*ntg 22.06.23 fixing the look of page title*/
+    margin-right: 2%;
+}
+
+.page-title { /*ntg 22.06.23 fixing the look of page title*/
+    /*    color: rgb(67,115,161);*/ /*rem ntg 19.03.24 rebranding vanila*/
+    color: rgb(73,141,179); /*ntg 19.03.24 rebranding vanila*/
+    font-weight: bold;
+}
+
+.justConSpceBtwn { /*ntg 25.06.23 when there's switch btn, its spaced*/
+    justify-content: space-between
+}
+
+.floating-label > select ~ label { /*ntg 25.06.23 fixing indent of floating label in a specific case*/
+    right: 0 !important;
+}
+
+.form-switch .form-check-input { /*ntg 25.06.23 making switch btn bigger*/
+    width: 2.4em;
+    height: 1.4em;
+    /* padding-left: 2.5em; */
+}
+
+.form-switch + .form-label {
+    margin-top: 0.2rem; /* *ntg 25.06.23 Adjust the margin-top value as per .form-label that if a brother tag for .form-switch */
+}
+
+.disableFooter { /*ntg 26.06.23 - when an 'i' window pops, disable the footer buttons*/
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.InvalidMan { /*ntg 02.07.23 the label of the SADE HOVA was to the side and not underneath the field*/
+    top: 90%;
+    position: absolute;
+}
+
+.InvalidManSelect { /*ntg 02.07.23 the label of the SADE HOVA was to the side and not underneath the field*/
+    top: 90%;
+    position: absolute;
+}
+
+.InvalidManNonZero { /*ntg 02.07.23 the label of the SADE HOVA was to the side and not underneath the field*/
+    top: 90%;
+    position: absolute;
+}
+
+label.list-group-item:has(> img) {
+    margin-left: 0.3rem;
+}
+
+.form-check-input[type=checkbox]:checked {
+    background-color: white; /*var(--ComtecLgog-Light-Blue);*/ /* ntg 28.02.24 changes in the switch button appearence*/
+    border: 1px solid rgb(73, 141, 179) !important; /*var(--ComtecLgog-Light-Blue);*/ /* ntg 28.02.24 changes in the switch button appearence*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3crect x='2' y='2' width='20' height='20' fill='rgb(73, 141, 179)' rx='3' ry='3'/%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 12l4 4 8-8'/%3e%3c/svg%3e");
+}
+
+#ShowXmlElem + input.form-control { /*ntg 04.07.23 hide a .form-control that was shown next to the ShowXmlElem of a modal window*/
+    display: none !important;
+}
+
+.form-select.is-invalid:not([multiple]):not([size]) {
+    background-image: none;
+}
+
+#FooterButtonsDiv:not(:has(.FooterElement)) { /*ntg 05.07.23 the FooterButtonsDiv was shown as a little white dot when empty, so that fixes it*/
+    display: none !important;
+}
+
+.justConSpceBtwn:has(> button.btn-dots) > .GroupRadioButtonsNoImages > .form-check > input.form-check-input { /*ntg 04.07.23 adjusting the space between radio btns in fnx design */
+    width: 40% !important;
+}
+.justConSpceBtwn:has(> button.btn-dots) > .GroupRadioButtonsNoImagesV > .form-check > input.form-check-input { /*ntg 04.07.23 adjusting the space between radio btns in fnx design */
+    width: 100% !important;
+}
+/*
+.GroupRadioButtonsNoImagesV > .form-check > input.form-check-input {
+    margin:auto;
+}
+*/
+.popUpFooter { /*ntg 09.07.23 fixing the appearence of the pop up footer*/
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#ModalHeaderText { /*ntg 09.07.23 making the header of a modal pop up bold*/
+    font-weight: bold;
+}
+
+#ModalWindow { /*ntg 09.07.23 the modal window wasnt visible in smartphone mode because of the backdrop*/
+    visibility: visible !important;
+}
+
+.modal-backdrop { /*ntg 09.07.23 the modal window wasnt shown in smartphone mode because of the backdrop*/
+    z-index: 8 !important;
+}
+
+.duet-date__input.is-invalid { /*ntg 09.07.23 the border of the date wasnt colored red when invalid*/
+    border-color: rgb(237,67,55);
+}
+
+    .duet-date__input.is-invalid:focus { /*ntg 09.07.23 the border of the date wasnt colored red when invalid*/
+        border-color: rgb(237,67,55);
+        box-shadow: 0 0 0 0.25rem rgba(237, 67, 55, 0.5);
+    }
+
+.duet-date-picker.is-invalid .duet-date__input { /*ntg 02.04.24 the border of the date wasnt colored red when invalid in case of an illegal value (short)*/
+    border: 1px solid rgb(237, 67, 55) !important;
+}
+
+
+.devToolsDivDesign {
+    margin-top: auto !important;
+    /* margin-bottom: 8rem !important; */
+    padding-right: 0px !important;
+    /*    flex-direction: column !important;*/ /*rem ntg 17.04.24 changes for scrollable sidebar*/
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+tr:has(>td> input#Gfocus) { /*ntg 31.10.23 it changes the background color of the selected insured client in a list of clients*/
+    background-color: #e7f1ff;
+}
+
+.form-check-label, .form-check-input.is-invalid ~ .form-check-label { /*ntg 18.12.23 the color of the text in invalid radio btns was red instead of black*/
+    color: black;
+}
+
+.form-check-input + .invalid-feedback { /*ntg 18.12.23 the error msg in invalid radio btns was bolded and too much to the right*/
+    font-weight: normal;
+    margin-right: 8rem;
+    margin-top: 0.3rem;
+}
+
+.invalid-feedback { /*ntg 18.12.23 the error msg of invalid fields was hiding the labels of the fields underneath. now it would cover them nicely*/
+    background-color: transparent;
+    color: rgb(237,67,55); /*ntg 19.03.24 rebranding vanila*/
+    border-color: rgb(237,67,55); /*ntg 19.03.24 rebranding vanila*/
+    z-index: 10;
+    /*    width: fit-content;*/
+}
+
+.form-control.is-invalid:focus {
+    border-color: rgb(237,67,55);
+    box-shadow: 0 0 0 0.2rem rgba(237, 67, 55, 0.5);
+}
+
+.form-label:hover { /*ntg 18.12.23 the error msg of invalid fields is hiding the labels of the fields underneath completely, and if the user wants to see the label anyway, he can hover the label. */
+    z-index: 20;
+}
+
+.form-group.d-flex.floating-label.justConSpceBtwn:has(> .table-responsive) { /*ntg 04.01.24 the list of insured's header was to the side rather than on top*/
+    flex-direction: column-reverse;
+}
+
+
+.input-group-text {
+    border-radius: 6px;
+}
+
+.IconForMode {
+    font-size: 1.45em;
+    /*    color: var(--ComtecLgog-Light-Blue);*/
+    color: rgb(27,27,29);
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.CopyRightLink {
+    color: white;
+    font-size: smaller;
+}
+
+.marTopBotCardFields {
+    margin-top: 1.1rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.custom-img {
+    width: 25rem;
+}
+
+/*td > input {*/ /*ntg 13.02.24 adding bg image of magnifying-glass to input search in case its inside a table*/
+/*background-image: url('../assets/images/magnifying-glass-light.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}*/
+
+td > input:not([id='R']):not([readonly="true"]) { /*ntg 21.04.24 rem for creation of search button*/
+    /*  /*ntg 13.02.24 adding bg image of magnifying-glass to input search in case its inside a table*/
+    /*background-image: url('../assets/images/magnifying-glass-light.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 16px;*/
+    /*width: 90%;*/ /*ntg 21.04.24 changes to create a search button next to search field*/
+}
+
+.col-3-5 {
+    flex: 0 0 31%; /* or any other width you desire */
+    max-width: 31%;
+    margin-left: 2rem;
+}
+
+/* ntg 28.02.24 changes in the switch button appearence*/
+.form-check-input:checked[type=checkbox] {
+    /*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3crect x='2' y='2' width='20' height='20' fill='rgb(73, 141, 179)' rx='3' ry='3'/%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 12l4 4 8-8'/%3e%3c/svg%3e");*/
+    /*    border-color: var( --ComtecLgog-Light-Blue);*/
+    /*    border-color: rgb(73 141 179);*/
+}
+/* ntg 28.02.24 changes in the switch button appearence*/
+
+.form-switch .form-check-input,
+.form-switch .form-check-input:focus::after {
+    border-radius: 0.4em !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3crect x='-3' y='-3' width='6' height='6' rx='1' ry='1' fill='rgba(27,27, 29, 0.15)'/%3e%3c/svg%3e");
+}
+/* ntg 28.02.24 changes in the switch button appearence*/
+
+.form-check-input:focus[type=checkbox] { /* ntg 28.02.24 changes in the switch button appearence*/
+    border-color: rgba(0,49,41,0.15);
+}
+
+.form-check-input[type=checkbox] { /* ntg 28.02.24 changes in the switch button appearence*/
+    background-color: white !important;
+    border: 1px solid rgba(27,27, 29, 0.15);
+}
+/* ntg 28.02.24 changes in the appearence of area code fields*/
+.with-minus-label input {
+    width: 30%;
+}
+
+.card { /*ntg 03.03.24 help smooth look of card in a special screen qtyp*/
+    border: none !important;
+}
+
+.specialBtnsDatePickerDiv { /*ntg 05.03.24 classes for special date-picker*/
+    width: 100%;
+    top: 0.2rem;
+    position: relative;
+}
+
+.dateOptonsDiv { /*ntg 05.03.24 classes for special date-picker*/
+    display: flex;
+    place-content: center;
+    justify-content: space-evenly;
+}
+
+.dateSpecialButtons { /*ntg 05.03.24 classes for special date-picker*/
+    border-radius: 30px !important;
+    width: 50%;
+    margin-left: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-size: small;
+}
+
+.dateSpecialButtonsSelected { /*ntg 05.03.24 classes for special date-picker*/
+    background-color: #56baea66;
+    border: 2px solid #498db3;
+}
+
+#displayDateRange { /*ntg 05.03.24 classes for special date-picker*/
+    font-size: x-small;
+    text-align-last: right;
+    margin-right: 0.2rem;
+}
+
+/*.threeRadios .form-check-input {*/ /*ntg 05.03.24 classes for 3 radio buttons*/
+.threeRadios .form-check .form-check-input { /*ntg 05.03.24 classes for 3 radio buttons -- ntg 27.03.24 correction*/
+    width: 32% !important;
+}
+
+.threeRadios .form-check .form-check-input {
+    width: 32% !important;
+}
+
+.specialHelpText { /* ntg 05.03.24 for special field description (to replace the i window)*/
+    color: gray;
+    font-size: small;
+}
+
+/*ntg 19.03.24 rebranding vanila*/
+html {
+    font-family: 'Assistant', sans-serif; /* Fallback font family */
+}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('../font/Assistant-Regular.ttf') format('truetype');
+    font-display: swap; /* or optional, block, fallback, etc. */
+}
+
+body {
+    font-family: Assistant !important;
+    background-color: rgb(73 141 179 / 5%) !important; /*ntg 19.03.24 rebranding vanila*/
+}
+
+.nav-item {
+    font-family: Assistant !important;
+    font-size: inherit;
+    margin-top: 0.3rem !important; /*ntg 21.04.24 changes in appearence*/
+    margin-bottom: 0.3rem !important; /*ntg 21.04.24 changes in appearence*/
+}
+
+.btn {
+    font-family: Assistant !important;
+}
+
+.card-title {
+    font-family: Assistant !important;
+}
+
+input, button, select, optgroup, textarea, label {
+    font-family: Assistant !important;
+}
+
+/*tables*/
+.sortable th {
+    Background-color: rgb( 86, 186,234) !important;
+}
+
+.sortable td {
+    align-content: center;
+}
+
+.trSelected {
+    Background-color: rgba( 86, 186,234, 0.5) !important;
+}
+
+    .trSelected > * {
+    }
+
+tr:not(.trSelected):hover {
+}
+
+.table {
+    --bs-table-hover-bg: rgba(27, 27, 29, 0.1) !important;
+}
+
+.btnOpenActionButtons:hover {
+    border: 3px solid rgb(73,141,179) !important;
+}
+
+.fa-ellipsis-h::before {
+    Color: rgb(29,29, 27, 0.7);
+}
+
+.btn.popOverItem {
+    border-radius: 0px !important; /*ntg 19.03.24 rebranding vanila*/
+}
+
+.btn-primary:hover {
+    color: rgb(73,141,179);
+    background-color: rgb( 73,141,179,0.4);
+}
+
+.tooltip-inner {
+    background-color: rgb(73 141 179) !important;
+}
+
+.floating-label > input.form-control[placeholder]:not(:placeholder-shown) ~ label {
+    top: -1.3rem; /*ntg 19.03.24 rebranding vanila - להוצ יא את הלייבל המרחף מעל המסגרת של השדה*/
+    background-color: transparent !important;
+}
+
+.floating-label > input.form-control[placeholder][readonly] ~ label {
+    background-color: transparent !important;
+    top: -1.3rem !important;
+}
+
+.floating-label > input.form-control:focus ~ label {
+    top: -1.3rem; /*ntg 19.03.24 rebranding vanila - להוצ יא את הלייבל המרחף מעל המסגרת של השדה*/
+    background-color: transparent !important;
+    /*    right: 0 !important;*/
+}
+
+.floating-label > select ~ label {
+    top: -1.3rem; /*ntg 19.03.24 rebranding vanila - להוצ יא את הלייבל המרחף מעל המסגרת של השדה*/
+    background-color: transparent !important;
+}
+.floating-label > .InputSliderRange ~ label { /* tt+vk 09.24 */
+    top: -1.3rem; /*ntg 19.03.24 rebranding vanila - להוצ יא את הלייבל המרחף מעל המסגרת של השדה*/
+    background-color: transparent !important;
+    position: absolute;
+}
+
+/*@media (max-width: 1280px) {*/ /*ntg 29.05.24 extends the label text in case of a smaller screen resolution-asaf needs to approve*/
+/*.floating-label > select ~ label {
+        overflow: auto !important;
+        text-overflow: unset !important;
+    }
+}*/
+
+.floating-label > .datepicker-wrap ~ label {
+    top: -1.3rem; /*ntg 19.03.24 rebranding vanila - להוצ יא את הלייבל המרחף מעל המסגרת של השדה*/
+    background-color: transparent !important;
+}
+
+.form-control {
+    border: 1px solid rgb(27 27 29 / 10%);
+    line-height: 1.2; /*ntg 21.04.24 changes in appearence*/
+}
+
+    .form-control:disabled, .form-control[readonly] {
+        background-color: rgb(27 27 29 / 5%) !important;
+    }
+
+.grid-item > button {
+    background-color: rgb(29 29 27 / 5%);
+}
+
+    .grid-item > button:hover {
+        background-color: rgb(73 141 179 / 40%) !important;
+        border-radius: 0 !important;
+    }
+
+        .grid-item > button:hover > .grid-title {
+            color: rgb(29, 29, 27) !important;
+        }
+
+.input-group-text { /*color of the @ icon in the fields*/
+    background-color: rgb(73 141 179);
+    color: white;
+}
+
+.floating-label .form-label {
+    /*    font-size: 1rem !important;*/
+    font-size: 0.95rem !important; /*ntg 21.04.24 changes in appearence*/
+}
+
+/*.form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3crect x='-3' y='-3' width='6' height='6' rx='1' ry='1' fill='rgba(27, 27, 29, 0.15)'/%3e%3c/svg%3e");
+}*/
+
+#exitBtnModal {
+    background-color: white;
+    border-radius: 100px;
+    font-size: 1.7em;
+    color: rgb(86 186 234);
+}
+
+#showXmlBtnModal {
+    background-color: rgb(86 186 234);
+    border-radius: 14px;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.floating-label > .list-group-checkable ~ label {
+    background-color: transparent;
+    top: -1.3rem;
+}
+
+    .floating-label > .list-group-checkable ~ label.required {
+        top: -1.1rem;
+    }
+
+input.form-control:not([value=""]) { /*ntg 26.03.24 visual fixes*/
+    font-size: 1.1rem;
+}
+
+.duet-date__input { /*ntg 26.03.24 visual fixes*/
+    font-size: 110% !important;
+    line-height: 1.2; /*ntg 21.04.24 changes in appearence*/
+    border-radius: 6px; /*ntg 21.04.24 changes in appearence*/
+}
+
+.form-select { /*ntg 26.03.24 visual fixes*/
+    font-size: 1.1rem;
+    line-height: 1.2; /*ntg 21.04.24 changes in appearence*/
+}
+
+
+td:has(button.btn-dots) input.form-control,
+td:has(button.btn-dots) button.btn.btn-sm.btn-primary.btn-dots {
+    display: inline-block; /* Display input and button inline-block */
+    vertical-align: middle; /* Align elements vertically */
+}
+
+td:has(button.btn-dots) input.form-control {
+    width: 94%;
+}
+
+.btn-dots {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+}
+
+
+input[type=range]::-webkit-slider-thumb { /*ntg 07.04.24-tryouts range of field*/
+    background-color: rgb(73, 141, 179) !important;
+}
+
+#rangeInput { /*ntg 07.04.24-tryouts range of field*/
+    width: 100%;
+    height: 0.25rem;
+    background: linear-gradient(to right, rgba(73, 141, 179, 0.4) 0%, rgba(73, 141, 179, 0.4) 50%, rgb(73, 141, 179) 50%, rgb(73, 141, 179) 100%);
+    -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb { /*ntg 07.04.24-tryouts range of field*/
+    -webkit-appearance: none;
+    background: rgba(73, 141, 179, 0.4);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 5px;
+}
+
+.sortable th.dir-d { /*ntg 08.04.24 changes the color of selected column to sort by in a table*/
+    color: white !important;
+}
+
+.sortable th:hover { /*ntg 08.04.24 changes the color of hovered column to sort by in a table*/
+    color: white !important;
+}
+
+
+
+.GroupRadioButtonsNoImages > .form-check:first-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top-right-radius: 6px; /* Adjust the radius value as needed */
+    border-bottom-right-radius: 6px; /* Adjust the radius value as needed */
+    border-left: 1px solid rgb(86 186 234 / 70%);
+}
+
+.GroupRadioButtonsNoImages > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top-left-radius: 6px; /* Adjust the radius value as needed */
+    border-bottom-left-radius: 6px; /* Adjust the radius value as needed */
+    border-right: 1px solid rgb(86 186 234 / 70%);
+}
+.GroupRadioButtonsNoImagesV > .form-check:first-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top-right-radius: 6px; /* Adjust the radius value as needed */
+    border-top-left-radius: 6px; /* Adjust the radius value as needed */
+    border-left: 1px solid rgb(86 186 234 / 70%);
+}
+
+.GroupRadioButtonsNoImagesV > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    border-bottom-right-radius: 6px; /* Adjust the radius value as needed */
+    border-bottom-left-radius: 6px; /* Adjust the radius value as needed */
+    border-right: 1px solid rgb(86 186 234 / 70%);
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid rgb(27 27 29 / 10%) !important;
+    height: 2.2rem !important; /*ntg 21.04.24 changes in appearence*/
+    border-radius: 6px !important;
+    align-content: center;
+}
+
+.select2-selection__arrow {
+    top: 0.3rem !important;
+    /*background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e) !important;
+    background-repeat: no-repeat;*/
+    /* background-position: right 0.75rem center; */
+    /*background-size: 16px 12px;*/
+}
+
+.select2-selection__rendered {
+    font-size: 1.1rem !important;
+}
+
+.header { /*ntg 17.04.24 top header and sidebar fixation*/
+    position: fixed;
+    z-index: 999; /*ntg 12.05.24 changed from 9999 to 999 so the HeaderUserIcon's tooltip won't be hidden */
+    padding-bottom: 0.5rem; /*ntg 21.04.24 changes in appearence*/
+    padding-top: 0.5rem; /*ntg 21.04.24 changes in appearence*/
+}
+
+#BodyDiv { /*ntg 17.04.24 top header and sidebar fixation*/
+    top: 5rem;
+}
+
+.NavFixedButtonsList.flex-row { /*ntg 17.04.24 top header and sidebar fixation*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.devToolsDivDesign { /*ntg 17.04.24 top header and sidebar fixation*/
+    display: flex;
+}
+
+    .devToolsDivDesign .nav-item { /*ntg 17.04.24 top header and sidebar fixation*/
+        flex: 0; /* Ensure each button takes equal width */
+        margin-right: 10px; /* Optional: Adjust spacing between buttons */
+    }
+
+        .devToolsDivDesign .nav-item .nav-link { /*ntg 17.04.24 top header and sidebar fixation*/
+            width: fit-content !important;
+        }
+
+.NavFixedButtonsList .nav-item { /*ntg 17.04.24 top header and sidebar fixation*/
+    flex: 1;
+    margin-right: 10px;
+}
+
+    .NavFixedButtonsList .nav-item .nav-link { /*ntg 17.04.24 top header and sidebar fixation*/
+        width: fit-content !important;
+    }
+
+#MainRow { /*ntg 17.04.24 top header and sidebar fixation*/
+    height: 100vh !important;
+}
+
+.offcanvas-body::-webkit-scrollbar { /*ntg 17.04.24 top header and sidebar fixation*/
+    width: 6px; /* Width of the scrollbar inside the sidebar */
+}
+
+.offcanvas-body::-webkit-scrollbar-track { /*ntg 17.04.24 top header and sidebar fixation*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+    background-color: white;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb { /*ntg 17.04.24 top header and sidebar fixation*/
+    background: rgb(73 141 179 / 40% );
+    border-radius: 10px;
+}
+
+    .offcanvas-body::-webkit-scrollbar-thumb:hover { /*ntg 17.04.24 top header and sidebar fixation*/
+        background: rgb(73 141 179 / 70% );
+    }
+
+@keyframes blink {
+    /*ntg 17.04.24 top header and sidebar fixation*/
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink { /*ntg 17.04.24 top header and sidebar fixation*/
+    animation: blink 1s infinite;
+}
+
+.menu-container { /*ntg 17.04.24 top header and sidebar fixation*/
+    margin-top: 5rem;
+}
+
+td:has(button.searchBtn) input.form-control { /*ntg 21.04.24 fixing the appearence of the search button that is next to search bar in tables*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*td:has(label) > button.searchBtn {
+/*td:has(label) > button.searchBtn:not(+ .datepicker-wrap button.searchBtn) {*/
+td:has(label) > button.searchBtn:not(.datepicker-wrap ~ button.searchBtn) { /*ntg 19.05.24 the search btn appeared in tables where it shouldnt, now its fixed*/
+    display: none;
+}
+
+/*td:has(label) > button.searchBtn {*/ /*ntg 02.05.24 the search btn appeared in tables where it shouldnt, now its fixed*/
+/*display: none;
+}*/
+
+/*td:has(select) > button.searchBtn {*/ /* ntg 02.05.24 the search btn appeared in tables where it shouldnt, now its fixed */
+td:has(select) > button.searchBtn:not(+ .datepicker-wrap button.searchBtn) {
+    display: none;
+}
+
+td:has(button#LinksPopOverButton) > button.searchBtn { /* ntg 09.05.24 the search btn appeared in tables where it shouldnt, now its fixed */
+    display: none;
+}
+
+
+th > button.searchBtn { /*ntg 02.05.24 the search btn appeared in tables where it shouldnt, now its fixed*/
+    display: none;
+}
+
+.searchBtn { /*ntg 21.04.24 fixing the appearence of the search button that is next to search bar in tables*/
+    height: 2.2rem;
+    border: 2px solid rgb(73 141 179);
+    border-radius: 6px;
+    background-color: rgb(73, 141, 179);
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../assets/images/magnifying-glass-light.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 2.3rem;
+    /*    left: 2.5rem;*/ /* tami 26.09.24 */
+    position: relative;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.datepicker-wrap + .searchBtn { /*ntg 12.05.24 targeting the case where there is both datepicker and search btn in the search row of a table*/
+    height: 2.19rem;
+    /*
+    left: 2.55rem;
+    top: -0.1rem;
+        */
+    /*  left: 2.2rem;*/ /* tami 26.09.24 */
+    top: 1px; /* vk 09.24 */ /*  tami 26.09.24 */
+}
+
+.datepicker-wrap:has(+ .searchBtn) .duet-date__toggle { /*ntg 12.05.24 targeting the case where there is both datepicker and search btn in the search row of a table*/
+    width: 20% !important;
+    left: 0.2rem !important; /* change by tami from 2.5 to 0.2 rem 26.09.24 */
+    display: inline-block !important;
+    border-radius: 0px !important;
+}
+
+.datepicker-wrap:has(+ .searchBtn) .duet-date__input { /*ntg 12.05.24 targeting the case where there is both datepicker and search btn in the search row of a table*/
+    line-height: 1.29 !important;
+}
+
+td:has(button.searchBtn):has(div.datepicker-wrap) { /*ntg 12.05.24 targeting the case where there is both datepicker and search btn in the search row of a table*/
+    /* display: ruby-text; */
+    display: inline-flex; /* vk 09.24 */
+}
+
+.marTopBotBetweenCards { /*ntg 30.04.24 changed all spaces between cards to be influenced by this class rather than marTopBotCardFields*/
+    margin-top: 0.1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.sideBarArea { /*ntg 30.04.24 side bar appearence*/
+    position: fixed;
+    /*    top: 4rem;*/
+    top: 5rem; /*ntg 16.07.24 changes regarding sidebar fields */
+    overflow-y: auto;
+    width: 13%; /*ntg 16.07.24 was 15%-changes regarding sidebar fields*/
+    margin-right: 1.2rem;
+    height: calc(100% - 7rem); /*ntg 16.07.24 changes regarding sidebar fields */
+    /*height: calc(100% - 23.5rem);*/ /*ntg 16.07.24 changes regarding sidebar fields */
+    background-color: rgb(255 255 255/20%); /*ntg 16.07.24 changes regarding sidebar fields */
+    padding-bottom: 10rem;
+    border-radius: 5px; /*ntg 16.07.24 changes regarding sidebar fields */
+}
+
+@media (max-width: 992px) {
+    .sideBarArea { /*ntg 08.05.24 side bar appearence in smartphone mode*/
+        position: absolute;
+    }
+}
+
+#HeaderUserIcon[data-bs-toggle="tooltip"] .tooltip { /*ntg 12.05.24 this represents the tooltip coming out of the HeaderUserIcon*/
+    z-index: 9999;
+}
+
+.cardCmdBtn { /*ntg 19.05.24 new code section regarding cmd buttons that go inside cards */
+    border-radius: 6px;
+    font-size: 1.1rem;
+    border: 1px solid rgb(73 141 179 /70%);
+    padding: 0.1rem 1rem;
+    background-color: white;
+    margin-left: 0.3rem;
+    color: rgb(73 141 179);
+}
+
+    .cardCmdBtn:hover {
+        background-color: rgb(73 141 179 /20%);
+        font-weight: 600;
+    }
+
+.cmdButtonsForCardsIcon { /*ntg 19.05.24 new code section regarding cmd buttons that go inside cards */
+    line-height: normal;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 0.2rem;
+    color: rgb(73 141 179 /70%);
+    font-size: larger;
+}
+
+    .cmdButtonsForCardsIcon:hover {
+        color: rgb(73 141 179);
+    }
+
+.cardCmdButtonsWrapper { /*ntg 19.05.24 new code section regarding cmd buttons that go inside cards */
+    display: flex !important;
+    margin-bottom: 0.5rem;
+    margin-right: 0.6rem;
+}
+
+.CmdBtnsForCardRegular {
+    display: flex;
+}
+
+.CmdBtnsForCardNav {
+    display: flex;
+    margin-left: 1rem !important;
+}
+
+.no-text-dec { /*ntg 20.05.24 adding an icon for a mail field that doesnt look like a link*/
+    text-decoration: none;
+}
+
+.fgrPactionsWrapper { /*ntg 20.05.24 changes in appearence regarding screens with fgr=P*/
+    display: flex;
+    gap: 0.3rem;
+}
+
+.fgrP { /*ntg 20.05.24 changes in appearence regarding screens with fgr=P*/
+    border: 1px;
+    color: rgba(27, 29, 29, 0.4) !important;
+    height: 2rem;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 6px;
+}
+
+    .fgrP:hover { /*ntg 20.05.24 changes in appearence regarding screens with fgr=P*/
+        background-color: rgba(27, 29, 29, 0.1);
+        color: rgba(27, 29, 29, 0.4);
+        cursor: pointer;
+    }
+
+#ModalWindow #ShowXmlElem { /*ntg 21.05.24 adjusting the location of the show xml btn im modal window*/
+    margin-top: 5rem;
+}
+
+.modal {
+    z-index: 998; /*ntg 23.05.24 the modal window went abouve the main header (999 z-index)*/
+}
+
+.highlitedCell { /*ntg 23.05.24 highlited table cells according to xml parameters phi, pbg */
+    font-weight: bold;
+    background-color: rgba(27, 29, 29, 0.2) !important;
+}
+
+
+.form-control.l { /*ntg 26.05.24 some search fields have parameter prl=N and it changes direction from left to right, noe it fixes it*/
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+.subCardS, .subCardA { /*ntg 17.06.24 design for sub-title and accordion inside cards*/
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none !important;
+    background-color: transparent !important;
+    display: flex;
+}
+
+button.subCardS:disabled { /*ntg 17.06.24 design for sub-title and accordion inside cards*/
+    pointer-events: none; /* Prevent clicking */
+    opacity: 1;
+    color: inherit;
+    background-color: inherit;
+}
+
+.subTitleIcon { /*ntg 17.06.24 design for sub-title and accordion inside cards*/
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.subCardA_Data { /*ntg 17.06.24 design for sub-title and accordion inside cards*/
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease, opacity 0.15s ease;
+    opacity: 0;
+}
+
+    .subCardA_Data.accOpen { /*ntg 17.06.24 design for sub-title and accordion inside cards*/
+        max-height: fit-content;
+        opacity: 1;
+    }
+
+
+
+.externalPopoverWrapper { /*ntg 26.06.24 for fgr=B screens with an option to select multiple rows in a table*/
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.checkAllRowsWrapper { /*ntg 26.06.24 for fgr=B screens with an option to select multiple rows in a table*/
+    align-self: center;
+    border-radius: 6px;
+    border: 1px solid rgb(27 27 29 / 10%);
+    padding: 0.1rem 1rem;
+    background-color: white;
+}
+
+#LinksPopOverButtonExternal { /*ntg 26.06.24 for fgr=B screens with an option to select multiple rows in a table*/
+    border-radius: 6px;
+    border: 1px solid rgb(27 27 29 / 10%);
+    padding: 0.1rem 1rem;
+    background-color: white;
+}
+
+#checkAllRowsCheckbox:focus {
+    box-shadow: none !important;
+}
+
+
+.tooltip-wrapper { /*ntg 08.07.24 design for buttons in fgr=B screen*/
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+#LinksPopOverButtonExternal { /*ntg 08.07.24 design for buttons in fgr=B screen*/
+    margin-left: 3px;
+}
+
+.info-icon { /*ntg 08.07.24 design for buttons in fgr=B screen*/
+    align-self: flex-start;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 9px;
+    background-color: rgb(73, 141, 179);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+
+.extraActionsIcon { /*ntg 08.07.24 design for buttons in fgr=B screen*/
+    color: white;
+}
+
+.menuShortcut { /*ntg 15.07.24 for menu shortcuts*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    top: 1rem;
+}
+
+.menuShortcutBtn { /*ntg 15.07.24 for menu shortcuts*/
+    height: 2.2rem;
+    border: 2px solid rgb(73 141 179);
+    border-radius: 6px;
+    background-color: rgb(73, 141, 179);
+    display: inline-block;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 2.3rem;
+    left: 2.3rem;
+    position: relative;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+}
+
+.sidebarBtns { /*ntg 16.07.24 changes regarding sidebar fields */
+    position: fixed;
+    bottom: 2.2rem;
+    /*    bottom: 20rem;*/
+}
+
+.wideSideBarBtns { /*ntg 16.07.24 changes regarding sidebar fields */
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+}
+
+.fieldsSideBarSection { /*ntg 16.07.24 changes regarding sidebar fields */
+    background-color: rgb(255 255 255/20%);
+    margin: 1.3rem;
+    height: 14rem;
+    border-radius: 5px;
+    position: fixed;
+    top: 45rem;
+    width: 13%;
+}
+
+.fieldsSideBarSectionHeader { /*ntg 16.07.24 changes regarding sidebar fields */
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 1.6rem;
+    position: fixed;
+    top: 44.2rem;
+}
+
+.oneSideBarField { /*ntg 16.07.24 changes regarding sidebar fields */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.sideBarDivider { /*ntg 16.07.24 changes regarding sidebar fields */
+    color: rgb(255 255 255/100%);
+    width: 100%;
+    height: 2px !important;
+    margin: 0;
+}
+
+.NarrowSideBar .sideBarArea { /*ntg 22.07.24 changes for new sidebar design  */
+    width: 3% !important;
+    margin-right: 0.7rem !important;
+}
+
+.NarrowSideBar .sidebarBtns { /*ntg 22.07.24 changes for new sidebar design  */
+    right: -0.3rem;
+}
+
+.specialDateButton {
+    background: #ffffff;
+    border: 1px solid #ced4da;
+}
+
+.specialDateButtonSelected {
+    background: #BBE3F7;
+    border: 2px solid #498db3;
+}
+
+.specialDateButtonFormattedDate {
+    background: #BBE3F7;
+    border: 2px solid #498db3;
+}
+
+.specialDateButtonFormattedNextMonthWithHyphens {
+    background: #BBE3F7;
+    border: 2px solid #498db3;
+}
+
+.specialDateButtonFormattedElse {
+    background: #BBE3F7;
+    border: 2px solid #498db3;
+}
+
+.duet-date-today {
+    background: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 43%;
+    padding: 5px 10px;
+}
+
+i.fa-light.fa-bullhorn.fa-flip {
+    width: 2.5rem;
+}
+
+i.fa-solid fa-square-check {
+    width: 2.5rem;
+}
+
+/*  Tami - changes for input-group 26.09.24 */
+
+div.input-group {
+    flex-wrap: initial;
+}
+
+td:has(button.searchBtn) input.form-control,
+td:has(button.btn-dots) input.form-control {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.form-group:has(button.searchBtn) input.form-control,
+.form-group:has(button.btn-dots) input.form-control {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+div.input-group .searchBtn {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+
+.input-group:has(.searchBtn) .btn-dots {
+    border-radius: 0 !important;
+}
+
+/*----------------------------------------------*/

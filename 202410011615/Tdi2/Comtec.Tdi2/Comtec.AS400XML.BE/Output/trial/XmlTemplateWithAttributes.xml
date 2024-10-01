@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xmlTemplate attr1="value" newAttr="1">
+	<singleElement1 attr1="value" newAttr="2"/>
+
+	<singleElement2 attr1="value" newAttr="3"></singleElement2>
+
+	<listOfElements attr1="value" newAttr="4"></listOfElements>
+	<listOfElements attr1="value"></listOfElements>
+
+	<parentElementEmpty1 attr1="value" newAttr="5"></parentElementEmpty1>
+
+	<parentElementW1Element1 attr1="value" newAttr="6">
+		<singleChildElement1 attr1="value" newAttr="7"/>
+	</parentElementW1Element1>
+
+	<parentElementW1Element2 attr1="value" newAttr="8">
+		<singleChildElement2 attr1="value" newAttr="9"></singleChildElement2>
+	</parentElementW1Element2>
+
+	<parentElementW1Element3 attr1="value" newAttr="10">
+		<listOfChildElements attr1="value" newAttr="11"></listOfChildElements>
+		<listOfChildElements attr1="value"></listOfChildElements>
+	</parentElementW1Element3>
+
+	<listOfParentElementWElement1 attr1="value" newAttr="12">
+		<singleChildElement1 attr1="value" newAttr="13"/>
+	</listOfParentElementWElement1>
+	<listOfParentElementWElement1 attr1="value" newAttr="14">
+		<singleChildElement1 attr1="value" newAttr="15"/>
+	</listOfParentElementWElement1>
+
+	<listOfParentElementWElement2 attr1="value" newAttr="16">
+		<singleChildElement attr1="value" newAttr="17"></singleChildElement>
+	</listOfParentElementWElement2>
+	<listOfParentElementWElement2 attr1="value" newAttr="18">
+		<singleChildElement attr1="value" newAttr="19"></singleChildElement>
+	</listOfParentElementWElement2>
+
+	<listOfParentElementWElement3 attr1="value" newAttr="20">
+		<listOfChildElements attr1="value" newAttr="21"></listOfChildElements>
+		<listOfChildElements attr1="value"></listOfChildElements>
+	</listOfParentElementWElement3>
+	<listOfParentElementWElement3 attr1="value" newAttr="22">
+		<listOfChildElements attr1="value" newAttr="23"></listOfChildElements>
+		<listOfChildElements attr1="value"></listOfChildElements>
+	</listOfParentElementWElement3>
+</xmlTemplate>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://www.fnx.co.il" targetNamespace="http://www.fnx.co.il" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:schema>
+      <xsd:import schemaLocation="GetPaymentURL.asmx.xsd1.xsd" namespace="http://www.fnx.co.il" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RequestResponseServiceSoapIn">
+    <wsdl:part xmlns:xsns="http://www.fnx.co.il" name="parameters" element="xsns:GetPaymentURL_ReqResSvc" />
+  </wsdl:message>
+  <wsdl:message name="RequestResponseServiceSoapOut">
+    <wsdl:part xmlns:xsns="http://www.fnx.co.il" name="parameters" element="xsns:GetPaymentURL_ReqResSvcResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ESBGatewaySoap2">
+    <wsdl:operation name="GetPaymentURL_ReqResSvc">
+      <wsdl:input name="GetPaymentURL_ReqResSvcRequest" message="ns0:RequestResponseServiceSoapIn" />
+      <wsdl:output name="GetPaymentURL_ReqResSvcResponse" message="ns0:RequestResponseServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ESBGatewaySoap2" type="ns0:ESBGatewaySoap2">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPaymentURL_ReqResSvc">
+      <soap11:operation soapAction="http://www.fnx.co.il/GenericGateway/RequestResponseService" style="document" />
+      <wsdl:input name="GetPaymentURL_ReqResSvcRequest">
+        <soap11:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetPaymentURL_ReqResSvcResponse">
+        <soap11:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetPaymentURL_ESBGW">
+    <wsdl:port name="ESBGatewaySoap2" binding="ns0:ESBGatewaySoap2">
+      <soap11:address location="http://172.31.7.199:80/ESBGatewayExperanto/Services/GetPaymentURL.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

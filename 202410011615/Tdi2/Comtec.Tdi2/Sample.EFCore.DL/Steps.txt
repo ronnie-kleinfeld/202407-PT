@@ -1,0 +1,20 @@
+﻿Create new project
+
+Install NuGet Microsoft.EntityFrameworkCore.SqlServer
+Install NuGet Microsoft.EntityFrameworkCore.Tools
+
+Create Model (in Program.cs)
+
+Add ConnectionString to App.Config
+  <connectionStrings>
+    <add name="DefaultConnection" connectionString="Data Source=RonnieDev;Initial Catalog=Pluto2;Persist Security Info=True;User Id=sa;Password=qweQWE123!@#" provIderName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+Create DBContext (in Program.cs)
+  add the name of the ConnectionString in the App.Config
+
+in PackageManagerConsole
+enable-migrations projectName:DLEF
+
+add-migration MigrationName projectName:DLEF -Force
+update-database projectName:DLEF

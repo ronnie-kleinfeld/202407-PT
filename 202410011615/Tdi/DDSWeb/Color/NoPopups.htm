@@ -1,0 +1,70 @@
+﻿<div class="modal fade"
+     id="Modal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="ModalLabel"
+     aria-hidden="true"
+     data-keyboard="false" data-backdrop="static"
+     onclick="UnDisableFooterBtns();">
+    <div class="modal-dialog modal-dialog-centered" role="document" onblur="UnDisableFooterBtns();">
+
+        <div class="modal-content" onblur="UnDisableFooterBtns()">
+            <div class="modal-header">
+                <!--<img id="helpPic" src="PICS/iconInfo64.png" class="mx-2 rounded" style="height:1.5em;">-->
+                <!--<i id="triangle-exclamation-header" class='fa-solid fa-triangle-exclamation' style="font-size: x-large; margin-left: 0.5rem; margin-right: 0.5rem"></i>-->
+                <h4 id="ModalHeaderText" class="modal-title mx-auto">כותרת החלון</h4>
+            </div>
+            <iframe class="modal-content" id="ifr100" name="ifr100" src='Empty.htm' style="overflow:hidden;  max-height: 400px;"></iframe>
+            <div class="modal-footer popUpFooter">
+                <button id="CancelButton" type="button"
+                        class="btn btn-danger NoButton modalFooterButtons"
+                        data-bs-dismiss="modal"
+                        onclick="UnDisableFooterBtns();"
+                        style=" margin-right: 1rem; margin-left: 1rem;">
+                    ביטול
+                    <!--<i class="far fa-times-circle" style='color:indianred;'></i>-->
+                </button>
+                <button id="OkButton" type="button"
+                        class="btn btn-success YesButton modalFooterButtons"
+                        data-bs-dismiss="modal"
+                        onclick="UnDisableFooterBtns();"
+                        style=" margin-right: 1rem; margin-left: 1rem;">
+                    אישור
+                    <!--<i class="far fa-check-circle"></i>-->
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Language is always specified as "en" or "he"
+    let lang = document.documentElement.lang;
+
+    // Find all elements with id="ifr100"
+    const ifr100Elements = document.querySelectorAll('#ifr100');
+
+    // Iterate through the elements and update the ones whose src starts with "Empty"
+    ifr100Elements.forEach((element) => {
+        if (element.src.startsWith('Empty')) {
+            // Update the iframe source based on the language
+            element.src = `Empty.htm?language=${lang}`;
+        }
+
+    });
+
+    // Update button texts based on the language
+    const cancelButton = document.getElementById('CancelButton');
+    const okButton = document.getElementById('OkButton');
+
+    if (lang === 'en') {
+        // Change button texts to English
+        cancelButton.innerText = 'Cancel';
+        okButton.innerText = 'Ok';
+    } else {
+        // Default to Hebrew or handle other languages
+        cancelButton.innerText = 'ביטול';
+        okButton.innerText = 'אישור';
+    }
+</script>
+

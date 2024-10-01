@@ -1,0 +1,227 @@
+﻿body {
+    background-color: white !important;
+}
+
+.accordion-button:not(.collapsed):not(.Menu-accordion-button) {
+    background-color: #d21c23 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+
+.accordion-button-modal {
+    background-color: #d21c23 !important;
+    color: white !important;
+}
+
+.accordion-button:not(.collapsed):not(.Menu-accordion-button)::before { /*arrow of card header is red when card is open*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(0deg);
+}
+
+.accordion-button:not(.Menu-accordion-button)::before { /*arrow of card header is black when card is closed*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-item { /*new shading for cards*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.16), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#offcanvas {
+    background-color: white !important;
+}
+
+.nav-link {
+    color: #020202 !important;
+}
+
+#HeaderUserIcon {
+    color: black;
+}
+
+.footerButton {
+    background-color: white;
+    color: black;
+}
+
+    .footerButton:hover {
+        color: #d21c23;
+    }
+
+.FooterElement {
+    background-color: #d21c23;
+}
+
+    .FooterElement:hover {
+        color: #d21c23;
+    }
+
+#FooterButtonsDiv {
+    background-color: #d21c23;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.16), 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.duet-date__toggle {
+    background-color: black;
+}
+
+.btn-dots {
+    background-color: black;
+}
+
+    .btn-dots:hover {
+        background-color: black;
+    }
+
+.nav-item:not(.active) .nav-link:hover {
+    background-color: white !important;
+    font-weight: bolder !important;
+}
+
+.nav-item.active > .nav-link {
+    text-decoration: underline;
+    font-weight: bolder !important;
+}
+
+#GoToTopBtn {
+    color: black !important;
+}
+
+.badgeScreenName {
+    color: black;
+    background-color: #e9ecef !important;
+}
+
+/*html {
+    font-family: 'Assistant', sans-serif;*/ /* Fallback font family */
+/*}
+
+@font-face {
+    font-family: 'Assistant';
+    src: url('../font/Assistant-Regular.ttf') format('truetype');
+    font-display: swap;*/ /* or optional, block, fallback, etc. */
+/*}
+
+body {
+    font-family: Assistant !important;
+}
+
+.nav-item {
+    font-family: Assistant !important;
+    font-size: inherit;
+}
+
+.btn {
+    font-family: Assistant !important;
+}
+
+.card-title {
+    font-family: Assistant !important;
+}
+
+input, button, select, optgroup, textarea, label {
+    font-family: Assistant !important;
+}*/
+
+.Menu-accordion-button {
+    background-color: #d21c23 !important;
+}
+
+.grid-item > button {
+    background-color: lightgray !important;
+}
+
+    .grid-item > button:hover > .grid-title {
+        background-color: gray !important;
+    }
+
+    .grid-item > button:hover {
+        border-radius: 0px !important;
+        background-color: gray !important;
+    }
+
+.list-group-item-info.list-group-item-action:hover {
+    background-color: lightgray !important;
+    color: black !important;
+}
+
+#ActionChooseBtn {
+    background-color: #d21c23 !important;
+}
+
+.list-group-item-info.list-group-item-action:focus {
+    background-color: gray !important;
+    color: white !important;
+}
+
+/*.form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: 0.7;
+    transform: translateY(-1rem) translateX(0.1rem);
+    color: #d21c23 !important;
+}*/
+
+.sortable th {
+    background: lightgray !important;
+}
+
+@media (max-width: 992px) {
+
+    #BodyDiv { /*this makes tables in smartphone mode to be scrolled to the sides - ntg 16.04.23 */
+        background-color: transparent !important;
+    }
+}
+
+.page-title {
+    color: black !important;
+}
+
+.tooltip-inner {
+    background-color: black !important;
+}
+
+.navbar-toggler {
+    /* background-color: white !important; */
+    color: black !important;
+}
+
+.HelpLink {
+    color: #000 !important;
+}
+
+.trSelected {
+    background-color: #6c757d !important;
+}
+
+.popOverItem:hover {
+    Color: white !important;
+    background-color: #6c757d !important;
+}
+
+#exitBtnModal {
+    background-color: white !important;
+}
+
+#showXmlBtnModal {
+    background-color: white !important;
+}
+
+.CopyRightLink{
+    color:black;
+}
+
+.footerButton:hover {
+     background-color: white; 
+}
+#exitBtnModal {
+     color: black; 
+}
+
+.btn-primary:hover {
+    color: white;
+}
+.btn-dots:focus, .btn-dots:active {
+    border-color: black !important;
+    box-shadow: 0 0 0 0.25rem rgb(86 186 234 / 40%) !important;
+    background-color: black !important;
+}

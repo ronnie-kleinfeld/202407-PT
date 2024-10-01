@@ -1,0 +1,650 @@
+.header,
+.header .badgeScreenName {
+    background-color: white !important;
+    color: #fff;
+}
+
+body,
+.accordion-body {
+    background-color: white !important; /* 5 */
+}
+
+.sideBarArea {
+    background-color: white; /* 8 */
+}
+
+.nav-item,
+.nav-link {
+    color: #111c3f !important; /* 3 */
+}
+
+    .nav-item:before {
+        play: none;
+    }
+
+    .nav-item.active {
+        background-color: #111c3f !important; /* 9 */
+        color: #111c3f; /* 3 */
+    }
+
+        .nav-item.active .nav-link {
+            color: #ff4e31 !important; /* 9 */
+        }
+
+    .nav-item:not(.active) .nav-link:hover {
+        background-color: white !important;
+        color: #111c3f !important; /* 3 */
+    }
+
+button.btn.nav-link.btnIcon:active {
+    color: #ff0000 !important;
+}
+
+#offcanvas {
+    background-color: #F5F6FA !important; /* 4 */ /* tami change color 30.09.24 from #f3f4f5 */
+}
+
+body {
+    background-color: #F5F6FA !important; /* 4 */ /* tami change color 30.09.24 from #f3f4f5 */
+    color: #111c3f; /* 3 */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white !important; /* 5 */
+}
+
+.form-control {
+    border-radius: 6px;
+    color: #111c3f !important; /* 3 */
+    background-color: #ffffff; /* 6 */
+}
+
+    .form-control:focus {
+        border: 1px solid var(--Blue-white-1000, #111c3f); /* 6 */
+        box-shadow: none; /* 6 */
+    }
+
+    .form-control:read-only,
+    .form-control[read-only],
+    .form-control:disabled {
+        border-radius: 6px;
+        color: #111c3f !important; /* 3 */
+    }
+
+    .form-control::placeholder {
+        color: rgba(0, 0, 0, 0.42) !important;
+    }
+
+    .form-control::-moz-placeholder {
+        color: rgba(0, 0, 0, 0.42) !important;
+    }
+
+    .form-control::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.42) !important;
+    }
+
+    .form-control:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.42) !important;
+    }
+
+    .form-control label {
+        color: #14008e;
+        font-size: 1.25rem;
+    }
+
+.accordion .accordion-item {
+    background-color: white; /* 5 */
+    box-shadow: 0px 1px 2px 0px #6c6c6c1f; /* 5 */
+    background-color: white !important;
+    border-radius: 0.375rem !important; /* tami 30.09.24 */
+}
+
+.accordion .accordion-body /* tami 30.09.24 */ 
+{
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+}
+
+.accordion .accordion-button, /* tami 30.09.24 */
+.accordion-item:first-of-type .accordion-button {
+    border-top-right-radius: 0.375rem !important;
+    border-top-left-radius: 0.375rem !important;
+}
+
+.accordion-button:focus {
+    box-shadow: 0px 1px 2px 0px #6c6c6c1f; /* 5 */
+}
+
+.btn-primary,
+.footerButton,
+.duet-date__toggle {
+    background-color: white; /* 10 */
+    color: #111c3f; /* 3 */
+}
+
+    .btn-primary:hover,
+    .duet-date__toggle:hover {
+        background-color: white; /* 10 */
+    }
+
+.sortable th {
+    background: #8796fa !important;
+}
+
+.page-title {
+    color: #18048c;
+}
+
+i.fa-solid.fa-folder.sideIcon {
+    display: none;
+}
+
+button,
+input,
+label,
+ul,
+li,
+select,
+option,
+span,
+div,
+.btn,
+.form-control,
+.form-check-label,
+.form-check-input.is-invalid ~ .form-check-label,
+.duet-date * {
+    font-family: "PloniMLv2AAA-Regular", sans-serif !important; /* 3 */
+    color: #111c3f !important; /* 3 */
+    font-kerning: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111c3f !important; /* 3 */
+}
+
+div#displayDateRange {
+    display: none;
+}
+
+.header.ShortHeader {
+    background-color: #111c3f !important; /* 1 */
+}
+
+img.header-brand-img {
+    color: white; /* 1 */
+}
+
+.d-flex.align-items-center {
+    flex-direction: row-reverse; /* 1 */
+}
+
+span#HeaderUserName {
+    color: white !important; /* 1 */
+}
+
+#HeaderUserFullInfo,
+#NavBurger {
+    margin-left: unset;
+}
+
+#CompanyNameWithLogo {
+    margin-right: unset; /* 1 */
+    margin-left: 3%;
+}
+
+span#HeaderUserIcon {
+    color: white !important; /* 1 */
+}
+
+span#HeaderPageDate {
+    color: white !important; /* 1 */
+}
+
+i#HeaderUserIcon {
+    color: white !important; /* 2 */
+    margin-left: 10px; /* 2 */
+}
+
+.d-lg-block {
+    display: none !important; /* 1 */
+}
+
+li.my-2.nav-item {
+    font-family: "plonimlv2aaa-regular", sans-serif !important;
+    margin-right: auto;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+}
+
+hr.mx-auto.sideBarDivider {
+    color: #b8bbc5 !important;
+    height: 1px !important;
+}
+
+button.btn.btn-sm.btn-primary.btn-dots {
+    background-color: transparent;
+}
+
+.py-2 {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.marTopBotBetweenCards {
+    /*ntg 30.04.24 changed all spaces between cards to be influenced by this class rather than marTopBotCardFields*/
+    margin-top: 0rem !important;
+}
+
+.container-fluid #BodyDiv,
+.container-fluid .menu-container {
+    flex: auto;
+}
+
+.accordion {
+    margin-right: 0;
+}
+
+.InputSliderRange-Fill {
+    background-color: #06D79D;
+}
+
+.InputSliderRange-Handler {
+    border: 4px solid #06D79D;
+    background-color: #06D79D;
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.InputSliderRange-Scale {
+    direction: ltr !important;
+}
+
+.dateSpecialButtons {
+    background: var(--Color-white-1000, #FFFFFF);
+    box-shadow: 0px 2px 15px 0px #0000001A !important;
+    border: none;
+}
+
+.dateSpecialButtonsSelected {
+    background: var(--Blue-white-100, #E7E8EC);
+    box-shadow: 0px 2px 15px 0px #0000001A;
+    border: 1px solid var(--Blue-white-300, #B8BBC5)
+}
+
+.form-control.l.InputSliderRange-Input {
+    direction: ltr !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.footerButton {
+    background-color: var(--Blue-white-1000, #111C3F);
+    color: white !important;
+    font-family: "PloniMLv2AAA-Regular", sans-serif !important;
+}
+
+div#FooterButtonsDiv {
+    box-shadow: 0px 1px 2px 0px #6C6C6C1F;
+    position: static;
+    cursor: default;
+}
+
+.duet-date-today {
+    border: 1px solid var(--Blue-white-300, #B8BBC5) !important;
+    border-radius: 6rem;
+    margin-top: 5px;
+    margin-left: 43%;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.duet-date__day.is-today {
+    box-shadow: none;
+}
+
+[aria-selected=true] .duet-date__day, .duet-date__day:focus {
+    box-shadow: none;
+    color: var(--duet-color-text-active);
+    outline: 0;
+    border: 1px solid var(--Color-prime-blue-700, #BDBFD5);
+    background: var(--Color-prime-blue-100, #E9E9F1);
+    box-shadow: 0px 2px 15px 0px #0000001A;
+}
+
+.form-switch .form-check-input, .form-switch .form-check-input:focus::after {
+    border-radius: 6rem !important;
+    border-color: transparent;
+}
+
+    .form-switch .form-check-input:checked {
+        background-color: #06D79D !important;
+        border: none !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e");
+    }
+
+    .form-switch .form-check-input:not(checked) {
+        background-color: #D3D3D6 !important;
+        border: none !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e");
+    }
+
+
+.GroupRadioButtonsNoImages > .form-check:hover {
+    background-color: white;
+    font-weight: normal;
+}
+.GroupRadioButtonsNoImagesV > .form-check:hover {
+    background-color: white;
+    font-weight: normal;
+}
+
+label.form-label { /* tami change 30.09.24 */
+    color: #6B6E77 !important;
+}
+
+.floating-label > .list-group-checkable ~ label { /* tami change 30.09.24 */
+    color: #111C3F !important;
+}
+
+input.form-control { /* tami change 30.09.24 */
+    color: #232873 !important;
+}
+
+input.form-control:disabled, input.form-control:read-only { /* tami change 30.09.24 */
+    background: #F0F0F1 !important;
+    color: #A6A8AD !important;
+}
+
+.form-control label {
+    font-size: 1rem;
+}
+
+.form-check-input:checked[type=radio] {
+    border-radius: 6rem !important;
+    border: 1px solid var(--Color-prime-blue-700, #BDBFD5) !important; /* tami change 30.09.24 */
+    box-shadow: 0px 2px 15px 0px #0000001A !important;
+    background: var(--Color-prime-blue-100, #E9E9F1) !important; /* tami change 30.09.24 */
+    /*    border-left: none !important;*/ /* tami change 30.09.24 */
+    /*    border-right: none !important;*/ /* tami change 30.09.24 */
+}
+
+.form-check-input:not(checked)[type=radio] {
+    border-radius: 6rem !important;
+    background: var(--Color-white-1000, #FFFFFF);
+    box-shadow: 0px 2px 15px 0px #0000001A;
+    border: none;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.GroupRadioButtonsNoImages > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    /*    border-left: none !important;*/ /* tami change 30.09.24 */
+    /*    border-right: none !important;*/ /* tami change 30.09.24 */
+}
+GroupRadioButtonsNoImagesV > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.form-check {
+    width: 36% !important;
+}
+
+i.fa-solid.fa-bullhorn.fa-flip-horizontal {
+    width: 2.5rem;
+    color: #34bb94;
+}
+
+i.fa-solid.fa-check {
+    width: 2.5rem;
+    color: #34bb94;
+}
+
+/*
+    Yariv
+@font-face {
+    font-display: swap;
+    font-family: "Ploni";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ploni-regular.woff2) format("woff2"),url(../fonts/ploni-regular.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Ploni";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/ploni-medium.woff2) format("woff2"),url(../fonts/ploni-medium.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Ploni";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/ploni-demibold.woff2) format("woff2"),url(../fonts/ploni-demibold.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Ploni";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ploni-bold.woff2) format("woff2"),url(../fonts/ploni-bold.woff) format("woff")
+}
+
+
+.accordion {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.SideMenu {
+    position: fixed;
+    top: 76px;
+    height: calc(100dvh - 76px);
+    z-index: 990;
+}
+
+@media (min-width: 992px) {
+    .SideMenu {
+        width: calc(240px - 3rem) !important;
+    }
+}
+
+.sideBarArea {
+    position: static;
+    display: block;
+    height: 100%;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    margin-right: 3rem !important;
+    margin-bottom: 3rem;
+    background-color: transparent;
+}
+
+.offcanvas-body {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+    background-color: #fff;
+}
+
+#accordionPanels {
+    margin-right: 200px;
+}
+
+.sidebarBtns {
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.NavFixedButtonsList .nav-item {
+    width: 30px !important;
+    padding: 0 !important;
+}
+
+#accordionPanels {
+    margin-right: calc(1.5rem + 240px);
+}
+
+.marTopBotBetweenCards {
+    margin-bottom: 2rem !important;
+}
+
+.rowStart .accordion-item:not(:last-child) {
+    margin-left: 2rem;
+}
+
+.form-check-input:checked[type=radio] ~ .form-check-label {
+    color: #111c3f !important;
+}
+
+.form-check-input:checked[type=radio] {
+    border-right: 1px solid var(--Blue-white-300, #B8BBC5) !important;
+    border-left: 1px solid var(--Blue-white-300, #B8BBC5) !important;
+}
+
+.form-check {
+    width: 50% !important;
+}
+
+button.btn-dots:has(> i.fa-info-circle) {
+    top: 0;
+}
+
+input.form-control.form-control {
+    font-family: arial !important;
+}
+
+.floating-label > .list-group-checkable ~ label {
+    top: -0.2rem;
+}
+
+.table th:nth-child(2) {
+    width: 100px !important;
+}
+
+.sortable th {
+    background: #EAF1FF !important;
+}
+
+.list-group-checkable.GroupRadioButtonsNoImages, .list-group-checkable.GroupRadioButtonsNoImagesV {
+    margin-top: 0.5rem !important;
+}
+
+
+label.form-check-label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.form-check-input[type=radio]:not([name="R"]) {
+    position: static !important;
+    width: 100% !important;
+    height: 30px !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-check {
+    align-items: center;
+    position: relative;
+}
+
+.sideBarArea {
+    height: 100% !important;
+}
+
+
+.fieldsSideBarSectionHeader {
+    top: 45.2rem;
+    margin-right: 3rem;
+    width: calc(240px - 3rem);
+    border-top: 18px solid #f3f4f5;
+    padding-top: 0.5rem;
+}
+
+
+.fieldsSideBarSection {
+    margin: 0 3rem 0 0;
+    top: 47rem;
+    width: calc(240px - 3rem);
+    background-color: #fff;
+}
+
+
+.floating-label > .list-group-checkable ~ label {
+    top: -1.3rem;
+}
+
+
+.table
+th:nth-child(3) {
+    width: 100px !important;
+}
+
+
+.table > :not(:first-child) {
+    border-top: 0 none;
+}
+*/
+
+i.fa-regular.fa-square-plus {
+    margin-left: 0.9rem;
+    line-height: inherit;
+    color: #111c3f;
+    margin-top: 0.3rem;
+}
+
+i.fa-regular.fa-square-minus {
+    margin-left: 0.9rem;
+    line-height: inherit;
+    color: #111c3f;
+    margin-top: 0.3rem;
+}
+
+i.fa-regular.fa-circle-info {
+    margin-right: 0rem;
+    line-height: inherit;
+    color: #111c3f;
+}
+
+.subTitleIcon {
+    font-size: 1rem;
+}
+
+i.fa-regular.fa-circle-info.tooltipType4 {
+    padding-right: 0.5rem;
+}
+
+.tooltip-inner {
+    background-color: #ffffff !important;
+    box-shadow: 0px -2px 16px 0px #0B004D24;
+    border-radius: 6px;
+}
+
+.tooltip-arrow {
+    opacity: 0;
+}
+
+.form-check-input[type=radio]:not([name="R"]) { /* tt+vk 09.24 */
+    width: 32%;
+}

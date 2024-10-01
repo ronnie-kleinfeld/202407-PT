@@ -1,0 +1,893 @@
+﻿body.modal-open {
+  overflow: hidden;
+}
+a{ cursor: pointer;  }
+.afterUpload {  display: block; }
+.countdown-amount {
+  font: normal 60px/60px 'typograph', arial;
+}
+/*.countdown-amount:before{ font: normal 60px/60px 'typograph', arial; letter-spacing: 6px; }*/
+.pageLogin_formStep02{display: block;}
+.pageLogin_formStep03{display: block;}
+.title-slider{display: none;}
+.homeProducts_pageTabs_item a span {
+  color:#e5e5e5;
+}
+.homeProducts_pageTabs_item.active a span {
+  color:#d21c23;
+}
+.homeProducts_pageTabs_item a:hover span {
+  color:#d21c23;
+}
+.homeProducts_pageTabs_item a span.icon-home {
+  font-size: 60px;
+}
+.homeProducts_pageTabs_item a span.icon-home_products_vehicle {
+  font-size: 75px;
+}
+.homeProducts_pageTabs_item a span.icon-home_products_savings {
+  font-size: 60px;
+}
+.homeProducts_pageTabs_item a span.icon-home_products_health {
+  font-size: 65px;
+}
+
+.homeProducts_pageTabs_item a span.icon-home_products_life {
+  font-size: 65px;
+}
+.homeProducts_pageTabs_item a span.icon-home_products_business {
+  font-size: 70px;
+}
+.homeProducts_pageTabs_item a span.icon-home_products_accident{
+  font-size: 65px;
+}
+.homeProducts_savingPage{
+  height: 1037px ;
+}
+.homeProducts_savingPage_prom{
+  height: 1137px ;
+  background-color: #bfe2cd;
+}
+.homeProducts_savingPage_best{
+  height: 1258px;
+  background-color: #bfe2cd;
+}
+.polisaPage_popularActions li a{min-height: 119px; display: block; text-decoration: none; padding: 24px 7px 14px 7px; background-color: #4f575c; font: normal 24px/24px 'typograph', arial; color: white; border-radius: 5px; text-align: center;}
+/* Active */
+.activeApplications_carNum span{
+  text-align: right;
+}
+.activeApplications_carNum strong{
+  text-align: right
+}
+.activeApplications_carNum i{
+  font-size:40px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.activeApplications_claimNum span{
+  text-align: right;
+}
+.aactiveApplications_claimNum strong{
+  text-align: right
+}
+.activeApplications_claimNum i{
+  font-size:40px;
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.lastActions_item{
+  padding: 7px 90px 12px 15px;
+  cursor: pointer;
+  height: 67px;
+}
+.lastActions_item i {
+  float: right;
+  font-size: 46px;
+  padding-left: 10px;
+  color: #d21c23;
+}
+
+.itemVehicle_title {
+  text-align: center;
+  font: normal 80px/60px 'typograph', arial;  padding: 5px;  margin: 0;
+}
+
+
+.tab-content{
+   height: auto;
+  overflow: hidden;
+ }
+.tab-content-home{
+  height: 285px;
+  overflow-y: scroll;
+}
+.itemVehicle_details {
+  overflow: hidden;
+  padding: 28px 0px 0px 0px;
+}
+.nav-top{
+  position: relative;
+  top: 0px;
+  transform: none;
+  display: none;
+}
+ul.bestInvest_investmentsGrid li strong {
+  font: normal 45px 'typograph', arial;
+}
+.floatLeft{
+    text-align: left;
+    width:  80%;
+    max-width: 1025px;
+    height: 55px;
+}
+.swiper-tabs{
+  display: none !important;
+  height: 160px;
+}
+.headerMenu > ul > li > ul{z-index: 30000;}
+.menuActive .overlay{display: block;}
+.menuActive ul{
+  display: inline-block;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+  position: absolute;
+  top: 66px;
+}
+
+/*
+*/
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+#nav-toggle {
+  width: 48px;
+  height: 45px;
+  position: relative;
+  margin: 17px 25px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#nav-toggle span {
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  background: #d21c23;
+  border-radius: 8px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+  top: 3px;
+}
+
+#nav-toggle span:nth-child(2) {
+  top: 16px;
+}
+
+#nav-toggle span:nth-child(3) {
+  top: 29px;
+}
+
+#nav-toggle.open span:nth-child(1) {
+  top: 14px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-toggle.open span:nth-child(3) {
+  top: 14px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+
+
+
+
+
+
+/*.headerMenu_toggleMobile {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.headerMenu_toggleMobile span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d21c23;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+}
+.headerMenu_toggleMobile.open span:nth-child(1) {
+  margin-top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.headerMenu_toggleMobile.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+.headerMenu_toggleMobile.open span:nth-child(3) {
+  margin-top: -20px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}*/
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.homeProducts_apartmentPage{ min-height:1354px;}
+
+.headerBottom_name, .headerPanel_login {direction: rtl;}
+
+.itemVehicle_details_Hova {overflow: hidden; padding: 28px 0px 0px 0px;}
+.itemVehicle_details_Hova li{float: right; width: 33.33%; text-align: center; padding: 10px 1% 0px; border-right: 1px solid #e4e4e4;}
+.itemVehicle_details_Hova li:nth-child(1){border-right: 0px;}
+.itemVehicle_details_Hova li span{display: block; font: normal 20px/26px 'typograph', arial;}
+.itemVehicle_details_Hova li strong{display: block; font: bold 30px/28px 'typograph', arial; letter-spacing: -1px;}
+
+
+.homeProducts_pageTabs_list{
+  margin: 0px auto; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);
+}
+.flexslider .slides > li{
+  display: block;
+  width: 100%; margin-left: 0px; float: right;
+
+}
+
+
+
+
+a.headerMenu_toggleMobile{display: none;}
+.activeApplications_carNum strong{
+  text-align: right;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;
+}
+.activeApplications_carNum{float: right; width: 21%; text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.95);}
+.activeApplications_claimNum{float: right; width: 21%; text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.95);}
+.activeApplications_claimStatus{float: right; width: 21%; text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.95);}
+.activeApplications_claimDate{float: right; width: 21%; text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.95);}
+
+.activeApplications_carNum div{display: inline-block; padding: 0px 48px 0px 0px; text-align: right; background: url(imgs/claim_car_num.png) right center / 39px auto no-repeat;}
+.activeApplications_claimNum div{display: inline-block; padding: 0px 48px 0px 0px; text-align: right; background: url(imgs/claim_number_icon.png) right center / 39px auto no-repeat;}
+.activeApplications_claimStatus div{display: inline-block; padding: 0px 48px 0px 0px; text-align: right; background: url(imgs/claim_status_icon.png) right center / 39px auto no-repeat;}
+
+.activeApplications_claimDate div{display: inline-block; padding: 0px 48px 0px 0px; text-align: right; background: url(imgs/claim_status_icon.png) right center / 39px auto no-repeat;}
+.itemVehicle_title {
+  text-align: center;
+  font: normal 65px/60px 'typograph', arial;
+}
+
+.headerMenu ul li.activeMenuItem ul{
+  display: block;
+
+}
+
+.active .polisaPage_body{display: block;}
+
+.modalText{font-size: 1.5em;}
+.leftButton{margin: 0 10px 0 0 !important;}
+
+/*******************************************************************
+        Loader styles
+********************************************************************/
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+@keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+#loader {
+  -webkit-perspective: 1200px;
+}
+
+.loadingImg {
+  background: url(imgs/logo.png) no-repeat center center transparent;
+  width: 65px;
+  height: 78px;
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  -webkit-transform-style: preserve-3d;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  transform-style: preserve-3d;
+  margin: auto;
+}
+
+.loadingContainerOn{
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.3);
+  text-align: center;
+  color: #fff;
+}
+
+#loaderContent{
+  height: 40%;
+  width: 50%;
+  margin: 0 0 0 -25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #d21c23;
+}
+/*******************************************************************
+     /Loader styles
+********************************************************************/
+
+.radioInput > div:before{content: ''; position: absolute; right: 15px; top: 50%; transform: translate(0, -50%); width: 21px; height: 21px; border-radius: 50%; background-color: #ffffff; border: 1px solid #e5e5e5; font-size: 0px;}
+.radioInput input:checked + div:after{content: ''; position: absolute; right: 22px; top: 50%; transform: translate(0, -50%); width: 7px; height: 7px; border-radius: 50%; background-color: #d21c23; font-size: 0px;}
+.radioInput input {display: none;}
+label.radioInput  { margin-right: 25px;top:15px;}
+button.send-sms-email { font-size: 26px; width: 100%;}
+
+#toast-container > .toast-info {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
+}
+#toast-container > .toast-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=") !important;
+}
+#toast-container > .toast-success {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==") !important;
+}
+#toast-container > .toast-warning {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important;
+}
+#toast-container.toast-top-center > div,
+#toast-container.toast-bottom-center > div {
+  width: 300px;
+  margin: auto;
+}
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+  width: 96%;
+  margin: auto;
+}
+.toast {
+  background-color: #FFFFFF;
+  pointer-events: auto;
+}
+.toast-success {
+  background-color: #51A351;
+}
+.toast-error {
+  background-color: #101010;
+}
+.toast-info {
+  background-color: #2F96B4;
+}
+.toast-warning {
+  background-color: #F89406;
+}
+
+
+app-dialog-container app-dialog-back {
+  background-color: #000;
+  opacity: 0.7;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none; }
+app-dialog-container app-dialog-back.open {
+  display: block; }
+app-dialog-container app-dialog-back.open ~ * {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  height: 100%; }
+app-dialog-container app-dialog-back.open ~ * > section {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  right: 50%;
+  background-color: #fff;
+  border: 1px solid #001936;
+  width: 500px;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  -moz-box-shadow: 0px 2px 4.5px 0.5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 4.5px 0.5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 4.5px 0.5px rgba(0, 0, 0, 0.5);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+app-dialog-container app-dialog-back.open ~ * > section.error {
+  border: 1px solid #ed1c24; }
+app-dialog-container app-dialog-back.open ~ * > section.warning {
+  border: 1px solid #ffff00; }
+app-dialog-container app-dialog-back.open ~ * > section > d-header {
+  display: block;
+  padding: 1em 2em;
+  border-bottom: 1px solid #001936;
+  font-weight: bold; }
+app-dialog-container app-dialog-back.open ~ * > section > d-body {
+  display: block;
+  padding: 1em 2em; }
+app-dialog-container app-dialog-back.open ~ * > section > d-fotter {
+  display: block;
+  padding: 1em 2em;
+  text-align: right; }
+
+
+.homeProducts_pageCustomNavigation a.flex-prev, .homeProducts_pageCustomNavigation a.flex-next {
+  top: 596px;
+}
+.homeProducts_pageCustomNavigation a.flex-prev strong:nth-child(1), .homeProducts_pageCustomNavigation a.flex-next strong:nth-child(1){display: block;}
+
+.homeProducts_pageCustomNavigation a.flex-prev strong.icon-bestinvest_font, .homeProducts_pageCustomNavigation a.flex-next strong.icon-bestinvest_font {
+  font-size: 90px;
+}
+.plazmaPlanner img {
+  display: none;
+}
+
+.itemPage.homeProducts_vehiclePage {
+  height: auto;
+}
+
+.itemPage.homeProducts_lifesavingPage {
+  height: 1156px;
+}
+
+ul.lifeSavings_grid li.full {
+  float: right;
+  width: 100%;
+  padding: 5px 5px 0px 0px;
+}
+
+.upload_panel button {
+  background-color: #d21c23;
+  border: 0px;
+  height: 50px;
+  padding: 0px 18px 0px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font: normal 34px 'typograph', arial;
+  color: white;
+}
+
+.upload_panel button[disabled] {
+  background-color: rgba(210, 28, 35, 0.43);
+}
+
+#pidionTable{
+  width: 38%
+}
+
+#pidionTableFirst{
+  width: 33%
+}
+.archiveFrame_titleVehicle{background-image: url(imgs/vehicle.png); background-size: 53px;}
+.archiveFrame_titleApartments{background-image: url(imgs/apartment.png); background-size: 53px; }
+.archiveFrame_titleBusiness{background-image: url(imgs/business.png); background-size: 53px;}
+.archiveFrame_titleLife{background-image: url(imgs/life.png); background-size: 53px;}
+.archiveFrame_titleMortgage{background-image: url(imgs/mortgage.png); background-size: 53px;}
+.archiveFrame_titleHealth{background-image: url(imgs/health.png); background-size: 53px;}
+.archiveFrame_titleAccidents{background-image: url(imgs/personalAccidents.png); background-size: 53px;}
+.archiveFrame_titleBestInvest{background-image: url("imgs/bestInvest.png"); background-size: 53px;}
+.archiveFrame_titleGeneral{background-image: url(imgs/general.png); background-size: 53px;}
+
+div.polisaPage_anchorsPanel_clear {
+  display: none;
+}
+div.polisaPage_anchorsPanel_clear .show{
+  display: block;
+}
+
+/* 404 */
+.page404{background: #8ec2d7 url(imgs/404_bg.jpg) center bottom / 100% auto no-repeat; color: #272727;}
+.page404_frame{position: relative; padding: 0px 0px 300px 0px;}
+.page404_text{padding: 20px 0px 20px 0px; display: flex; flex-direction: column; justify-content: center; height: 100%; position: relative;}
+.page404_text h1{padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; font: bold 150px/120px 'typograph', arial;}
+.page404_text strong{display: block; padding: 0px 0px 0px 0px; font: bold 80px/60px 'typograph', arial;}
+.page404_text span{display: block; padding: 26px 0px 8px 0px; font: bold 24px/24px 'typograph', arial;}
+.page404_text a{display: inline-block; text-decoration: none; width: 206px; height: 40px; padding: 0px 0px 0px 0px; background-color: #d21c23; text-align: center; font: bold 24px/40px 'typograph', arial; color: #ffffff; border-radius: 2px;}
+.page404_text a:hover, .page404_text a:focus{background-color: #3d3d3d;}
+
+.page404_form{padding: 0px; position: absolute; right: 0px; bottom: 48px; width: 100%; max-width: 444px;}
+.page404_form h2{padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; font: bold 36px/30px 'typograph', arial;}
+.page404_form strong{display: block; padding: 4px 0px 0px 0px; font: bold 24px/20px 'typograph', arial;}
+.page404_form ul{padding: 0px 0px 0px 0px; margin: 0px -3px 0px 0px; overflow: hidden;}
+.page404_form li{padding: 5px 3px 6px 0px; float: right; width: 50%;}
+.page404_form li:nth-last-child(1){clear: right; width: 100%;}
+.page404_form li input{display: block; width: 100%; height: 42px; padding: 0px; margin: 0px; border: 1px solid #847252; border-radius: 5px; text-indent: 10px; font: normal 18px 'typograph', arial; color: #272727;}
+.page404_form li input::-webkit-input-placeholder{color: #272727 !important; opacity: 1;}
+.page404_form li input:-moz-placeholder{color: #272727 !important; opacity: 1;}
+.page404_form li input::-moz-placeholder{color: #272727 !important; opacity: 1;}
+.page404_form li input:-ms-input-placeholder{color: #272727 !important; opacity: 1;}
+div.page404_formError{padding: 0 20px 0 0; margin: 6px 0 0 0; font: bold 14px/16px 'typograph', arial; background: url(imgs/error_icon.png) right top / 16px auto no-repeat;}
+.page404_form li input.page404_formError{background-color: #ffbfc1; border-color: #d21c23;}
+
+.page404_callUs{font: bold 24px/28px 'typograph', arial; padding: 0px 0px 0px 80px;}
+.page404_callUs a{display: inline-block; color: #272727; font: bold 36px/28px 'typograph', arial; margin-right: 5px;}
+.page404_form input[type="submit"]{border: 0px; position: absolute; left: 0px; bottom: 0px; width: 75px; height: 35px; background-color: #d21c23; font: bold 24px 'typograph', arial; color: white; border-radius: 5px;}
+.page404_form input[type="submit"]:hover, .page404_form input[type="submit"]:focus{background-color: #3d3d3d;}
+
+/*toaster*/
+#toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div {
+  text-align: center;
+}
+
+.btn_downloads-reports {
+  width: 46% ;
+  float: right;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  .page404_frame{padding: 0 0 270px 0;}
+  .page404_text h1{font: bold 120px/100px 'typograph', arial;}
+  .page404_text strong{font: bold 70px/50px 'typograph', arial;}
+
+  .page404_form{bottom: 24px;}
+  .page404_form h2{font: bold 30px/24px 'typograph', arial;}
+  .page404_form strong{padding: 7px 0 0 0; font: bold 24px/20px 'typograph', arial;}
+}
+@media screen and (max-width: 1220px) {
+  .activeApplications_body li strong {
+    font: bold 16px 'typograph', arial;
+  }
+  .itemPage.homeProducts_lifesavingPage {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px){
+  .floatLeft{
+    width: auto;
+  }
+  a.headerMenu_toggleMobile  {display: block !important;}
+  .plazmaIphone{display: none;}
+  .activeApplications_body li{padding: 10px 0px 20px 0px;}
+  .activeApplications_carNum{width: 25%; padding: 0px;}
+  .activeApplications_claimNum{width: 25%; padding: 0px;}
+  .activeApplications_claimStatus{width: 25%; padding: 0px; border-left: 0px;}
+  .activeApplications_claimDate{width: 25%; border: 0px none;}
+  .activeApplications_panel{float: right; clear: both; padding: 15px 4% 0px 0px;}
+
+  .activeApplications_body li a.activeApplications_item{padding: 0px 32px 0px 0px;}
+  .activeApplications_body li a.activeApplications_item:before{width: 32px}
+  .activeApplications_body li a.activeApplications_item:after{width: 32px;}
+  .itemVehicle_title { font: normal 66px/60px 'typograph', arial;}
+  .loadingContainerOn{
+    float: left;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    color: #fff;
+  }
+  .page404{background-position: center bottom -40px;}
+  .page404_text h1{font: bold 100px/80px 'typograph', arial;}
+  .page404_text strong{font: bold 60px/45px 'typograph', arial;}
+  .page404_text span{padding: 18px 0px 8px 0px; font: bold 24px/24px 'typograph', arial;}
+  .page404_form{max-width: 400px; bottom: 16px;}
+
+  #nav-toggle{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .headerMenu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20%;
+  }
+  .headerMenu.menuActive {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+  }
+  .menuActive ul {
+    display: inline-block;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: slidein;
+    animation-name: slidein;
+    position: absolute;
+    top: 66px;
+    width: 100%;
+  }
+  li.activeMenuItem > a {
+    color: white !important;
+    background-color: #3d3d3d;
+  }
+}
+
+@media screen and (max-width: 1180px){
+  .activeApplications_body li strong {
+    font: bold 16px 'typograph', arial;
+  }
+}
+@media screen and (max-width: 900px) {
+  .personalActions_player {
+    display: none;
+  }
+  .homeProducts_savingPage{
+    height: auto;
+  }
+  .homeProducts_savingPage_prom{
+    height: 930px;
+  }
+  .homeProducts_apartmentPage{
+    min-height:1000px;
+  }
+  ul.bestInvest_investmentsGrid li strong {
+    font: normal 30px 'typograph', arial;
+  }
+}
+@media screen and (max-width: 800px) {
+  .page404{background-position: center bottom -40px;}
+  .page404_frame{padding: 0px 0px 270px 0px;}
+  .page404_text{padding: 32px 0px 20px 0px;}
+  .page404_text h1{font: bold 80px/60px 'typograph', arial;}
+  .page404_text strong{font: bold 40px/36px 'typograph', arial;}
+  .page404_text span{padding: 10px 0px 4px 0px; font: bold 21px/21px 'typograph', arial;}
+}
+@media screen and (max-width: 768px){
+  .activeApplications_carNum div{background: none;}
+  .activeApplications_claimNum div{background: none;}
+  .activeApplications_claimStatus div{background: none;}
+  .activeApplications_claimDate div{background: none;}
+  .itemVehicle_title { font: normal 54px/54px 'typograph', arial; padding: 5px 42px; }
+  .itemVehicle_details li{width: 100%;}
+  .page404{background-position: center bottom;}
+  .page404_frame{padding: 0px 0px 20px 0px;}
+  .page404_text{padding: 42px 0px 40px 0px;}
+  .page404_text h1{font: bold 120px/100px 'typograph', arial;}
+  .page404_text strong{font: bold 60px/60px 'typograph', arial;}
+  .page404_text span{padding: 18px 0px 8px 0px; font: bold 24px/24px 'typograph', arial;}
+  .page404_form{position: relative; right: auto; bottom: auto;}
+
+}
+@media screen and (max-width: 670px) {
+  .activeApplications_body li strong {
+    font: bold 25px 'typograph', arial;
+  }
+  .activeApplications_carNum i {
+    display: none;
+  }
+  .activeApplications_claimNum i {
+    display: none;
+  }
+  .itemVehicle_details_Hova li{float: right; width: 100%; text-align: center; padding: 10px 1% ; margin-bottom: 10px; border: 1px solid #e4e4e4;}
+  .itemVehicle_details_Hova li:nth-child(1){border: 1px solid #e4e4e4;}
+  .nav-top { transform: none; display: block; }
+  .homeProducts_pageTabs_overflow{
+    touch-action: pan-y pinch-zoom !important;
+  }
+
+  .homeProducts_pageTabs_list{
+    margin: 0px;
+    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+    transition-duration: 0ms;
+    transform: translate(-164px, 0px) translateZ(0px);
+  }
+
+  .homeProducts_apartmentPage{
+    min-height:1088px;
+  }
+  .nav-top { transform: none; display: block; }
+  .homeProducts_pageTabs_overflow{
+    touch-action: pan-y pinch-zoom !important;
+  }
+
+  .homeProducts_pageTabs_list{
+    margin: 0px;
+    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+    transition-duration: 0ms;
+    transform: translate(-164px, 0px) translateZ(0px);
+  }
+  .homeProducts_floatBG{
+    display: none;}
+  .homeProducts_savingBG{
+    display: none;}
+  .homeProducts_savingPage{
+    height: 669px !important;
+  }
+  .swiper-tabs{
+    display: block !important;
+    height: 160px;
+  }
+  .homeProducts_pageTabs_list{
+    display: none;
+  }
+  .activeApplications_carNum{float: none; width: auto; padding: 0px; border-left: 0px; text-align: right;}
+  .activeApplications_claimNum{float: none; width: auto; padding: 0px; border-left: 0px; text-align: right;}
+  .activeApplications_claimStatus{float: none; width: auto; padding: 0px; border-left: 0px; text-align: right;}
+  .activeApplications_carNum div{padding: 3px 0px 3px 0px; overflow: hidden; display: block; background: none;}
+  .activeApplications_claimNum div{padding: 3px 0px 3px 0px; overflow: hidden; display: block; background: none;}
+  .activeApplications_claimStatus div{padding: 3px 0px 0px 0px; overflow: hidden; background: none;}
+  .activeApplications_claimDate{float: none; width: auto; padding: 0px; border-left: 0px; text-align: right;}
+  .activeApplications_claimDate div{padding: 0px 0px 3px 0px; overflow: hidden; background: none;}
+  .activeApplications_panel{display: none;}
+  .activeApplications_panelItem{display: none;}
+  .title-slider{display: block;}
+  .itemPage.homeProducts_vehiclePage {
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .polisaPage_anchorsPanel{
+    display: none;
+  }
+
+  .page404_text{padding: 28px 0px 40px 0px;}
+  .page404_text h1{font: bold 100px/80px 'typograph', arial;}
+  .page404_text strong{font: bold 40px/36px 'typograph', arial;}
+  .page404_text span{padding: 12px 0px 8px 0px; font: bold 21px/21px 'typograph', arial;}
+
+  .btn_downloads-reports {
+    width: 100% !important; ;
+    float: left;
+    margin: 3px;
+  }
+}
+@media screen and (max-width: 549px){
+  .itemPage.homeProducts_vehiclePage {
+    height: auto;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .itemVehicle_title {  font: normal 48px/48px 'typograph', arial;}
+}
+@media screen and (max-width: 432px){
+  .activeApplications_body li a.activeApplications_item:before{width: 100%; height: 28px; left: 0px; right: 0px; top: auto; bottom: 0px; border-radius: 0px 0px 6px 6px;}
+  .itemVehicle_title {  font: normal 42px/32px 'typograph', arial;
+    padding: 5px 36px;
+    margin-bottom: 20px;
+  }
+
+  .page404{background: #98c7da url(imgs/404_mobile_bg.jpg) center bottom / 100% auto no-repeat;}
+  .page404_frame{padding: 0px 0px 210px 0px;}
+}
+@media screen and (max-width: 417px) {
+  .itemPage.homeProducts_vehiclePage {
+    height: auto;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .homeProducts_pageTabs_item a span.icon-home {
+    font-size: 49px;
+  }
+  .homeProducts_pageTabs_item a span.icon-home_products_vehicle {
+    font-size: 54px;
+  }
+  .homeProducts_pageTabs_item a span.icon-home_products_savings {
+    font-size: 49px;
+  }
+  .homeProducts_pageTabs_item a span.icon-home_products_health {
+    font-size: 49px;
+  }
+  .homeProducts_pageTabs_item a span.icon-home_products_life {
+    font-size: 49px;
+  }
+  .homeProducts_pageTabs_item a span.icon-home_products_business {
+    font-size: 54px;
+  }
+  .homeProducts_pageTabs_item a span.icon-home_products_accident{
+    font-size: 49px;
+  }
+  .swiper-slide.homeProducts_pageTabs_item {
+    width: 125px !important;
+  }
+
+}
+@media screen and (max-width: 412px) {
+  .itemPage.homeProducts_vehiclePage {
+    height: auto;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .itemPage.homeProducts_vehiclePage {
+    height: auto;
+    margin-bottom: 5px;
+  }
+  #nav-toggle {
+    margin: 14px 15px;
+  }
+
+}
+
+.numberLtr{direction: ltr;}

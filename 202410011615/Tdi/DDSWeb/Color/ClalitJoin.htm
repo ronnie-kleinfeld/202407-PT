@@ -1,0 +1,561 @@
+﻿<html>
+
+<style>
+table
+{
+table-layout:fixed;
+direction:rtl;
+}
+td
+{
+white-space:nowrap;
+}
+table.cll1 tr td
+{
+border-width:.5pt;
+border-color:#21B24A;
+border-style:solid solid none none;
+color:#08418C;
+font-weight:bold;
+font-size:14;
+font-family:Arial (Hebrew),Arial;
+/* font-stretch:condensed; */
+text-align:center;
+height:20pt;
+}
+table.cll1
+{
+border-width:.5pt;
+border-color:#21B24A;
+border-style:none none none solid;
+border-spacing:0;
+}
+table.cll2 tr td
+{
+border:none;
+/* border: 1px solid red; */
+color:#08418C;
+font-weight:bold;
+font-size:14;
+font-family:Arial (Hebrew),Arial;
+/* font-stretch:condensed; */
+text-align:center;
+height:20pt;
+}
+table.cll2 tr td.bot
+{
+border-top:.5pt solid #21B24A;
+font-size:10;
+height:15pt;
+}
+table.cll2 tr td.num
+{
+text-align:right;
+padding:10pt;
+}
+table.cll2
+{
+border:none;
+/* border: 1px dashed red; */
+border-spacing:0;
+}
+.bkg
+{
+background-color:#EFF7E7;
+}
+.sig
+{
+color:red;
+font-size:10;
+direction:ltr;
+}
+.brk
+{
+page-break-after:always;
+border:none;
+/* border:1px dashed red; */
+}
+.fullpage
+{
+height:27cm;
+width:18cm;
+background-repeat:no-repeat;
+}
+table.cll2 tr td.spa
+{
+letter-spacing:10pt;
+text-align:right;
+}
+</style>
+
+<body><div style="width:18cm;">
+
+<!-- 1 -->
+
+<!--
+<input type=hidden id=red name=red value={@(D0)RED@}{@(D0)RED02@}{@(D0)RED03@}{@(D0)RED04@}{@(D0)RED05@}{@(D0)RED06@}{@(D0)RED07@}{@(D0)RED08@}{@(D0)RED09@}{@(D0)RED10@}{@(D0)RED11@}{@(D0)RED12@}{@(D0)RED13@}{@(D0)RED14@}{@(D0)RED15@}>
+-->
+
+<!-- {@(K2)(D0)RED@} -->
+<!-- {@(K2)(D0)RED02@} -->
+<!-- {@(K2)(D0)RED03@} -->
+<!-- {@(K2)(D0)RED04@} -->
+<!-- {@(K2)(D0)RED05@} -->
+<!-- {@(K2)(D0)RED06@} -->
+<!-- {@(K2)(D0)RED07@} -->
+<!-- {@(K2)(D0)RED08@} -->
+<!-- {@(K2)(D0)RED09@} -->
+<!-- {@(K2)(D0)RED10@} -->
+<!-- {@(K2)(D0)RED11@} -->
+<!-- {@(K2)(D0)RED12@} -->
+<!-- {@(K2)(D0)RED13@} -->
+<!-- {@(K2)(D0)RED14@} -->
+<!-- {@(K2)(D0)RED15@} -->
+
+<!-- key {@(K)AN@} -->
+<!-- key {@(K)(C)-@} -->
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J1c.jpg);height:7.5cm;">
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=15%><col width=20%><col width=13%><col width=30%><col width=15%><col width=7%>
+<tr><td colspan=6 style="height:6.8cm;"></td><tr>
+<tr><td></td>
+<td>{@(K)TH@}</td>
+<td></td>
+<td></td>
+<td>{@TA@}</td>
+<td></td></tr>
+<!--
+<tr><td></td>
+<td>{@AGTNO@}</td>
+<td></td>
+<td colspan=2>{@AGTNM@}</td>
+<td></td></tr>
+-->
+</table></div>
+<!-- key {@(K)(C)-@} -->
+<!-- key {@(K)TZD@} -->
+
+<!-- maybe field=TZQ cond=EXIST -->
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J1d.jpg" />
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll1>
+<col width=4%><col width=15%><col width=15%><col width=20%><col width=15%><col width=5%><col width=13%><col width=13%>
+<tr class=bkg><td>מס'</td>
+<td>מס' תעודת זהות</td>
+<td>שם פרטי</td>
+<td>שם משפחה</td>
+<td>תאריך לידה</td>
+<td>מין</td><td style="height:30pt;">תשלום חודשי<br>זהב</td><td style="height:30pt;">תשלום חודשי<br>פלטינום</td></tr>
+
+<!-- cycle field=TZQ step=1 -->
+<tr>
+<td class=bkg>{@(i)@}.</td>
+<td>{@(D&nbsp;)TZQ(i)@}</td>
+<td>{@(D&nbsp;)SPQ(i)@}</td>
+<td>{@(D&nbsp;)SMQ(i)@}</td>
+<td>{@(D&nbsp;)TLQ(i)@}</td>
+<td>{@(D&nbsp;)MINQ(i)@}</td>
+<td>{@(D&nbsp;)TZV(i)@}</td>
+<td>{@(D&nbsp;)TPL(i)@}</td>
+</tr>
+<!-- /cycle -->
+
+<tr>
+<td colspan=4 style="border-right-style:none;">&nbsp;</td>
+<td colspan=2 style="border-bottom-style:solid;height:30pt;" class=bkg>סה"כ תשלום חודשי</td>
+<td style="border-bottom-style:solid;">{@(D&nbsp;)TZVS@}</td>
+<td style="border-bottom-style:solid;">{@(D&nbsp;)TPLS@}</td>
+</tr>
+</table>
+<!-- /maybe -->
+
+<!-- maybe field=TZQ cond=NOTEXIST -->
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J1e.jpg" />
+<!-- /maybe -->
+
+<!-- maybe field=SPSMQ cond=EXIST -->
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J1b.jpg" />
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=5%><col width=15%><col width=15%><col width=15%>
+<col width=5%><col width=15%><col width=15%><col width=15%>
+<!-- /maybe -->
+
+<!-- cycle field=SPSMQ step=2 -->
+<tr>
+<td rowspan=2 class=num>{@(i)@}.</td>
+<td>{@SPSMQ(i)@}</td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)SPSMQ(i)@} `</p></td>
+<td>{@TA@}</td>
+<td rowspan=2 class=num><!-- maybe field=SPSMQ(i+1) cond=GE value=0 -->{@(i+1)@}.<!-- /maybe --></td>
+<td>{@SPSMQ(i+1)@}</td>
+<td><!-- maybe field=SPSMQ(i+1) cond=GE value=0 --><p class=sig>`sig,sq={@XXXI@},fd={@(W)SPSMQ(i+1)@} `</p><!-- /maybe --></td>
+<td><!-- maybe field=SPSMQ(i+1) cond=GE value=0 -->{@TA@}<!-- /maybe --></td>
+</tr><tr>
+<td class=bot>שם לקוח/ה</td>
+<td class=bot>חתימה</td>
+<td class=bot>תאריך</td>
+<td class=bot><!-- maybe field=SPSMQ(i+1) cond=GE value=0 -->שם לקוח/ה<!-- /maybe --></td>
+<td class=bot><!-- maybe field=SPSMQ(i+1) cond=GE value=0 -->חתימה<!-- /maybe --></td>
+<td class=bot><!-- maybe field=SPSMQ(i+1) cond=GE value=0 -->תאריך<!-- /maybe --></td>
+</tr>
+<!-- /cycle -->
+
+<!-- maybe field=SPSMQ cond=EXIST -->
+</table>
+<!-- /maybe -->
+
+<!-- maybe field=TZQ cond=EXIST -->
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J1f.jpg);height:2.5cm;">
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=17%><col width=20%><col width=15%><col width=25%><col width=23%>
+<tr><td colspan=5 style="height:1.3cm;"></td><tr>
+<tr><td></td>
+<td>{@AGTNM@}</td>
+<td></td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)(C)איש המכירות@} `</p></td>
+<td>{@TA@}</td></tr>
+</table></div>
+<!-- /maybe -->
+
+<!-- 2, 3 -->
+
+<table><tr><td><p class=brk></p></td></tr></table>
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J2.jpg" />
+<table><tr><td><p class=brk></p></td></tr></table>
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J3.jpg" />
+
+<!-- 4 -->
+
+<!-- maybe field=TZ cond=EXIST -->
+<table><tr><td><p class=brk></p></td></tr></table>
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J4a.jpg);height:4.2cm;">
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=18%><col width=20%><col width=13%><col width=7%><col width=17%><col width=25%>
+<tr><td colspan=6 style="height:2.2cm;"></td><tr>
+<!--
+<tr><td></td>
+<td>{@TH@}</td>
+<td colspan=4></td></tr>
+<tr>
+<td colspan=2>{@AGTNM@}</td>
+<td>{@AGTNO@}</td>
+<td></td>
+<td>{@TA@}</td>
+<td></td></tr>
+-->
+</table></div>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll1>
+<col width=5%><col width=20%><col width=25%><col width=25%><col width=15%><col width=10%>
+<tr class=bkg><td>מס'</td>
+<td>מספר תעודת זהות</td>
+<td>שם משפחה</td>
+<td>שם פרטי</td>
+<td>תאריך לידה</td>
+<td>מין</td></tr>
+
+<!-- cycle field=TZ step=1 -->
+<tr>
+<td class=bkg>{@(i)@}.</td>
+<td>{@(D&nbsp;)TZ(i)@}</td>
+<td>{@(D&nbsp;)SM(i)@}</td>
+<td>{@(D&nbsp;)SP(i)@}</td>
+<td>{@(D&nbsp;)TL(i)@}</td>
+<td>{@(D&nbsp;)MIN(i)@}</td>
+</tr>
+<!-- /cycle -->
+
+<tr><td colspan=6 style="border-right-style:none;height:0;line-height:0;">&nbsp;</td></tr>
+</table>
+
+<table width=100% cellspacing=0 cellpadding=0>
+<tr><td style="height:9.7cm;">
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J4b.jpg" />
+</td></tr><tr><td>
+
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J4c.jpg);height:auto;background-repeat:repeat-y;">
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=15%><col width=14%><col width=14%><col width=14%><col width=14%><col width=14%><col width=15%>
+<!-- cycle field=SPSM step=1 -->
+<tr>
+<td></td>
+<td>{@SPSM(i)@}</td>
+<td></td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)SPSM(i)@} `</p></td>
+<td></td>
+<td>{@TA@}</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td class=bot>{@(i)@}. שם הלקוח/ה</td>
+<td></td>
+<td class=bot>חתימה</td>
+<td></td>
+<td class=bot>תאריך</td>
+<td></td>
+</tr>
+<!-- /cycle -->
+</table>
+
+</div>
+
+<!--
+</td></tr><tr><td>
+<img galleryImg=false src="{@XXXP@}{@XXX/@}Pics{@XXX/@}J4d.jpg" />
+-->
+</td></tr></table>
+
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J4d.jpg);height:2.7cm;">
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=17%><col width=20%><col width=15%><col width=25%><col width=23%>
+<tr><td colspan=5 style="height:1.7cm;"></td><tr>
+<tr><td></td>
+<td>{@AGTNM@}</td>
+<td></td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)(C)איש המכירות@} `</p></td>
+<td>{@TA@}</td></tr>
+</table></div>
+
+<!-- /maybe -->
+
+<!-- 6 -->
+<!-- cycle field=TZ step=1 -->
+<table><tr><td><p class=brk></p></td></tr></table>
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J6a.jpg);height:20cm;">
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=37%><col width=23%><col width=8%><col width=12%><col width=20%>
+<tr><td colspan=5 style="height:2.4cm;"></td><tr>
+<tr><td></td><td colspan=3>{@SP(i)@} {@SM(i)@}</td>
+<td></td></tr>
+<tr><td colspan=5 style="height:0.95cm;"></td><tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNA(i)@}.gif /></td><td style="height:0.55cm;">{@TMA(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.85cm;"></td><td style="height:0.85cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNB(i)@}.gif /></td><td style="height:0.85cm;">{@TMB(i)@}</td><td style="height:0.85cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNC(i)@}.gif /></td><td style="height:0.55cm;">{@TMC(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KND(i)@}.gif /></td><td style="height:0.55cm;">{@TMD(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNE(i)@}.gif /></td><td style="height:0.55cm;">{@TME(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNF(i)@}.gif /></td><td style="height:0.55cm;">{@TMF(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNG(i)@}.gif /></td><td style="height:0.55cm;">{@TMG(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNH(i)@}.gif /></td><td style="height:0.55cm;">{@TMH(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNI(i)@}.gif /></td><td style="height:0.55cm;">{@TMI(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNJ(i)@}.gif /></td><td style="height:0.55cm;">{@TMJ(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.85cm;"></td><td style="height:0.85cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNK(i)@}.gif /></td><td style="height:0.85cm;">{@TMK(i)@}</td><td style="height:0.85cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNL(i)@}.gif /></td><td style="height:0.55cm;">{@TML(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNM(i)@}.gif /></td><td style="height:0.55cm;">{@TMM(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNN(i)@}.gif /></td><td style="height:0.55cm;">{@TMN(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNO(i)@}.gif /></td><td style="height:0.55cm;">{@TMO(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.85cm;"></td><td style="height:0.85cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNP(i)@}.gif /></td><td style="height:0.85cm;">{@TMP(i)@}</td><td style="height:0.85cm;"></td></tr>
+<tr><td colspan=2 style="height:0.85cm;"></td><td style="height:0.85cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNQ(i)@}.gif /></td><td style="height:0.85cm;">{@TMQ(i)@}</td><td style="height:0.85cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNR(i)@}.gif /></td><td style="height:0.55cm;">{@TMR(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td style="height:1.20cm;"></td><td valign=bottom style="height:1.20cm;">{@(V)KNS(i)@}<br>{@(V)KNW(i)@}<br>{@(V)KNX(i)@}</td>
+                                              <td style="height:1.20cm;"></td><td style="height:1.20cm;">{@TMS(i)@}</td><td style="height:1.20cm;"></td></tr>
+<tr><td colspan=2 style="height:0.55cm;"></td><td style="height:0.55cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNT(i)@}.gif /></td><td style="height:0.55cm;">{@TMT(i)@}</td><td style="height:0.55cm;"></td></tr>
+<tr><td colspan=2 style="height:0.85cm;"></td><td style="height:0.85cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNU(i)@}.gif /></td><td style="height:0.85cm;">{@TMU(i)@}</td><td style="height:0.85cm;"></td></tr>
+<tr><td colspan=2 style="height:1.20cm;"></td><td style="height:1.20cm;"><img galleryImg=false src={@XXXP@}{@XXX/@}Pics{@XXX/@}JV_{@KNV(i)@}.gif /></td><td style="height:1.20cm;">{@TMV(i)@}</td><td style="height:1.20cm;"></td></tr>
+</table>
+
+</div>
+
+<div class=fullpage style="height:auto;">
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=10%><col width=90%>
+<tr><td valign=top style="height:auto;text-align:right;color:#F78A10;"><b>הערות</b></td><td style="height:auto;text-align:right;">{@HR(i)@}</td></tr>
+</table>
+</div>
+
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J6b.jpg);height:5cm;">
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=5%><col width=25%><col width=25%><col width=20%><col width=5%><col width=20%>
+<tr><td colspan=4 style="height:2.7cm;"></td></tr>
+<tr><td></td>
+<td>{@SP(i)@}</td>
+<td>{@TZ(i)@}</td>
+<td>{@TA@}</td>
+<td></td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)SP(i)@} `</p></td></tr>
+</table>
+
+</div>
+<!-- /cycle -->
+
+<!-- 5 -->
+
+<!-- maybe field=KC cond=INLIST value=05,06,07,08,09 -->
+<table><tr><td><p class=brk></p></td></tr></table>
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J5_{@(R1)KC@}.jpg);height:13cm;">
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=18%><col width=12%><col width=29%><col width=13%><col width=7%><col width=6%><col width=15%>
+<tr><td colspan=7 style="height:4.2cm;"></td><tr>
+<tr style="letter-spacing:9pt;"><td></td>
+<td>{@CARD@}</td>
+<td></td>
+<td>{@TT@}</td>
+<td></td>
+<td>{@MM@}</td>
+<td></td></tr>
+</table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=20%><col width=28%><col width=12%><col width=15%><col width=5%><col width=12%><col width=8%>
+<tr><td colspan=7 style="height:5.4cm;"></td><tr>
+<tr><td></td>
+<td>{@SPM@}</td>
+<td></td>
+<td>{@TZM@}</td>
+<td></td>
+<td>{@TA@}</td>
+<td></td></tr>
+</table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=14%><col width=38%><col width=21%><col width=19%><col width=8%>
+<tr><td colspan=5 style="height:0.8cm;"></td><tr>
+<tr><td></td>
+<td>{@ST@}</td>
+<td></td><td><p class=sig>`sig,sq={@XXXI@},fd={@(W)(C)בעל כרטיס אשראי@} `</p></td>
+<td></td></tr>
+</table>
+
+</div>
+<!-- /maybe -->
+
+<!-- 7 -->
+
+<!-- maybe field=KC cond=EQ value=01 -->
+<table><tr><td><p class=brk></p></td></tr></table>
+<div class=fullpage style="background-image:url({@XXXP@}{@XXX/@}Pics{@XXX/@}J7.jpg);">
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=15%><col width=18%><col width=3%><col width=53%><col width=11%>
+<tr><td colspan=5 style="height:2.2cm;"></td></tr>
+<tr><td></td><td style="height:1.8cm;" valign=top>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=100%>
+<tr><td style="height:0.6cm;text-align:right;">{@BNS@}</td></tr>
+<tr><td style="height:0.6cm;text-align:right;">{@SBS@}</td></tr>
+<tr><td style="height:0.6cm;text-align:right;">{@SSTS@}</td></tr>
+</table>
+
+</td><td></td><td valign=top>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=53%><col width=17%><col width=30%>
+<tr><td colspan=3 style="height:0.2cm;"></td></tr>
+<tr>
+<td class=spa>{@HS@}</td>
+<td class=spa>{@SO@}</td>
+<td class=spa>{@BN@}{@SB@}</td>
+</tr>
+</table>
+
+</td><td></td></tr></table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=13%><col width=20%><col width=7%><col width=9%><col width=18%><col width=8%><col width=14%><col width=11%>
+<tr>
+<td colspan=2></td>
+<td colspan=3 style="text-align:right;">{@SPM@}</td>
+<td colspan=2 style="text-align:right;">{@TZM@}</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td colspan=2 style="text-align:right;">{@ST@}</td>
+<td style="text-align:right;">{@NUM@}</td>
+<td colspan=2 style="text-align:right;">{@CT@}</td>
+<td style="text-align:right;">{@MI@}</td>
+<td></td>
+</tr></table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=39%><col width=15%><col width=18%><col width=17%><col width=11%>
+<tr><td colspan=5 style="height:3.2cm;"></td></tr>
+<tr>
+<td></td>
+<td>{@TA@}</td>
+<td></td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)(C)בעל חשבון בנק@} `</p></td>
+<td></td>
+</tr></table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=36%><col width=25%><col width=12%><col width=16%><col width=11%>
+<tr><td colspan=5 style="height:1.7cm;"></td></tr>
+<tr>
+<td></td>
+<td class=spa>{@HS@}</td>
+<td class=spa>{@SO@}</td>
+<td class=spa>{@BN@}{@SB@}</td>
+<td></td>
+</tr>
+</table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=15%><col width=33%><col width=52%>
+<tr><td colspan=3 style="height:1cm;"></td></tr>
+<tr>
+<td></td>
+<td style="text-align:right;">{@SPM@}</td>
+<td></td>
+</tr></table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=15%><col width=18%><col width=3%><col width=53%><col width=11%>
+<tr><td colspan=5 style="height:3.6cm;"></td></tr>
+<tr><td></td><td style="height:1.8cm;" valign=top>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=100%>
+<tr><td style="height:0.6cm;text-align:right;">{@BNS@}</td></tr>
+<tr><td style="height:0.6cm;text-align:right;">{@SBS@}</td></tr>
+<tr><td style="height:0.6cm;text-align:right;">{@SSTS@}</td></tr>
+</table>
+
+</td><td></td><td valign=top>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=53%><col width=17%><col width=30%>
+<tr><td colspan=3 style="height:0.1cm;"></td></tr>
+<tr>
+<td class=spa>{@HS@}</td>
+<td class=spa>{@SO@}</td>
+<td class=spa>{@BN@}{@SB@}</td>
+</tr>
+</table>
+
+</td><td></td></tr></table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=13%><col width=20%><col width=7%><col width=9%><col width=18%><col width=8%><col width=14%><col width=11%>
+<tr>
+<td colspan=2></td>
+<td colspan=3 style="text-align:right;">{@SPM@}</td>
+<td colspan=2 style="text-align:right;">{@TZM@}</td>
+<td></td>
+</tr><tr>
+<td></td>
+<td colspan=2 style="text-align:right;">{@ST@}</td>
+<td style="text-align:right;">{@NUM@}</td>
+<td colspan=2 style="text-align:right;">{@CT@}</td>
+<td style="text-align:right;">{@MI@}</td>
+<td></td>
+</tr></table>
+
+<table width=100% cellspacing=0 cellpadding=0 class=cll2>
+<col width=39%><col width=15%><col width=18%><col width=17%><col width=11%>
+<tr><td colspan=5 style="height:3.0cm;"></td></tr>
+<tr>
+<td></td>
+<td>{@TA@}</td>
+<td></td>
+<td><p class=sig>`sig,sq={@XXXI@},fd={@(W)(C)בעל חשבון בנק@} `</p></td>
+<td></td>
+</tr></table>
+
+</div>
+<!-- /maybe -->
+
+</div></body></html>

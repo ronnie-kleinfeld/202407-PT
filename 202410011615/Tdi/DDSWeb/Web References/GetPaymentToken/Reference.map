@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx?WSDL" filename="GetPaymentToken.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx.xsd4.xsd" filename="GetPaymentToken.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx.xsd3.xsd" filename="GetPaymentToken0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx.xsd2.xsd" filename="GetPaymentToken1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx.xsd5.xsd" filename="GetPaymentToken2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx.xsd1.xsd" filename="GetPaymentToken3.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./assets/styles/font.css" />
+    <link rel="stylesheet" href="./assets/styles/all.css" />
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/styles/custom.css" />
+    <title>comtec</title>
+</head>
+
+<body><div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">
+            ערים ורחובות
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group d-flex flex-wrap">
+                <label class="form-label col-12">עיר</label>
+                <input type="text" class="form-control" placeholder="" id="oCity" value="" />
+                <select class="form-control custom-select" size="5" id="oCityList" >
+
+                </select>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group d-flex flex-wrap">
+                <label class="form-label col-12">רחוב</label>
+                <input type="text" class="form-control" placeholder="" id="oStreet" value="" />
+                <select class="form-control custom-select" size='5' id="oStreetList" >
+
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+            <p class="col-12" id="msg"></p>
+
+            <div style='display:none;'>
+			<iframe id='oIFrame' name='oIFrame' src='Empty.htm' width='0' height='0'></iframe>
+			<form id="Form1" target="oIFrame" method="post" action="Bring.aspx" >
+				<input type="hidden" id="txtDb" name="txtDb" value="<%=sDb%>"/>
+				<input type="hidden" id="txtHalves" name="txtHalves" value="<%=sHalves%>"/>
+				<input type="hidden" id="txtTable" name="txtTable" value=""/>
+				<input type="hidden" id="txtWhere" name="txtWhere" value=""/>
+				<input type="hidden" id="txtCurrent" name="txtCurrent" value=""/> 
+			</form>
+			<input type="hidden" id="txtResult" name="txtResult" value="" />
+			<input type="hidden" id="txtWhat" name="txtWhat" value=""/>
+		</div>
+    <script src="./assets/scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="./assets/scripts/popper.min.js"></script>
+    <script src="./assets/scripts/bootstrap.min.js"></script>
+  </div></body>
+</html>

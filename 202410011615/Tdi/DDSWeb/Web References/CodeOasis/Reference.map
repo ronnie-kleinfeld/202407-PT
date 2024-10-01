@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd1" filename="ComtecService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd2" filename="ComtecService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?disco" filename="ComtecService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd4" filename="ComtecService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd5" filename="ComtecService2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd3" filename="ComtecService3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?wsdl" filename="ComtecService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd0" filename="ComtecService4.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

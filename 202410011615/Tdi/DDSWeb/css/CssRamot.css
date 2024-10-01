@@ -1,0 +1,369 @@
+﻿:root {
+    --ramotDarkGreen: #003129;
+    --ramotLightGreen: #57bd84;
+    --ramotLightGray: #f0f0f0;
+}
+
+
+/*.accordion-button:not(.collapsed) {*/ /*accordion header background in main menu*/
+/*background-color: rgba(0, 49 ,41, 0.15) !important;
+    color: var(--ramotDarkGreen) !important;
+    font-weight: bold;
+        border: 0.5px solid rgb(0 49 41);
+}*/
+
+.accordion-button:not(.collapsed):not(.Menu-accordion-button) { /*accordion header background of cards*/
+    background-color: rgba(0,49,41,0.15) !important;
+    font-weight: normal;
+    color: var(--ramotDarkGreen) !important;
+}
+
+    .accordion-button:not(.collapsed):not(.Menu-accordion-button)::before { /* Arrow of card header is dark green when card is open */
+
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23003129'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        transform: rotate(0deg);
+    }
+
+.Menu-accordion-button {
+    /*    background-color: white !important;
+    border: 0.5px solid rgb(0 49 41) !important;
+    color: var(--ramotDarkGreen) !important;*/
+    background-color: rgba(0,49,41,0.15) !important;
+    font-weight: normal;
+    color: var(--ramotDarkGreen) !important;
+}
+
+.accordion-button:not(.Menu-accordion-button)::before { /*arrow of card header is  dark green when card is closed*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23003129'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.Menu-accordion-button.collapsed {
+    background-color: white !important;
+}
+
+#offcanvas { /*background color of the sidebar*/
+    background-color: var(--ramotDarkGreen) !important;
+}
+
+.grid-item > button {
+    background-color: var(--ramotLightGray) !important;
+}
+
+    /*    .grid-item > button:hover > .grid-title {
+        background-color: rgb(68 0 153/ 10%) !important;
+    }*/
+
+    .grid-item > button:hover {
+        background-color: var(--ramotLightGreen) !important;
+    }
+
+
+.btn-primary, .duet-date__toggle, .footerButton {
+    background-color: var(--ramotDarkGreen);
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: var(--ramotDarkGreen);
+    }
+
+    .btn-primary:focus {
+        background-color: var(--ramotDarkGreen) !important;
+        color: white !important;
+        box-shadow: none !important;
+    }
+
+    .footerButton:hover {
+        font-weight: bold !important;
+        color: var(--ramotDarkGreen) !important;
+        background-color: var(--ramotLightGreen);
+        border: none;
+    }
+
+#HeaderUserIcon, #HeaderUserInfo {
+    color: white;
+}
+
+.badgeScreenName {
+    color: var(--ramotDarkGreen) !important;
+    background-color: var(--ramotLightGray) !important;
+    font-weight: normal !important;
+}
+
+.ShortHeader, .WideHeader {
+    background-color: var(--ramotDarkGreen);
+}
+
+body {
+    background-color: white !important;
+}
+
+.nav-item.active, .nav-item:focus { /*active folders in the side bar*/
+    background-color: var(--ramotLightGray) !important;
+    color: var(--ramotDarkGreen) !important;
+}
+
+/*    .nav-item.active .nav-link {
+        color: rgb(68 0 153) !important;
+        opacity: 1 !important;
+    }*/
+
+.nav-item:not(.active) .nav-link:hover {
+    background-color: var(--ramotLightGreen) !important;
+    color: var(--ramotDarkGreen) !important;
+}
+
+
+.accordion-button .collapsed {
+    background-color: white;
+}
+
+#ActionChooseBtn {
+    background-color: var(--ramotDarkGreen) !important;
+    color: white;
+}
+
+.nav-link { /*folder line in the sidebar*/
+    color: white !important;
+}
+
+.btn:hover {
+    /*    font-weight: bold !important;*/
+    color: white !important;
+}
+
+.list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus { /*the items in button list*/
+    color: var(--ramotDarkGreen);
+    background-color: var(--ramotLightGreen);
+}
+
+.accordion-button-modal {
+    background-color: rgba(0,49,41,0.15) !important;
+    font-weight: normal !important;
+    color: var(--ramotDarkGreen) !important;
+}
+
+.fa-times-circle { /*exit modal button icon*/
+    background-color: var(--ramotDarkGreen) !important;
+}
+
+#showXmlBtnModal { /*exit modal button icon*/
+    background-color: white !important;
+    color: var(--ramotDarkGreen) !important;
+}
+
+.sortable th { /*header row of table*/
+    background-color: var(--ramotDarkGreen) !important;
+}
+
+th:hover { /*header row of table*/
+    background-color: var(--ramotDarkGreen) !important;
+    color: white !important;
+}
+
+
+tr:hover { /*row of table*/
+    background-color: var(--ramotLightGray) !important; /*ntg 28.01.24 changed bg of table rows to darker*/
+    color: var(--ramotDarkGreen) !important;
+}
+
+.trSelected {
+    background-color: rgba(0,49,41, 0.3) !important;
+    color: var(--ramotDarkGreen) !important;
+}
+
+    .trSelected > * {
+        Color: var(--ramotDarkGreen) !important;
+    }
+
+.popOverItem:hover {
+    Color: var(--ramotDarkGreen) !important;
+    background-color: var(--ramotLightGreen) !important;
+}
+
+.tooltip-inner {
+    background-color: var(--ramotDarkGreen) !important;
+    opacity: 0.6;
+}
+
+.fa-info-circle {
+    color: var(--ramotDarkGreen) !important;
+}
+
+.btn-dots .fa-info-circle {
+    color: white !important;
+}
+
+
+select option:checked { /*selected option in combo*/
+    background-color: var(--ramotLightGreen) !important;
+}
+
+#UpIcon {
+    color: white !important;
+}
+
+html {
+    font-family: 'Rubik'; /* Fallback font family */
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Regular.ttf') format('truetype');
+    font-display: swap; /* or optional, block, fallback, etc. */
+}
+
+body {
+    font-family: Rubik !important;
+}
+
+.nav-item {
+    font-family: Rubik !important;
+    font-size: inherit;
+}
+
+.btn {
+    font-family: Rubik !important;
+}
+
+.card-title {
+    font-family: Rubik !important;
+}
+
+input, button, select, optgroup, textarea, label {
+    font-family: Rubik !important;
+}
+
+tr:not(.trSelected):hover {
+    Background-color: var(--ramotDarkGreen);
+    opacity: 1;
+}
+
+.page-title {
+    color: var(--ramotDarkGreen);
+}
+
+.form-check-input.is-invalid:focus, .form-check-input:focus { /*removing focus around radio btns that are invalid*/
+    box-shadow: none !important;
+}
+
+.form-check-input[type=radio] {
+    border: none;
+    background-image: none !important;
+    background-color: rgba(0,49,41,0.15) !important;
+}
+
+.form-check-input:checked[type=radio] {
+    border: 2px solid var(--ramotDarkGreen) !important;
+}
+
+.input-group-text { /*ntg 05.02.24 color of the @ icon in the fields*/
+    background-color: var(--ramotDarkGreen);
+    color: white;
+}
+
+.IconForMode, #StatusOfPolicy, .CopyRightLink {
+    color: white !important;
+}
+
+.form-check-input:checked[type=checkbox] { /* ntg 28.02.24 changes in the switch button appearence*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3crect x='2' y='2' width='20' height='20' fill='%23003129' rx='3' ry='3'/%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 12l4 4 8-8'/%3e%3c/svg%3e");
+    border-color: var(--ramotDarkGreen);
+}
+
+#exitBtnModal {
+    color: white;
+}
+
+
+.list-group-item-check:checked + .list-group-item {
+    border: 2px solid var(--ramotDarkGreen) !important;
+}
+
+.nav-link:focus {
+    border-radius: 0 !important;
+}
+
+#HeaderCompanyName {
+    color: white;
+}
+
+#DevToolsSpan {
+    font-size: x-small;
+}
+
+.CopyRightLink {
+    font-size: x-small;
+}
+
+.searchBtn {
+    border-color: var(--ramotDarkGreen);
+    background-color: var(--ramotDarkGreen);
+}
+
+.GroupRadioButtonsNoImages > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: 1px solid var(--ramotDarkGreen);
+}
+.GroupRadioButtonsNoImages > .form-check:first-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: 1px solid var(--ramotDarkGreen);
+}
+GroupRadioButtonsNoImagesV > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: 1px solid var(--ramotDarkGreen);
+}
+.GroupRadioButtonsNoImagesV > .form-check:first-child .form-check-input[type=radio]:not([name="R"]) {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-left: 1px solid var(--ramotDarkGreen);
+}
+
+.input-group-text:hover {
+    color: white;
+}
+
+.accordion-item {
+    box-shadow: 2px 2px 5px 0px #0a4c2d26;
+}
+
+#FooterButtonsDiv {
+    box-shadow: 2px 2px 5px 0px #0a4c2d4a;
+}
+
+.header {
+    box-shadow: 2px 2px 5px 0px #0a4c2d26;
+}
+
+.form-control:focus {
+    border-color: rgb(0, 49, 41, 0.5);
+    box-shadow: 0 0 0 0.25rem rgb(0, 49, 41, 0.3);
+}
+
+.highlitedCell {
+    background-color: rgba(0, 49, 41, 0.25) !important;
+}
+
+.cardCmdBtn { /*ntg 19.05.24 new code section regarding cmd buttons that go inside cards */
+    border: 1px solid rgb(0 49 41 /70%);
+    color: rgb(0, 49, 41);
+}
+
+    .cardCmdBtn:hover {
+        background-color: rgb(0 49 41 /20%);
+    }
+
+.cmdButtonsForCardsIcon { /*ntg 19.05.24 new code section regarding cmd buttons that go inside cards */
+    color: rgb(0 49 41 /70%);
+}
+
+    .cmdButtonsForCardsIcon:hover {
+        color: rgb(0 49 41);
+    }
+
+.fgrP {
+    color: rgb(0, 49, 41, 0.5) !important;
+}

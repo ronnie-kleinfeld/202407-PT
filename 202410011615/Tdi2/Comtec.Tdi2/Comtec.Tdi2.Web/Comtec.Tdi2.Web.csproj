@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Comtec.AS400XML\Comtec.AS400XML.csproj" />
+    <ProjectReference Include="..\Comtec.BE\Comtec.BE.csproj" />
+    <ProjectReference Include="..\Comtec.DL\Comtec.DL.csproj" />
+    <ProjectReference Include="..\Comtec.Tdi2.BE\Comtec.Tdi2.BE.csproj" />
+    <ProjectReference Include="..\Comtec.Tdi2.BL\Comtec.Tdi2.BL.csproj" />
+  </ItemGroup>
+
+</Project>

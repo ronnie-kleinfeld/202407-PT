@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g>
+    <g xmlns="http://www.w3.org/2000/svg" id="00-38-apps,-arrange,-array,-grid,-layout,-menu,-view" fill="none" fill-rule="nonzero">
+      <path id="Shape" d="m39 25c1.5976809 0 2.9949073 1.3006635 3 3v11c0 1.5976809-1.284494 3-3 3h-11c-1.5976809 0-2.9949073-1.3016253-3-3v-11c0-1.5976809 1.2882162-3 3-3zm-19 0c1.5976809 0 2.9949073 1.3006635 3 3v11c0 1.5976809-1.284494 3-3 3h-11c-1.59768088 0-2.99490731-1.3016253-3-3v-11c0-1.5976809 1.2882162-3 3-3zm0-19c1.5976809 0 2.9949073 1.30066351 3 3v11c0 1.5976809-1.284494 3-3 3h-11c-1.59768088 0-2.99490731-1.3016253-3-3v-11c0-1.59768088 1.2882162-3 3-3z" fill="#569bdd" data-original="#2eaff0" class=""/>
+      <path id="Path" d="m39 6c1.5976809 0 2.9949073 1.30066351 3 3v11c0 1.5976809-1.284494 3-3 3h-11c-1.5976809 0-2.9949073-1.3016253-3-3v-11c0-1.59768088 1.2882162-3 3-3z" fill="#03498e" data-original="#a5e1ff" class=""/>
+    </g>
+  </g>
+</svg>

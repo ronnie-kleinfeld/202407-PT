@@ -1,0 +1,77 @@
+/* For loginPage */
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.imgSide {
+  width: 30%;
+  background-image: url("../images/loginImg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.menuSide {
+  width: 70%;
+}
+
+input:hover {
+  border: 3px solid rgba(69, 170, 242, 0.7);
+}
+
+@media (max-width: 992px) {
+  .menuSide {
+    width: 100%;
+  }
+}
+
+.form-signin {
+  min-width: 300px;
+}
+
+@media (min-width: 992px) {
+  .form-signin {
+    min-width: 400px;
+  }
+  label {
+    font-size: 1.1rem;
+  }
+  .logo {
+    position: fixed;
+    right: 8%;
+    top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    right: 9%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .logo {
+    right: 14%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .logo {
+    right: 17%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .logo {
+    right: 19%;
+  }
+}
+
+footer {
+  width: 100%;
+}

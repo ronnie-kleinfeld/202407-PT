@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:schema xmlns="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdRequestURL" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.fnx.co.il" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s4="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdResponseURL" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s2="http://www.fnx.co.il/Fnx.ESB.Infra.Schemas" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s3="http://www.fnx.co.il/ESB" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdRequestURL" targetNamespace="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdRequestURL">
+  <xs:element name="ashrait">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="request">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="doDeal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="total" type="xs:string" />
+                    <xs:element name="currency" type="xs:string" />
+                    <xs:element name="transactionType" type="xs:string" />
+                    <xs:element name="creditType" type="xs:string" />
+                    <xs:element name="transactionCode" type="xs:string" />
+                    <xs:element name="terminalNumber" type="xs:string" />
+                    <xs:element minOccurs="0" name="firstPayment" type="xs:string" />
+                    <xs:element minOccurs="0" name="periodicalPayment" type="xs:string" />
+                    <xs:element minOccurs="0" name="numberOfPayments" type="xs:string" />
+                    <xs:element minOccurs="0" name="user" type="xs:string" />
+                    <xs:element name="mid" type="xs:string" />
+                    <xs:element minOccurs="0" name="uniqueid" type="xs:string" />
+                    <xs:element name="mpiValidation" type="xs:string" />
+                    <xs:element minOccurs="0" name="description" type="xs:string" />
+                    <xs:element minOccurs="0" name="email" type="xs:string" />
+                    <xs:element minOccurs="0" name="userData1" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</s:schema>

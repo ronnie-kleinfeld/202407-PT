@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Comtec" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Comtec" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Enums" />
+  <xs:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Requests" />
+  <xs:complexType name="PoliciesRequestModel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Requests" base="q1:RequestModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IdentityNumber" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Enums" minOccurs="0" name="IdentityType" type="q2:PrivateAreaEnums.IdentityType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PoliciesRequestModel" nillable="true" type="tns:PoliciesRequestModel" />
+  <xs:complexType name="ArrayOfPolicyModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PolicyModel" nillable="true" type="tns:PolicyModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolicyModel" nillable="true" type="tns:ArrayOfPolicyModel" />
+  <xs:complexType name="PolicyModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InsuranceBranchName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InsuranceBranchNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="PolicyNumber" type="xs:long" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Enums" minOccurs="0" name="PolicyStatus" type="q3:PrivateAreaEnums.PolicyStatus" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PolicyModel" nillable="true" type="tns:PolicyModel" />
+  <xs:complexType name="SmsRequestModel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Requests" base="q4:RequestModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Recipient" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmsRequestModel" nillable="true" type="tns:SmsRequestModel" />
+</xs:schema>

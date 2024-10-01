@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='css/TDI.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.css" />
+
+    <script src="./assets/scripts/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        var sec, txt, dir, ok;
+        var MyInterval;
+        function onl() {
+            if (location.search != "") {
+                var srch = location.search.substring(1).split("&");
+                for (var param in srch) {
+                    var pair = srch[param].split("=");
+                    var v = decodeURI(pair[1]);
+                    switch (pair[0]) {
+                        case "txt": txt = v; break;
+                        case "sec": sec = v; break;
+                        case "dir": dir = v; break;
+                        case "ok": ok = v; break;
+                    }
+                }
+            }
+            window.parent.$("#CancelButton").hide();
+            window.parent.$("#OkButton").show();
+            window.parent.$("#OkButton").value = ok;
+            SetSeconds();
+            MyInterval = setInterval(function () { EverySecond(); }, 1000);
+        }
+        function EverySecond() {
+            sec -= 1;
+            SetSeconds();
+            if (sec <= 0) {
+                clearInterval(MyInterval);
+                parent.SetPingCounter("max");
+            }
+        }
+
+        function SetSeconds() {
+            document.getElementById("CountTextSpan").innerHTML = txt + "<br>" + sec + " שניות לפני ניתוק ";
+        }
+    </script>
+</head>
+
+<body style="overflow:hidden;">
+    <div class="container" dir="rtl" style="background-color:#F9F9F9">
+        <span id="CountTextSpan"></span>
+        <img src="PICS/iconSandGlass48.png" id="helpPic" class="rounded float-left">
+    </div>
+    <script>
+        $(document).ready(function () {
+            onl();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENT>
+<DOC_HEADER>
+<DOC_NAME>{@file@}</DOC_NAME>
+</DOC_HEADER>
+<DOC_DATA>
+<DOCID>{@key.4@}</DOCID>
+<SYS_MAKOR>T</SYS_MAKOR>
+<ANAF>{@key.1@}</ANAF>
+<TVIA>{@key.4@}</TVIA>
+<TOVEA>{@key.6@}</TOVEA>
+<POLISA>{@key.2@}</POLISA>
+<SUG_DOC_COMTEC>000000</SUG_DOC_COMTEC>
+<SUG_DOC_IFN>{@left@}</SUG_DOC_IFN>
+<SUG_DOC_DCL>{@right@}</SUG_DOC_DCL>
+<MAIL>{@email@}</MAIL>
+<DATE>{@date@}</DATE>
+<TEXT>{@text@}</TEXT>
+</DOC_DATA>
+</DOCUMENT>

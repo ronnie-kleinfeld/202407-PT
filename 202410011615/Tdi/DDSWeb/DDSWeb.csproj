@@ -1,0 +1,1503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AB10BBF-5056-489E-B37E-A49834B48636}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDSWeb</RootNamespace>
+    <AssemblyName>DDSWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlexPage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\FlexPage.dll</HintPath>
+    </Reference>
+    <Reference Include="MetadefenderCoreClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\MetadefenderCoreClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Properties, Version=1.0.848.24165, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alert.htm" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.rtl.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.rtl.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.rtl.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap.rtl.css" />
+    <Content Include="assets\bootstrap5\css\bootstrap.rtl.min.css" />
+    <Content Include="assets\bootstrap5\js\bootstrap.bundle.js" />
+    <Content Include="assets\bootstrap5\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\bootstrap5\js\bootstrap.esm.js" />
+    <Content Include="assets\bootstrap5\js\bootstrap.esm.min.js" />
+    <Content Include="assets\bootstrap5\js\bootstrap.js" />
+    <Content Include="assets\bootstrap5\js\bootstrap.min.js" />
+    <Content Include="assets\fonts\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\fonts\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\fonts\webfonts\fa-solid-900.svg" />
+    <Content Include="assets\images\023-logout.svg" />
+    <Content Include="assets\images\024-return.svg" />
+    <Content Include="assets\images\025-continue.svg" />
+    <Content Include="assets\images\026-filter.svg" />
+    <Content Include="assets\images\027-setting.svg" />
+    <Content Include="assets\images\028-calculator.svg" />
+    <Content Include="assets\images\029-view-more.svg" />
+    <Content Include="assets\images\Add_tasks.svg" />
+    <Content Include="assets\images\car.svg" />
+    <Content Include="assets\images\Car_city_driver.svg" />
+    <Content Include="assets\images\Car_off_road.svg" />
+    <Content Include="assets\images\charger.svg" />
+    <Content Include="assets\images\charging-station.svg" />
+    <Content Include="assets\images\chargingStationComtec.svg" />
+    <Content Include="assets\images\chargingStationFnx.svg" />
+    <Content Include="assets\images\check-ok-16px.png" />
+    <Content Include="assets\images\close-16px.png" />
+    <Content Include="assets\images\coming_home.svg" />
+    <Content Include="assets\images\install.png" />
+    <Content Include="assets\images\InstallIcon.ico" />
+    <Content Include="assets\images\kuba-icon-no.svg" />
+    <Content Include="assets\images\kuba-icon-ok.svg" />
+    <Content Include="assets\images\log-out.png" />
+    <Content Include="assets\images\loginImg.jpg" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\Man.svg" />
+    <Content Include="assets\images\Man1.svg" />
+    <Content Include="assets\images\no_image.svg" />
+    <Content Include="assets\images\repair-tool.png" />
+    <Content Include="assets\images\Taking_notes.svg" />
+    <Content Include="assets\images\To_do_list.svg" />
+    <Content Include="assets\images\Woman.svg" />
+    <Content Include="assets\images\Woman1.svg" />
+    <Content Include="assets\images\yes_image.svg" />
+    <Content Include="assets\scripts\anime.min.js" />
+    <Content Include="assets\scripts\axios.min.js" />
+    <Content Include="assets\scripts\bootstrap.min.js" />
+    <Content Include="assets\scripts\bootstrap4-toggle.min.js" />
+    <Content Include="assets\scripts\datePickerLogic.js" />
+    <Content Include="assets\scripts\duet\css-shim-5273df18.system.js" />
+    <Content Include="assets\scripts\duet\css-shim-8de9f2ac.js" />
+    <Content Include="assets\scripts\duet\dom-424264d0.js" />
+    <Content Include="assets\scripts\duet\dom-7053817c.system.js" />
+    <Content Include="assets\scripts\duet\duet-date-picker.entry.js" />
+    <Content Include="assets\scripts\duet\duet-date-picker.system.entry.js" />
+    <Content Include="assets\scripts\duet\duet.esm.js" />
+    <Content Include="assets\scripts\duet\duet.js" />
+    <Content Include="assets\scripts\duet\duet.system.js" />
+    <Content Include="assets\scripts\duet\index-3aa2297e.system.js" />
+    <Content Include="assets\scripts\duet\index-ceadba20.js" />
+    <Content Include="assets\scripts\duet\index.esm.js" />
+    <Content Include="assets\scripts\duet\index.system.js" />
+    <Content Include="assets\scripts\duet\themes\dark.css" />
+    <Content Include="assets\scripts\duet\themes\default.css" />
+    <Content Include="assets\scripts\inputMask\inputmask.binding.js" />
+    <Content Include="assets\scripts\inputMask\jquery.inputmask.js" />
+    <Content Include="assets\scripts\inputMask\jquery.inputmask.min.js" />
+    <Content Include="assets\scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="assets\scripts\popper.min.js" />
+    <Content Include="assets\styles.new\all.css" />
+    <Content Include="assets\styles.new\bootstrap.css" />
+    <Content Include="assets\styles.new\custom.css" />
+    <Content Include="assets\styles.new\datepicker.css" />
+    <Content Include="assets\styles.new\font.css" />
+    <Content Include="assets\styles.new\login.css" />
+    <Content Include="assets\styles.new\menu.css" />
+    <Content Include="assets\styles.new\menurow.css" />
+    <Content Include="assets\styles\all.css" />
+    <Content Include="assets\styles\bootstrap.css" />
+    <Content Include="assets\styles\bootstrap4-toggle.min.css" />
+    <Content Include="assets\styles\bth_1.css" />
+    <Content Include="assets\styles\custom.css" />
+    <Content Include="assets\styles\datepicker.css" />
+    <Content Include="assets\styles\floating-labels.css" />
+    <Content Include="assets\styles\fnxHome_1.css" />
+    <Content Include="assets\styles\fnx_1.css" />
+    <Content Include="assets\styles\font.css" />
+    <Content Include="assets\styles\hcsra_1.css" />
+    <Content Include="assets\styles\list-groups.css" />
+    <Content Include="assets\styles\login.css" />
+    <Content Include="assets\styles\menu.css" />
+    <Content Include="assets\styles\menurow.css" />
+    <Content Include="Attach.aspx" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bring.aspx" />
+    <Content Include="BringC.aspx" />
+    <Content Include="BringF.aspx" />
+    <Content Include="BringM.aspx" />
+    <Content Include="BringS.aspx" />
+    <Content Include="Calendar.aspx" />
+    <Content Include="cg_cancel.aspx" />
+    <Content Include="cg_cancel.htm" />
+    <Content Include="cg_cancel2.aspx" />
+    <Content Include="cg_notok.aspx" />
+    <Content Include="cg_ok.aspx" />
+    <Content Include="chartjs\chart.js" />
+    <Content Include="chartjs\Chart.min.css" />
+    <Content Include="chartjs\Chart.min.js" />
+    <Content Include="chartjs\chartjs-plugin-datalabels.min.js" />
+    <Content Include="CheckMq.aspx" />
+    <Content Include="CityStreet.aspx" />
+    <Content Include="Close.aspx" />
+    <Content Include="Color\Arch.htm" />
+    <Content Include="Color\archive1t.xml" />
+    <Content Include="Color\Biya002.htm" />
+    <Content Include="Color\Biya010.htm" />
+    <Content Include="Color\Boo0.htm" />
+    <Content Include="Color\Boo1.htm" />
+    <Content Include="Color\Boo2.htm" />
+    <Content Include="Color\booEng.htm" />
+    <Content Include="Color\ClalitJoin.htm" />
+    <Content Include="Color\ColorDef.xml" />
+    <Content Include="Color\Fami001.htm" />
+    <Content Include="Color\Fami002.htm" />
+    <Content Include="Color\Fami003.htm" />
+    <Content Include="Color\Guard006.htm" />
+    <Content Include="Color\Lititz007.htm" />
+    <Content Include="Color\Lmic036.htm" />
+    <Content Include="Color\Lmic037.htm" />
+    <Content Include="Color\LongHtml.htm" />
+    <Content Include="Color\NewKopelPP.htm" />
+    <Content Include="Color\NewKopelTest.htm" />
+    <Content Include="Color\NoPopups.htm" />
+    <Content Include="Color\Pics\J1.jpg" />
+    <Content Include="Color\Pics\J1a.jpg" />
+    <Content Include="Color\Pics\J1b.jpg" />
+    <Content Include="Color\Pics\J2.jpg" />
+    <Content Include="Color\Pics\J3.jpg" />
+    <Content Include="Color\Pics\J4.jpg" />
+    <Content Include="Color\Pics\J4a.jpg" />
+    <Content Include="Color\Pics\J4b.jpg" />
+    <Content Include="Color\Pics\J4c.jpg" />
+    <Content Include="Color\Pics\J4d.jpg" />
+    <Content Include="Color\Pics\J5.jpg" />
+    <Content Include="Color\Pics\J5_5.jpg" />
+    <Content Include="Color\Pics\J5_6.jpg" />
+    <Content Include="Color\Pics\J5_7.jpg" />
+    <Content Include="Color\Pics\J5_8.jpg" />
+    <Content Include="Color\Pics\J5_9.jpg" />
+    <Content Include="Color\Pics\J5_{%40%28R1%29KC%40}.jpg" />
+    <Content Include="Color\Pics\J6.jpg" />
+    <Content Include="Color\Pics\J6a.jpg" />
+    <Content Include="Color\Pics\J6b.jpg" />
+    <Content Include="Color\Pics\J7.jpg" />
+    <Content Include="Color\Pics\JV_1.gif" />
+    <Content Include="Color\Pics\JV_2.gif" />
+    <Content Include="Color\PoolTVIA001.htm" />
+    <Content Include="Color\StampHaklai.htm" />
+    <Content Include="Color\StampNewKopel.htm" />
+    <Content Include="Color\StampNewKopelC.htm" />
+    <Content Include="Color\StampPdfHH.htm" />
+    <Content Include="Color\StampPdfNewKopel.htm" />
+    <Content Include="Color\StampPdfNewKopelC.htm" />
+    <Content Include="Color\StampShomera.htm" />
+    <Content Include="Color\StampXxx.htm" />
+    <Content Include="Color\Thie038.htm" />
+    <Content Include="Color\Thie039.htm" />
+    <Content Include="Color\Utrin011.htm" />
+    <Content Include="confirm2.htm" />
+    <Content Include="confirm3.htm" />
+    <Content Include="count.htm" />
+    <Content Include="css\agents.css" />
+    <Content Include="css\cli035.css" />
+    <Content Include="css\cli037.css" />
+    <Content Include="css\cli050.css" />
+    <Content Include="css\cli051.css" />
+    <Content Include="css\cli052.css" />
+    <Content Include="css\cli053.css" />
+    <Content Include="css\cli057.css" />
+    <Content Include="css\CssHcsra.css" />
+    <Content Include="css\CssKanat.css" />
+    <Content Include="css\CssRamot.css" />
+    <Content Include="css\dds.css" />
+    <Content Include="css\lex.css" />
+    <Content Include="css\mamash.css" />
+    <Content Include="css\sortable.css" />
+    <Content Include="css\sortable.min.css" />
+    <Content Include="css\TDI.css" />
+    <Content Include="css\TDIextra.css" />
+    <Content Include="Datetimepicker\css\bootstrap-datetimepicker.css" />
+    <Content Include="Datetimepicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Datetimepicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="Datetimepicker\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ar.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.az.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.bg.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.bn.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ca.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.cs.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.da.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.de.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ee.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.el.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.es.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.fi.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.fr.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.he.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.hr.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.hu.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.hy.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.id.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.is.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.it.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ja.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ka.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ko.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.lt.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.lv.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ms.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.nb.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.nl.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.no.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.pl.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.pt-BR.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.pt.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ro.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.rs-latin.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.rs.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ru.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.sk.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.sl.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.sv.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.sw.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.th.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.tr.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.ua.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.uk.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="Datetimepicker\js\locales\bootstrap-datetimepicker.zh-TW.js" />
+    <Content Include="Init.aspx" />
+    <Content Include="js\ddsSubmit.js" />
+    <Content Include="Empty.htm" />
+    <Content Include="error.xml" />
+    <Content Include="frame.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="graphics.aspx" />
+    <Content Include="help.htm" />
+    <Content Include="in0.aspx" />
+    <Content Include="ipaddress.aspx" />
+    <Content Include="assets\docs\PDFData.pdf" />
+    <Content Include="assets\fonts\Rubik-Bold.ttf" />
+    <Content Include="assets\fonts\Rubik-Bold.woff" />
+    <Content Include="assets\fonts\Rubik-Bold.woff2" />
+    <Content Include="assets\fonts\Rubik-Light.ttf" />
+    <Content Include="assets\fonts\Rubik-Light.woff" />
+    <Content Include="assets\fonts\Rubik-Light.woff2" />
+    <Content Include="assets\fonts\Rubik-Medium.ttf" />
+    <Content Include="assets\fonts\Rubik-Medium.woff" />
+    <Content Include="assets\fonts\Rubik-Medium.woff2" />
+    <Content Include="assets\fonts\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\fonts\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\fonts\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\fonts\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\fonts\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\fonts\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\fonts\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\fonts\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\fonts\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\fonts\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\fonts\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\fonts\webfonts\fa-solid-900.woff2" />
+    <Content Include="assets\scripts\.DS_Store" />
+    <Content Include="assets\fonts\almoni-neue-bold-aaa.eot" />
+    <Content Include="assets\fonts\almoni-neue-bold-aaa.otf" />
+    <Content Include="assets\fonts\almoni-neue-bold-aaa.woff" />
+    <Content Include="assets\fonts\almoni-neue-bold-aaa.woff2" />
+    <Content Include="assets\fonts\almoni-neue-medium-aaa.eot" />
+    <Content Include="assets\fonts\almoni-neue-medium-aaa.otf" />
+    <Content Include="assets\fonts\almoni-neue-medium-aaa.woff" />
+    <Content Include="assets\fonts\almoni-neue-medium-aaa.woff2" />
+    <Content Include="assets\fonts\almoni-neue-regular-aaa.eot" />
+    <Content Include="assets\fonts\almoni-neue-regular-aaa.otf" />
+    <Content Include="assets\fonts\almoni-neue-regular-aaa.woff" />
+    <Content Include="assets\fonts\almoni-neue-regular-aaa.woff2" />
+    <Content Include="assets\fonts\ericasansfot-bold-webfont.woff2" />
+    <Content Include="assets\fonts\ericasansfot-regular-webfont.woff2" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap.min.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap.rtl.css.map" />
+    <Content Include="assets\bootstrap5\css\bootstrap.rtl.min.css.map" />
+    <Content Include="assets\bootstrap5\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\bootstrap5\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\bootstrap5\js\bootstrap.esm.js.map" />
+    <Content Include="assets\bootstrap5\js\bootstrap.esm.min.js.map" />
+    <Content Include="assets\bootstrap5\js\bootstrap.js.map" />
+    <Content Include="assets\bootstrap5\js\bootstrap.min.js.map" />
+    <Content Include="font\Assistant-Regular.ttf" />
+    <Content Include="font\Rubik-Regular.ttf" />
+    <None Include="jquery\jquery-1.10.2.intellisense.js" />
+    <Content Include="jquery\jquery-1.10.2.js" />
+    <Content Include="jquery\jquery-1.10.2.min.js" />
+    <Content Include="js\dds.js" />
+    <Content Include="js\ddsDate.js" />
+    <Content Include="js\ddsDialog.js" />
+    <Content Include="js\ddsFocus.js" />
+    <Content Include="js\ddsGrid.js" />
+    <Content Include="js\ddsKiosk.js" />
+    <Content Include="js\ddsLang.js" />
+    <Content Include="js\ddsLogon.js" />
+    <Content Include="js\ddsModalPing.js" />
+    <Content Include="js\ddsMsgEng.js" />
+    <Content Include="js\ddsMsgHeb.js" />
+    <Content Include="js\ddsNum.js" />
+    <Content Include="js\ddsPrint.js" />
+    <Content Include="js\ddsSelect.js" />
+    <Content Include="js\ddsTab.js" />
+    <Content Include="js\ddsTime.js" />
+    <Content Include="js\sortable.js" />
+    <Content Include="js\sortable.min.js" />
+    <Content Include="js\TdiFunctions.js" />
+    <Content Include="Lib\FlexPage.dll" />
+    <Content Include="Lib\MetadefenderCoreClient.dll" />
+    <Content Include="Logon.aspx" />
+    <Content Include="LogonQ.aspx" />
+    <Content Include="out.aspx" />
+    <Content Include="PICS\001.gif" />
+    <Content Include="PICS\002.gif" />
+    <Content Include="PICS\003.gif" />
+    <Content Include="PICS\004.gif" />
+    <Content Include="PICS\005.gif" />
+    <Content Include="PICS\01.jpg" />
+    <Content Include="PICS\026.gif" />
+    <Content Include="PICS\10128538.gif" />
+    <Content Include="PICS\11.jpg" />
+    <Content Include="PICS\12.jpg" />
+    <Content Include="PICS\128_1.gif" />
+    <Content Include="PICS\128_2.gif" />
+    <Content Include="PICS\2036682.jpg" />
+    <Content Include="PICS\265624.JPG" />
+    <Content Include="PICS\3549483.gif" />
+    <Content Include="PICS\3701057.gif" />
+    <Content Include="PICS\48160039cacd.gif" />
+    <Content Include="PICS\48_1.gif" />
+    <Content Include="PICS\48_2.gif" />
+    <Content Include="PICS\5mjj_111_jara.gif" />
+    <Content Include="PICS\69.jpg" />
+    <Content Include="PICS\70.jpg" />
+    <Content Include="PICS\7280586.gif" />
+    <Content Include="PICS\8869.gif" />
+    <Content Include="PICS\96_1.gif" />
+    <Content Include="PICS\96_2.gif" />
+    <Content Include="PICS\ADSC0020.gif" />
+    <Content Include="PICS\arrow_b.gif" />
+    <Content Include="PICS\arrow_level0.gif" />
+    <Content Include="PICS\arrow_level1.gif" />
+    <Content Include="PICS\arrow_level2.gif" />
+    <Content Include="PICS\arrSel.gif" />
+    <Content Include="PICS\arrSelD.gif" />
+    <Content Include="PICS\avtars120x120.creep.ru.34.gif" />
+    <Content Include="PICS\bgBut.gif" />
+    <Content Include="PICS\bgTitleArrow.jpg" />
+    <Content Include="PICS\bg_level0.gif" />
+    <Content Include="PICS\bg_level1.gif" />
+    <Content Include="PICS\bg_level2.gif" />
+    <Content Include="PICS\biya.png" />
+    <Content Include="PICS\bkg_phoenix.jpg" />
+    <Content Include="PICS\bottom_line.jpg" />
+    <Content Include="PICS\Bridge-5.gif" />
+    <Content Include="PICS\Bridge-5a.gif" />
+    <Content Include="PICS\btn1.gif" />
+    <Content Include="PICS\BtnTitle.jpg" />
+    <Content Include="PICS\btn_kasefet_details.gif" />
+    <Content Include="PICS\CALC_DOWN.gif" />
+    <Content Include="PICS\CALC_left.gif" />
+    <Content Include="PICS\CALC_right.gif" />
+    <Content Include="PICS\CALC_UP.gif" />
+    <Content Include="PICS\clalit\J1.jpg" />
+    <Content Include="PICS\clalit\J1a.jpg" />
+    <Content Include="PICS\clalit\J1b.jpg" />
+    <Content Include="PICS\clalit\J1c.jpg" />
+    <Content Include="PICS\clalit\J1d.jpg" />
+    <Content Include="PICS\clalit\J1e.jpg" />
+    <Content Include="PICS\clalit\J2.jpg" />
+    <Content Include="PICS\clalit\J3.jpg" />
+    <Content Include="PICS\clalit\J4.jpg" />
+    <Content Include="PICS\clalit\J4a.jpg" />
+    <Content Include="PICS\clalit\J4b.jpg" />
+    <Content Include="PICS\clalit\J4c.jpg" />
+    <Content Include="PICS\clalit\J4d.jpg" />
+    <Content Include="PICS\clalit\J5.jpg" />
+    <Content Include="PICS\clalit\J5_5.jpg" />
+    <Content Include="PICS\clalit\J5_6.jpg" />
+    <Content Include="PICS\clalit\J5_7.jpg" />
+    <Content Include="PICS\clalit\J5_8.jpg" />
+    <Content Include="PICS\clalit\J5_9.jpg" />
+    <Content Include="PICS\clalit\J5_{%40%28R1%29KC%40}.jpg" />
+    <Content Include="PICS\clalit\J6.jpg" />
+    <Content Include="PICS\clalit\J6a.jpg" />
+    <Content Include="PICS\clalit\J6b.jpg" />
+    <Content Include="PICS\clalit\J7.jpg" />
+    <Content Include="PICS\clalit\JV_1.gif" />
+    <Content Include="PICS\clalit\JV_2.gif" />
+    <Content Include="PICS\Cmic.gif" />
+    <Content Include="PICS\cmic_80_paint.GIF" />
+    <Content Include="PICS\cmt1.gif" />
+    <Content Include="PICS\cmt2.gif" />
+    <Content Include="PICS\ComtecLogo.gif" />
+    <Content Include="PICS\cr1.gif" />
+    <Content Include="PICS\cr10.gif" />
+    <Content Include="PICS\cr11.gif" />
+    <Content Include="PICS\cr12.gif" />
+    <Content Include="PICS\cr2.gif" />
+    <Content Include="PICS\cr3.gif" />
+    <Content Include="PICS\cr4.gif" />
+    <Content Include="PICS\cr5.gif" />
+    <Content Include="PICS\cr6.gif" />
+    <Content Include="PICS\cr7.gif" />
+    <Content Include="PICS\cr8.gif" />
+    <Content Include="PICS\cr9.gif" />
+    <Content Include="PICS\cr_l_bk.gif" />
+    <Content Include="PICS\cr_r_bk.gif" />
+    <Content Include="PICS\cs.gif" />
+    <Content Include="PICS\d.gif" />
+    <Content Include="PICS\dail6006.jpg" />
+    <Content Include="PICS\DaimlerLogo.JPG" />
+    <Content Include="PICS\Dashboard.gif" />
+    <Content Include="PICS\DetailsBckgrnd.bmp" />
+    <Content Include="PICS\df.jpg" />
+    <Content Include="PICS\df_brht.jpg" />
+    <Content Include="PICS\df_chess.jpg" />
+    <Content Include="PICS\df_dark.jpg" />
+    <Content Include="PICS\df_inv.jpg" />
+    <Content Include="PICS\dog.gif" />
+    <Content Include="PICS\eli.gif" />
+    <Content Include="PICS\eli_n.gif" />
+    <Content Include="PICS\eli_n0.gif" />
+    <Content Include="PICS\eli_w.gif" />
+    <Content Include="PICS\eli_w0.gif" />
+    <Content Include="PICS\eng\file.gif" />
+    <Content Include="PICS\eng\folder.gif" />
+    <Content Include="PICS\eng\folderopen.gif" />
+    <Content Include="PICS\eng\L.gif" />
+    <Content Include="PICS\eng\T.gif" />
+    <Content Include="PICS\enter.jpg" />
+    <Content Include="PICS\enterBgForm.jpg" />
+    <Content Include="PICS\enterBgLock.jpg" />
+    <Content Include="PICS\enterBgTitle.jpg" />
+    <Content Include="PICS\enterBottom.jpg" />
+    <Content Include="PICS\enterBottomCenter.jpg" />
+    <Content Include="PICS\enterBottomLeft.jpg" />
+    <Content Include="PICS\enterBut.gif" />
+    <Content Include="PICS\enterLock.gif" />
+    <Content Include="PICS\enterLockRight.jpg" />
+    <Content Include="PICS\enterLogin.gif" />
+    <Content Include="PICS\enterLogo_lex.jpg" />
+    <Content Include="PICS\enterMainLeft.jpg" />
+    <Content Include="PICS\enterMainLeft1.jpg" />
+    <Content Include="PICS\enterMainRight.jpg" />
+    <Content Include="PICS\enterMainRight1.jpg" />
+    <Content Include="PICS\enterTitileRight.jpg" />
+    <Content Include="PICS\enterTitle.gif" />
+    <Content Include="PICS\enterTitle_lex.gif" />
+    <Content Include="PICS\enterTop.jpg" />
+    <Content Include="PICS\enterUser.gif" />
+    <Content Include="PICS\enter_gray_box.jpg" />
+    <Content Include="PICS\exclamation-mark.png" />
+    <Content Include="PICS\exit.jpg" />
+    <Content Include="PICS\fami_bkg.gif" />
+    <Content Include="PICS\file.gif" />
+    <Content Include="PICS\folder.gif" />
+    <Content Include="PICS\folderopen.gif" />
+    <Content Include="PICS\friday5yd.gif" />
+    <Content Include="PICS\Graph.gif" />
+    <Content Include="PICS\gray_bg.jpg" />
+    <Content Include="PICS\gx.gif" />
+    <Content Include="PICS\H.gif" />
+    <Content Include="PICS\harel\acc.gif" />
+    <Content Include="PICS\harel\acc_old.gif" />
+    <Content Include="PICS\harel\arrow_b.gif" />
+    <Content Include="PICS\harel\arrow_level0.gif" />
+    <Content Include="PICS\harel\arrow_level1.gif" />
+    <Content Include="PICS\harel\arrow_level2.gif" />
+    <Content Include="PICS\harel\bgBut.gif" />
+    <Content Include="PICS\harel\bgTitleArrow.jpg" />
+    <Content Include="PICS\harel\bg_level0.gif" />
+    <Content Include="PICS\harel\bg_level1.gif" />
+    <Content Include="PICS\harel\bg_level2.gif" />
+    <Content Include="PICS\harel\cs.gif" />
+    <Content Include="PICS\harel\email.gif" />
+    <Content Include="PICS\harel\enterBgForm.jpg" />
+    <Content Include="PICS\harel\enterBgLock.jpg" />
+    <Content Include="PICS\harel\enterBgTitle.jpg" />
+    <Content Include="PICS\harel\enterBottom.jpg" />
+    <Content Include="PICS\harel\enterBottomCenter.jpg" />
+    <Content Include="PICS\harel\enterBottomLeft.jpg" />
+    <Content Include="PICS\harel\enterBut.gif" />
+    <Content Include="PICS\harel\enterLock.gif" />
+    <Content Include="PICS\harel\enterLockRight.jpg" />
+    <Content Include="PICS\harel\enterLogin.gif" />
+    <Content Include="PICS\harel\enterLogo.jpg" />
+    <Content Include="PICS\harel\enterMainLeft.jpg" />
+    <Content Include="PICS\harel\enterMainLeft1.jpg" />
+    <Content Include="PICS\harel\enterMainRight.jpg" />
+    <Content Include="PICS\harel\enterMainRight1.jpg" />
+    <Content Include="PICS\harel\enterTitileRight.jpg" />
+    <Content Include="PICS\harel\enterTitle.gif" />
+    <Content Include="PICS\harel\enterTop.jpg" />
+    <Content Include="PICS\harel\enterUser.gif" />
+    <Content Include="PICS\harel\file.gif" />
+    <Content Include="PICS\harel\folder.gif" />
+    <Content Include="PICS\harel\folderopen.gif" />
+    <Content Include="PICS\harel\helpBut.gif" />
+    <Content Include="PICS\harel\L.gif" />
+    <Content Include="PICS\harel\level0_left.gif" />
+    <Content Include="PICS\harel\level0_right.gif" />
+    <Content Include="PICS\harel\level1_left.gif" />
+    <Content Include="PICS\harel\level1_right.gif" />
+    <Content Include="PICS\harel\level2_left.gif" />
+    <Content Include="PICS\harel\level2_right.gif" />
+    <Content Include="PICS\harel\lineHeader.jpg" />
+    <Content Include="PICS\harel\lock.gif" />
+    <Content Include="PICS\harel\lock.jpg" />
+    <Content Include="PICS\harel\lomda.gif" />
+    <Content Include="PICS\harel\pageBgHeader.gif" />
+    <Content Include="PICS\harel\pageBgLeft.gif" />
+    <Content Include="PICS\harel\pageBgMain.jpg" />
+    <Content Include="PICS\harel\pageBgRight.gif" />
+    <Content Include="PICS\harel\pageBottom.jpg" />
+    <Content Include="PICS\harel\pageHeaderCenter.jpg" />
+    <Content Include="PICS\harel\pageLogo.jpg" />
+    <Content Include="PICS\harel\pageMainTop.jpg" />
+    <Content Include="PICS\harel\pageTop.jpg" />
+    <Content Include="PICS\harel\rope.jpg" />
+    <Content Include="PICS\harel\spacer.gif" />
+    <Content Include="PICS\harel\T.gif" />
+    <Content Include="PICS\heb\file.gif" />
+    <Content Include="PICS\heb\folder.gif" />
+    <Content Include="PICS\heb\folderopen.gif" />
+    <Content Include="PICS\heb\Haklai.gif" />
+    <Content Include="PICS\heb\Haklai.jpg" />
+    <Content Include="PICS\heb\Igudtrade_Logo_Mini.gif" />
+    <Content Include="PICS\heb\L.gif" />
+    <Content Include="PICS\heb\T.gif" />
+    <Content Include="PICS\Help-1.gif" />
+    <Content Include="PICS\Help.gif" />
+    <Content Include="PICS\Help.jpg" />
+    <Content Include="PICS\helpBut.gif" />
+    <Content Include="PICS\helpEmpty.gif" />
+    <Content Include="PICS\hglass.gif" />
+    <Content Include="PICS\home.gif" />
+    <Content Include="PICS\iconExcl.gif" />
+    <Content Include="PICS\iconInfo64.png" />
+    <Content Include="PICS\iconInfo64_2.png" />
+    <Content Include="PICS\iconInfo64_3.png" />
+    <Content Include="PICS\IconKeys.gif" />
+    <Content Include="PICS\iconOk.png" />
+    <Content Include="PICS\iconOk48_2.png" />
+    <Content Include="PICS\iconOk48_3.png" />
+    <Content Include="PICS\iconOk64.png" />
+    <Content Include="PICS\iconQue.gif" />
+    <Content Include="PICS\iconQue64.png" />
+    <Content Include="PICS\iconQue64_2.png" />
+    <Content Include="PICS\iconQue64_3.png" />
+    <Content Include="PICS\idi-01.JPG" />
+    <Content Include="PICS\image009.gif" />
+    <Content Include="PICS\InfoBay.gif" />
+    <Content Include="PICS\Infobay.jpg" />
+    <Content Include="PICS\J1.jpg" />
+    <Content Include="PICS\J1b.jpg" />
+    <Content Include="PICS\J1c.jpg" />
+    <Content Include="PICS\J1d.jpg" />
+    <Content Include="PICS\J1e.jpg" />
+    <Content Include="PICS\J1f.jpg" />
+    <Content Include="PICS\J2.jpg" />
+    <Content Include="PICS\J3.jpg" />
+    <Content Include="PICS\J4.jpg" />
+    <Content Include="PICS\J4a.jpg" />
+    <Content Include="PICS\J4b.jpg" />
+    <Content Include="PICS\J4c.jpg" />
+    <Content Include="PICS\J4d.jpg" />
+    <Content Include="PICS\J5.jpg" />
+    <Content Include="PICS\J5_5.jpg" />
+    <Content Include="PICS\J5_6.jpg" />
+    <Content Include="PICS\J5_7.jpg" />
+    <Content Include="PICS\J5_8.jpg" />
+    <Content Include="PICS\J5_9.jpg" />
+    <Content Include="PICS\J5_{%40%28R1%29KC%40}.jpg" />
+    <Content Include="PICS\J6.jpg" />
+    <Content Include="PICS\J6a.jpg" />
+    <Content Include="PICS\J6b.jpg" />
+    <Content Include="PICS\J7.jpg" />
+    <Content Include="PICS\JV_1.gif" />
+    <Content Include="PICS\JV_2.gif" />
+    <Content Include="PICS\kasefet.gif" />
+    <Content Include="PICS\kasefet.jpg" />
+    <Content Include="PICS\kasefet_big.gif" />
+    <Content Include="PICS\kotyon.gif" />
+    <Content Include="PICS\L.gif" />
+    <Content Include="PICS\laptop.jpg" />
+    <Content Include="PICS\level0_left.gif" />
+    <Content Include="PICS\level0_right.gif" />
+    <Content Include="PICS\level1_left.gif" />
+    <Content Include="PICS\level1_right.gif" />
+    <Content Include="PICS\level2_left.gif" />
+    <Content Include="PICS\level2_right.gif" />
+    <Content Include="PICS\lexelite.jpg" />
+    <Content Include="PICS\lexelite.png" />
+    <Content Include="PICS\lexington\001.gif" />
+    <Content Include="PICS\lexington\002.gif" />
+    <Content Include="PICS\lexington\003.gif" />
+    <Content Include="PICS\lexington\004.gif" />
+    <Content Include="PICS\lexington\005.gif" />
+    <Content Include="PICS\lexington\btn1.gif" />
+    <Content Include="PICS\lexington\cr1.gif" />
+    <Content Include="PICS\lexington\cr10.gif" />
+    <Content Include="PICS\lexington\cr11.gif" />
+    <Content Include="PICS\lexington\cr12.gif" />
+    <Content Include="PICS\lexington\cr2.gif" />
+    <Content Include="PICS\lexington\cr3.gif" />
+    <Content Include="PICS\lexington\cr4.gif" />
+    <Content Include="PICS\lexington\cr5.gif" />
+    <Content Include="PICS\lexington\cr6.gif" />
+    <Content Include="PICS\lexington\cr7.gif" />
+    <Content Include="PICS\lexington\cr8.gif" />
+    <Content Include="PICS\lexington\cr9.gif" />
+    <Content Include="PICS\lexington\cr_l_bk.gif" />
+    <Content Include="PICS\lexington\cr_r_bk.gif" />
+    <Content Include="PICS\lexington\eli.gif" />
+    <Content Include="PICS\lexington\eli_n.gif" />
+    <Content Include="PICS\lexington\eli_n0.gif" />
+    <Content Include="PICS\lexington\eli_w.gif" />
+    <Content Include="PICS\lexington\eli_w0.gif" />
+    <Content Include="PICS\lexington\enterLogo_lex.jpg" />
+    <Content Include="PICS\lexington\enterTitle_lex.gif" />
+    <Content Include="PICS\lexington\file.gif" />
+    <Content Include="PICS\lexington\Graph.gif" />
+    <Content Include="PICS\lexington\gx.gif" />
+    <Content Include="PICS\lexington\Help-1.gif" />
+    <Content Include="PICS\lexington\Help.jpg" />
+    <Content Include="PICS\lexington\hglass.gif" />
+    <Content Include="PICS\lexington\home.gif" />
+    <Content Include="PICS\lexington\InfoBay.gif" />
+    <Content Include="PICS\lexington\Infobay.jpg" />
+    <Content Include="PICS\lexington\main_content_bk.gif" />
+    <Content Include="PICS\lexington\osubmit1.gif" />
+    <Content Include="PICS\lexington\osubmit2.gif" />
+    <Content Include="PICS\lexington\osubmit3.gif" />
+    <Content Include="PICS\lexington\osubmit4.gif" />
+    <Content Include="PICS\lexington\osubmit5.gif" />
+    <Content Include="PICS\lexington\osubmit6.gif" />
+    <Content Include="PICS\lexington\osubmit7.gif" />
+    <Content Include="PICS\lexington\print.gif" />
+    <Content Include="PICS\lexington\refresh.gif" />
+    <Content Include="PICS\lexington\submit1.gif" />
+    <Content Include="PICS\lexington\submit2.gif" />
+    <Content Include="PICS\lexington\submit3.gif" />
+    <Content Include="PICS\lexington\submit4.gif" />
+    <Content Include="PICS\lexington\submit5.gif" />
+    <Content Include="PICS\lexington\submit6.gif" />
+    <Content Include="PICS\lexington\submit7.gif" />
+    <Content Include="PICS\lexington\top_balck_title.gif" />
+    <Content Include="PICS\lexington\top_ht_bk.gif" />
+    <Content Include="PICS\lexington\top_h_bk.gif" />
+    <Content Include="PICS\lexington\top_nav_border.jpg" />
+    <Content Include="PICS\lexington\vdots.gif" />
+    <Content Include="PICS\lineHeader.jpg" />
+    <Content Include="PICS\Link31.gif" />
+    <Content Include="PICS\Link31d.gif" />
+    <Content Include="PICS\LinkArrowDown.gif" />
+    <Content Include="PICS\LinkArrowDown5.gif" />
+    <Content Include="PICS\LinkArrowDown5b.gif" />
+    <Content Include="PICS\LinkArrowDown8.gif" />
+    <Content Include="PICS\LinkArrowDown8b.gif" />
+    <Content Include="PICS\LinkArrowPoints.gif" />
+    <Content Include="PICS\LinkArrowRight.gif" />
+    <Content Include="PICS\LinkDate.gif" />
+    <Content Include="PICS\Linkf4.gif" />
+    <Content Include="PICS\Linkf4d.gif" />
+    <Content Include="PICS\lmic1.jpg" />
+    <Content Include="PICS\lmic2.jpg" />
+    <Content Include="PICS\lock.jpg" />
+    <Content Include="PICS\login.jpg" />
+    <Content Include="PICS\logo-lex.gif" />
+    <Content Include="PICS\Logo.gif" />
+    <Content Include="PICS\logo.jpg" />
+    <Content Include="PICS\LogoComtec.bmp" />
+    <Content Include="PICS\LogoComtec.gif" />
+    <Content Include="PICS\logoMhd.jpg" />
+    <Content Include="PICS\logos\aig.gif" />
+    <Content Include="PICS\logos\amit.jpg" />
+    <Content Include="PICS\logos\Ayalon.jpg" />
+    <Content Include="PICS\logos\bet.gif" />
+    <Content Include="PICS\logos\betachlogo.jpg" />
+    <Content Include="PICS\logos\Clalit.jpg" />
+    <Content Include="PICS\logos\Cmic.gif" />
+    <Content Include="PICS\logos\cmic1.gif" />
+    <Content Include="PICS\logos\cmic_80_paint.GIF" />
+    <Content Include="PICS\logos\ComtecLogo.gif" />
+    <Content Include="PICS\logos\Ethniki.jpg" />
+    <Content Include="PICS\logos\fibi_logo.gif" />
+    <Content Include="PICS\logos\Haklai.gif" />
+    <Content Include="PICS\logos\igud.jpg" />
+    <Content Include="PICS\logos\kanat.gif" />
+    <Content Include="PICS\logos\Logo.gif" />
+    <Content Include="PICS\logos\LogoAmit.gif" />
+    <Content Include="PICS\logos\LogoClal.gif" />
+    <Content Include="PICS\logos\LogoComtec.bmp" />
+    <Content Include="PICS\logos\LogoComtec.gif" />
+    <Content Include="PICS\logos\LogoComtecSmall.bmp" />
+    <Content Include="PICS\logos\LogoHarel.gif" />
+    <Content Include="PICS\logos\logoMhd.jpg" />
+    <Content Include="PICS\logos\LogoPoalim.gif" />
+    <Content Include="PICS\logos\LogoPoalim.jpg" />
+    <Content Include="PICS\logos\logopoalim_small.gif" />
+    <Content Include="PICS\logos\LogoShomra.bmp" />
+    <Content Include="PICS\logos\LogoTis.gif" />
+    <Content Include="PICS\logos\logo_eliahu.jpg" />
+    <Content Include="PICS\logos\logo_in_menu.gif" />
+    <Content Include="PICS\logos\Minerva.gif" />
+    <Content Include="PICS\logos\Minerva.jpg" />
+    <Content Include="PICS\logos\Nalico.jpg" />
+    <Content Include="PICS\logos\nk.jpg" />
+    <Content Include="PICS\logos\nkilogo.gif" />
+    <Content Include="PICS\logos\Phoenix.gif" />
+    <Content Include="PICS\logos\Shirbit.gif" />
+    <Content Include="PICS\logos\Shirbit0.gif" />
+    <Content Include="PICS\logos\shlomo.jpg" />
+    <Content Include="PICS\logos\Shomera.jpg" />
+    <Content Include="PICS\LogoTis.gif" />
+    <Content Include="PICS\logo_comtec.gif" />
+    <Content Include="PICS\logo_comtec.jpg" />
+    <Content Include="PICS\logo_in_menu.gif" />
+    <Content Include="PICS\mail.gif" />
+    <Content Include="PICS\main_content_bk.gif" />
+    <Content Include="PICS\MamashTitle.gif" />
+    <Content Include="PICS\nk\nk-bgr.jpg" />
+    <Content Include="PICS\nk\nk001.jpg" />
+    <Content Include="PICS\nk\nk002.jpg" />
+    <Content Include="PICS\nk\nk003.gif" />
+    <Content Include="PICS\nk\nkb.jpg" />
+    <Content Include="PICS\nk\shl-bgr.jpg" />
+    <Content Include="PICS\nk\Tis.gif" />
+    <Content Include="PICS\nk\untitled1.gif" />
+    <Content Include="PICS\nk\water.gif" />
+    <Content Include="PICS\NotValid.gif" />
+    <Content Include="PICS\orange_line.jpg" />
+    <Content Include="PICS\osubmit1.gif" />
+    <Content Include="PICS\osubmit2.gif" />
+    <Content Include="PICS\osubmit3.gif" />
+    <Content Include="PICS\osubmit4.gif" />
+    <Content Include="PICS\osubmit5.gif" />
+    <Content Include="PICS\osubmit6.gif" />
+    <Content Include="PICS\osubmit7.gif" />
+    <Content Include="PICS\pageBgHeader.gif" />
+    <Content Include="PICS\pageBgLeft.gif" />
+    <Content Include="PICS\pageBgMain.gif" />
+    <Content Include="PICS\pageBgMain.jpg" />
+    <Content Include="PICS\pageBgRight.gif" />
+    <Content Include="PICS\pageBottom.jpg" />
+    <Content Include="PICS\pageHeaderCenter.jpg" />
+    <Content Include="PICS\pageMainTop.jpg" />
+    <Content Include="PICS\pageTop.jpg" />
+    <Content Include="PICS\pdf.jpg" />
+    <Content Include="PICS\phoenix\bkg_phoenix.jpg" />
+    <Content Include="PICS\phoenix\Fnx_Logo.png" />
+    <Content Include="PICS\phoenix\Mamash.jpg" />
+    <Content Include="PICS\phoenix\Mamashlogo.gif" />
+    <Content Include="PICS\phoenix\top_phoenix.gif" />
+    <Content Include="PICS\phoenix\top_phoenix.jpg" />
+    <Content Include="PICS\pixel.gif" />
+    <Content Include="PICS\points5.gif" />
+    <Content Include="PICS\points8.gif" />
+    <Content Include="PICS\print.gif" />
+    <Content Include="PICS\qq.jpg" />
+    <Content Include="PICS\refresh.gif" />
+    <Content Include="PICS\rope.jpg" />
+    <Content Include="PICS\scrollD.jpg" />
+    <Content Include="PICS\scrollDdis.jpg" />
+    <Content Include="PICS\scrollL.jpg" />
+    <Content Include="PICS\scrollLdis.jpg" />
+    <Content Include="PICS\scrollR.jpg" />
+    <Content Include="PICS\scrollRdis.jpg" />
+    <Content Include="PICS\scrollU.jpg" />
+    <Content Include="PICS\scrollUdis.jpg" />
+    <Content Include="PICS\scroll_fill.jpg" />
+    <Content Include="PICS\shlomo.ico" />
+    <Content Include="PICS\shlomo\bottom_line.jpg" />
+    <Content Include="PICS\shlomo\dail6006.jpg" />
+    <Content Include="PICS\shlomo\enter.jpg" />
+    <Content Include="PICS\shlomo\enter_gray_box.jpg" />
+    <Content Include="PICS\shlomo\gray_bg.jpg" />
+    <Content Include="PICS\shlomo\laptop.jpg" />
+    <Content Include="PICS\shlomo\login.jpg" />
+    <Content Include="PICS\shlomo\logo.jpg" />
+    <Content Include="PICS\shlomo\orange_line.jpg" />
+    <Content Include="PICS\shlomo\shlomo_07.jpg" />
+    <Content Include="PICS\shlomo_07.jpg" />
+    <Content Include="PICS\shom001.jpg" />
+    <Content Include="PICS\shomera\image001.png" />
+    <Content Include="PICS\shomera\image002.gif" />
+    <Content Include="PICS\shomera\image002.png" />
+    <Content Include="PICS\shomera\image003.gif" />
+    <Content Include="PICS\shomera\image003.png" />
+    <Content Include="PICS\shomera\image004.gif" />
+    <Content Include="PICS\shomera\image005.gif" />
+    <Content Include="PICS\shomera\image006.gif" />
+    <Content Include="PICS\shomera\image007.gif" />
+    <Content Include="PICS\shomera\image008.gif" />
+    <Content Include="PICS\shomera\Mamash.jpg" />
+    <Content Include="PICS\shomera\Mamashlogo.gif" />
+    <Content Include="PICS\shomera\MamashTitle.gif" />
+    <Content Include="PICS\shomera\shom001.jpg" />
+    <Content Include="PICS\shomera\shom002.gif" />
+    <Content Include="PICS\shomera\Shomera.gif" />
+    <Content Include="PICS\shomera\shomnew1.jpg" />
+    <Content Include="PICS\shomera\shomnew2.jpg" />
+    <Content Include="PICS\Shomera_Logo_HR.JPG" />
+    <Content Include="PICS\spacer.gif" />
+    <Content Include="PICS\stopwatch.gif" />
+    <Content Include="PICS\submit1.gif" />
+    <Content Include="PICS\submit2.gif" />
+    <Content Include="PICS\submit3.gif" />
+    <Content Include="PICS\submit4.gif" />
+    <Content Include="PICS\submit5.gif" />
+    <Content Include="PICS\submit6.gif" />
+    <Content Include="PICS\submit7.gif" />
+    <Content Include="PICS\T.gif" />
+    <Content Include="PICS\test.jpg" />
+    <Content Include="PICS\Tis.gif" />
+    <Content Include="PICS\tmp.jpg" />
+    <Content Include="PICS\top_balck_title.gif" />
+    <Content Include="PICS\top_ht_bk.gif" />
+    <Content Include="PICS\top_h_bk.gif" />
+    <Content Include="PICS\top_nav_border.jpg" />
+    <Content Include="PICS\top_phoenix.gif" />
+    <Content Include="PICS\top_phoenix.jpg" />
+    <Content Include="PICS\Transparent.gif" />
+    <Content Include="PICS\V.gif" />
+    <Content Include="PICS\vdots.gif" />
+    <Content Include="PICS\W.gif" />
+    <Content Include="PICS\x.gif" />
+    <Content Include="Ping.aspx" />
+    <Content Include="press000.htm" />
+    <Content Include="press004.htm" />
+    <Content Include="press005.htm" />
+    <Content Include="p_error.xml" />
+    <Content Include="Refresh.aspx" />
+    <Content Include="screen.aspx" />
+    <Content Include="screenAdd.aspx" />
+    <Content Include="screenMod.htm" />
+    <Content Include="js\jQuery.inputSliderRange.js" />
+    <Content Include="css\inputSliderRange.css" />
+    <Content Include="Sql.aspx" />
+    <Content Include="TestLogon.aspx" />
+    <Content Include="unix_error.xml" />
+    <Content Include="jquery\jquery-1.10.2.min.map" />
+    <None Include="Web References\CodeOasis\ComtecService.wsdl" />
+    <None Include="Web References\CodeOasis\ComtecService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CodeOasis\ComtecService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CodeOasis\ComtecService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CodeOasis\ComtecService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CodeOasis\ComtecService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CodeOasis\ComtecService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\CodeOasis\PoliciesResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CodeOasis\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\CodeOasis\SmsResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\CodeOasis\ValidateTokenResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\DspWsServer\Service1.disco" />
+    <Content Include="Version.txt" />
+    <None Include="Web References\Wwa\MainService.disco" />
+    <None Include="Web References\CodeOasis\ComtecService.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WinModalSubmit.htm" />
+    <None Include="Web References\Wwa\MainService.wsdl" />
+    <None Include="Web References\Wwa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attach.aspx.cs">
+      <DependentUpon>Attach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicAuthHttpModule.cs" />
+    <Compile Include="Bring.aspx.cs">
+      <DependentUpon>Bring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bring.aspx.designer.cs">
+      <DependentUpon>Bring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BringC.aspx.cs">
+      <DependentUpon>BringC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BringF.aspx.cs">
+      <DependentUpon>BringF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BringM.aspx.cs">
+      <DependentUpon>BringM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BringS.aspx.cs">
+      <DependentUpon>BringS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Call.aspx.cs">
+      <DependentUpon>Call.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cg_cancel.aspx.cs">
+      <DependentUpon>cg_cancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cg_cancel2.aspx.cs">
+      <DependentUpon>cg_cancel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cg_notok.aspx.cs">
+      <DependentUpon>cg_notok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cg_ok.aspx.cs">
+      <DependentUpon>cg_ok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckFile.aspx.cs">
+      <DependentUpon>CheckFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckMq.aspx.cs">
+      <DependentUpon>CheckMq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityStreet.aspx.cs">
+      <DependentUpon>CityStreet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityStreet.aspx.designer.cs">
+      <DependentUpon>CityStreet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Close.aspx.cs">
+      <DependentUpon>Close.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>frame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frame.aspx.designer.cs">
+      <DependentUpon>frame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="graphics.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>graphics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="graphics.aspx.designer.cs">
+      <DependentUpon>graphics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GreatConnect.cs" />
+    <Compile Include="in0.aspx.cs">
+      <DependentUpon>in0.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Init.aspx.cs">
+      <DependentUpon>Init.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ipaddress.aspx.cs">
+      <DependentUpon>ipaddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogonQ.aspx.cs">
+      <DependentUpon>LogonQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="out.aspx.cs">
+      <DependentUpon>out.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ping.aspx.cs">
+      <DependentUpon>Ping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Refresh.aspx.cs">
+      <DependentUpon>Refresh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="screen.aspx.cs">
+      <DependentUpon>screen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="screenAdd.aspx.cs">
+      <DependentUpon>screenAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sql.aspx.cs">
+      <DependentUpon>Sql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestLogon.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TestLogon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestLogon.aspx.designer.cs">
+      <DependentUpon>TestLogon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\CodeOasis\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DspWsServer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GetPaymentToken\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\GetPaymentURL\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Wwa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Attach.aspx.resx">
+      <DependentUpon>Attach.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BringC.aspx.resx">
+      <DependentUpon>BringC.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BringF.aspx.resx">
+      <DependentUpon>BringF.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BringM.aspx.resx">
+      <DependentUpon>BringM.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Call.aspx.resx">
+      <DependentUpon>Call.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckFile.aspx.resx">
+      <DependentUpon>CheckFile.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckMq.aspx.resx">
+      <DependentUpon>CheckMq.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Close.aspx.resx">
+      <DependentUpon>Close.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="in0.aspx.resx">
+      <DependentUpon>in0.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ipaddress.aspx.resx">
+      <DependentUpon>ipaddress.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.aspx.resx">
+      <DependentUpon>Logon.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogonQ.aspx.resx">
+      <DependentUpon>LogonQ.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="out.aspx.resx">
+      <DependentUpon>out.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ping.aspx.resx">
+      <DependentUpon>Ping.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refresh.aspx.resx">
+      <DependentUpon>Refresh.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen.aspx.resx">
+      <DependentUpon>screen.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screenAdd.aspx.resx">
+      <DependentUpon>screenAdd.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload.aspx.resx">
+      <DependentUpon>Upload.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="acrotest.pdf" />
+    <Content Include="Call.aspx" />
+    <Content Include="cg_notok.htm" />
+    <Content Include="cg_ok.htm" />
+    <Content Include="CheckFile.aspx" />
+    <Content Include="Color\artis.config" />
+    <Content Include="Upload.aspx" />
+    <None Include="PICS\128_1.1" />
+    <None Include="PICS\128_2.1" />
+    <None Include="PICS\48_1.1" />
+    <None Include="PICS\48_2.1" />
+    <None Include="PICS\96_1.1" />
+    <None Include="PICS\96_2.1" />
+    <None Include="PICS\eli_n.1" />
+    <None Include="PICS\eli_w.1" />
+    <None Include="PICS\enterBut.old" />
+    <None Include="PICS\harel\enterBut.old" />
+    <None Include="PICS\J1a.not" />
+    <None Include="PICS\J1c.sav" />
+    <None Include="PICS\J4a.sav" />
+    <None Include="PICS\J4d.sav" />
+    <None Include="PICS\lexington\128_1.1" />
+    <None Include="PICS\lexington\128_2.1" />
+    <None Include="PICS\lexington\48_1.1" />
+    <None Include="PICS\lexington\48_2.1" />
+    <None Include="PICS\lexington\96_1.1" />
+    <None Include="PICS\lexington\96_2.1" />
+    <None Include="PICS\lexington\eli_n.1" />
+    <None Include="PICS\lexington\eli_w.1" />
+    <None Include="PICS\logos\cmic.1" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\DspWsServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\DspWsServer\Service1.wsdl" />
+    <None Include="Web References\GetPaymentToken\ESBServiceResponseMetadata.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GetPaymentToken\GetPaymentToken.wsdl" />
+    <None Include="Web References\GetPaymentToken\GetPaymentToken.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentToken\GetPaymentToken0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentToken\GetPaymentToken1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentToken\GetPaymentToken2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentToken\GetPaymentToken3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentToken\PaymentToken1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GetPaymentToken\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\GetPaymentURL\ashrait1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GetPaymentURL\ESBServiceResponseMetadata.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\GetPaymentURL\GetPaymentURL.wsdl" />
+    <None Include="Web References\GetPaymentURL\GetPaymentURL.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentURL\GetPaymentURL0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentURL\GetPaymentURL1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentURL\GetPaymentURL2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentURL\GetPaymentURL3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\GetPaymentURL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GetPaymentToken\</RelPath>
+      <UpdateFromURL>http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentToken.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDSWeb_GetPaymentToken_ESBGateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentURL.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GetPaymentURL\</RelPath>
+      <UpdateFromURL>http://172.31.7.199/ESBGatewayExperanto/Services/GetPaymentURL.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDSWeb_GetPaymentURL_ESBGateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/DspWs/Service1.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DspWsServer\</RelPath>
+      <UpdateFromURL>http://localhost/DspWs/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDSWeb_DspWsServer_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CodeOasis\</RelPath>
+      <UpdateFromURL>http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDSWeb_CodeOasis_ComtecService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://test-tis/WwaAIGU/MainService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Wwa\</RelPath>
+      <UpdateFromURL>http://test-tis/WwaAIGU/MainService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>DDSWeb_Wwa_MainService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DspDev40\AesCrypto\AesCrypto.csproj">
+      <Project>{cde203ca-bad8-4d2e-a4dc-17d98368f64e}</Project>
+      <Name>AesCrypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\AS400Page\AS400Page.vbproj">
+      <Project>{366836a1-b9cd-4697-adcd-327acc6ec216}</Project>
+      <Name>AS400Page</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\AS400\AS400.csproj">
+      <Project>{76d7cd89-c4cb-476b-9d62-2282e3b8215c}</Project>
+      <Name>AS400</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\ChartJs\ChartJs.csproj">
+      <Project>{4a5ca0de-1164-4b09-902f-642f0e4fb160}</Project>
+      <Name>ChartJs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\ConvCom\ConvCom.csproj">
+      <Project>{537b1ca8-f1e1-4618-8942-43cb922daa1c}</Project>
+      <Name>ConvCom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\DspCallCG\DspCallCG.csproj">
+      <Project>{02070456-0ff6-45f4-aa77-131fd1b3f146}</Project>
+      <Name>DspCallCG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\PocketKnife\PocketKnife.vbproj">
+      <Project>{8488625e-b693-42a6-8a73-a56f11f4d7dd}</Project>
+      <Name>PocketKnife</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\SpoolPage\SpoolPage.vbproj">
+      <Project>{9f0b1316-5106-4d6e-805c-08f419891aba}</Project>
+      <Name>SpoolPage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DspDev40\SqInterface\SqInterface.csproj">
+      <Project>{b57afd3f-83cd-4f11-85bc-3f33a891fffc}</Project>
+      <Name>SqInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>-->
+</Project>

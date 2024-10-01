@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ComtecService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Comtec" />
+      <xsd:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Requests" />
+      <xsd:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Enums" />
+      <xsd:import schemaLocation="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ComtecInterfaceWS.DataObjects.Responses.Comtec" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IComtecService_GetPolicies_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPolicies" />
+  </wsdl:message>
+  <wsdl:message name="IComtecService_GetPolicies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoliciesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComtecService_SendSms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSms" />
+  </wsdl:message>
+  <wsdl:message name="IComtecService_SendSms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendSmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IComtecService_ValidateUserLoginToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserLoginToken" />
+  </wsdl:message>
+  <wsdl:message name="IComtecService_ValidateUserLoginToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserLoginTokenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IComtecService">
+    <wsdl:operation name="GetPolicies">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComtecService/GetPolicies" message="tns:IComtecService_GetPolicies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComtecService/GetPoliciesResponse" message="tns:IComtecService_GetPolicies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComtecService/SendSms" message="tns:IComtecService_SendSms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComtecService/SendSmsResponse" message="tns:IComtecService_SendSms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserLoginToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IComtecService/ValidateUserLoginToken" message="tns:IComtecService_ValidateUserLoginToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IComtecService/ValidateUserLoginTokenResponse" message="tns:IComtecService_ValidateUserLoginToken_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IComtecService" type="tns:IComtecService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPolicies">
+      <soap:operation soapAction="http://tempuri.org/IComtecService/GetPolicies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSms">
+      <soap:operation soapAction="http://tempuri.org/IComtecService/SendSms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserLoginToken">
+      <soap:operation soapAction="http://tempuri.org/IComtecService/ValidateUserLoginToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ComtecService">
+    <wsdl:port name="BasicHttpBinding_IComtecService" binding="tns:BasicHttpBinding_IComtecService">
+      <soap:address location="http://qa.shirbit.co.il/ComtecInternalService/services/ComtecService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

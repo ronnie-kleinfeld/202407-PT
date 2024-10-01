@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Almoni";
+  src: url("../fonts/almoni-neue-regular-aaa.woff2") format("woff2");
+  font-weight: 500 !important;
+}
+
+body {
+  background-color: #fff !important;
+  margin: 0;
+  font-family: "Almoni" !important;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.07;
+  letter-spacing: normal;
+  color: #202f65;
+}
+
+.header {
+  background-color: #202f65;
+}
+.badge {
+  margin: 0;
+}
+
+.header .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-lg ul {
+  background-color: #60bb70;
+}
+.col-lg .nav-item::before {
+  background-color: #60bb70; 
+}
+.nav-item {
+  color: white !important;
+  font-family: "Almoni" !important;
+  font-size: inherit;
+  font-weight: 100;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  background-color: #202f65 !important;
+}
+.nav-tabs .nav-link {
+  margin-bottom: 0;
+}
+.nav-item button:hover,
+.nav-item button:focus {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.badge-info {
+  background-color: #202f65;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+.card {
+  box-shadow: 0 0 0 0 !important;
+  border: none !important;
+}
+
+.card-header {
+  background-color: #202f65 !important;
+  color: white;
+}
+.card-body {
+  margin: 30px auto 83px;
+  max-width: 995px;
+  width: 100%;
+  border: solid 2px #60bb70;
+  position: relative;
+}
+
+.btn {
+  font-family: "Almoni" !important;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 36px 8px 36px;
+  line-height: 1em;
+  border: none;
+  cursor: pointer;
+  outline-offset: 1px;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.btn-info {
+  background-color: #467fcf;
+}
+
+.footer {
+  opacity: 1;
+}
+
+.tableOnMobile td {
+  border: none;
+}
+
+.tableOnMobile tr:nth-child(even) {
+  background-color: #eefaff;
+}
+.sortable th {
+  background-color: #fff;
+  color: black;
+  border: none;
+}
+.table thead th,
+.text-wrap table thead th {
+  border: none !important;
+}
+.form-control {
+  border-width: 0 0 1px 0;
+  border-color: #202f65;
+  outline: none;
+  font-size: 1em;
+  width: 92%;
+  direction: rtl; 
+}
+.form-control:focus {
+  box-shadow: 0 0 2px 2px #fff !important;
+  outline-color: #000;
+  outline: 2px dotted #000 !important;
+}
+
+.container .ButtonGroup {
+  border: none !important;
+}
+.form-control {
+  border-radius: 0;
+}
+input[type="text"] {
+  border-radius: 0 !important;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.btn.disabled,
+.dataTables_wrapper .dataTables_paginate .disabled.paginate_button,
+.btn:disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button:disabled {
+  opacity: 1;
+}
+.nav-item.active {
+  color: white !important;
+  background-color: #60bb70 !important;
+}
+
+.card-title {
+    font-family: "Almoni" !important;
+    font-size: 1.5rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: inherit !important;
+}

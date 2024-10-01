@@ -1,0 +1,150 @@
+﻿body {
+}
+
+.list-group-item-check + .list-group-item {
+    border-radius: 3rem;
+}
+
+.list-group-item-check:checked + .list-group-item {
+    border: 2px solid #18048c !important;
+    background-color: #18048c;
+    /*    border-radius: 3rem;*/
+    color: white;
+}
+
+/*.form-check-input:checked[type=checkbox] {*/ /*ntg 29.08.23 changing colors of switch buttons in fnx (checkbox)*/
+/*background-color: #06d79d !important;
+    border-color: #06d79d !important;
+}
+
+.form-check-input[type=checkbox] {*/ /*ntg 29.08.23 changing colors of switch buttons in fnx (checkbox)*/
+/*background-color: #aaa !important;
+    border-width: 2px;
+    border-color: #aaa !important;
+}*/
+
+
+
+.form-check-input:checked[type=radio] { /*ntg 03.07.23 now the radio buttons dont show the radio circle + have a new shape and color*/
+    background-image: none !important;
+    background-color: #18048c;
+    border-color: #18048c;
+    border-width: 2px;
+}
+
+    .form-check-input:checked[type=radio] ~ .form-check-label { /*ntg 03.07.23 now the radio buttons dont show the radio circle + have a new shape and color*/
+        color: white !important;
+    }
+
+.form-check-input[type=radio]:not([name="R"]) { /*ntg 03.07.23 now the radio buttons dont show the radio circle + have a new shape and color*/
+    /*        display: none;*/
+    /*        opacity: 0;*/
+    position: absolute !important;
+    width: 48%;
+    height: 79%;
+    border-radius: 6rem;
+    top: 0.3rem;
+    background-image: none !important;
+}
+
+/*.floating-label > select ~ label {
+    background-color: #f7f8ff !important;
+}
+.floating-label > input.form-control[placeholder]:not(:placeholder-shown) ~ label {*/
+/*    background-color: #f7f8ff !important;*/
+/*}*/
+
+.list-group-checkable.GroupRadioButtonsNoImages, .list-group-checkable.GroupRadioButtonsNoImagesV { /*ntg 25.06.23 new class .GroupRadioButtonsNoImages for radio btns with no image*/
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 0.1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.2rem;
+    gap: 0.2rem; /*ntg 05.07.23 - the image ones had no gap, now they do*/
+}
+
+button.btn-dots:has(> i.fa-info-circle) { /*ntg 04.07.23 change the look of the (i) btn*/
+    /*button.btn-dots:has(> i.fa-info-circle):not(:has(+ <select>)) {*/
+    position: relative;
+    top: 0.6rem;
+    align-self: center;
+    color: #06d79d;
+    background-color: transparent;
+}
+
+    button.btn-dots:has(> i.fa-info-circle):hover { /*ntg 04.07.23 change the look of the (i) btn in hover mode*/
+        color: #18048c;
+    }
+
+select ~ button.btn-dots { /*ntg 05.07.23 if the (i) btn has a <select> next to it, change the "top" attribute */
+    top: 0 !important;
+}
+
+i.fa-info-circle { /*ntg 04.07.23 change the look of the (i) icon*/
+    border: 2px solid #18048c;
+    border-radius: 8rem;
+    font-size: 1.3rem;
+}
+
+.justConSpceBtwn:has(> button.btn-dots) > .GroupRadioButtonsNoImages > .form-check > input.form-check-input { /*ntg 04.07.23 adjusting the space between radio btns in fnx design */
+    width: 48% !important;
+}
+.justConSpceBtwn:has(> button.btn-dots) > .GroupRadioButtonsNoImagesV > .form-check > input.form-check-input { /*ntg 04.07.23 adjusting the space between radio btns in fnx design */
+    width: 48% !important;
+}
+
+/*.form-switch .form-check-input {*/ /*ntg 29.08.23 switch btn inner color change for fnx*/
+/*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+}*/
+
+.duet-date__toggle { /*ntg 29.08.23 calender color change for fnx*/
+    color: #18048c;
+    background-color: #06d79d;
+    left: 0px;
+    right: auto;
+    border-radius: var(--duet-radius) 0px 0px var(--duet-radius) !important;
+}
+
+
+tr:has(>td> input#Gfocus) { /*ntg 05.12.23 it changes the background color of the selected insured client in a list of clients*/
+    background-color: #adbefd;
+}
+
+
+
+.accordion-item {
+    background-color: #F7F8FF !important;
+}
+
+.card {
+    border: none !important;
+}
+
+#HeaderUserIcon, #StatusOfPolicy, .IconForMode {
+    color: white;
+}
+
+/*.list-group-checkable:only-child:nth-child(3) .form-check .form-check-input[type=radio] {
+    width: 31% !important;
+}*/
+
+.form-check-input:checked[type=checkbox] { /* ntg 28.02.24 changes in the switch button appearence*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3crect x='2' y='2' width='20' height='20' fill='%2300b07a' rx='3' ry='3'/%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 12l4 4 8-8'/%3e%3c/svg%3e");
+    border-color: #00b07a;
+}
+
+.GroupRadioButtonsNoImages > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+border-radius: 6rem !important;
+}
+.GroupRadioButtonsNoImages > .form-check:first-child .form-check-input[type=radio]:not([name="R"]) {
+border-radius: 6rem !important;
+}
+.GroupRadioButtonsNoImagesV > .form-check:last-child .form-check-input[type=radio]:not([name="R"]) {
+    border-radius: 6rem !important;
+}
+
+.GroupRadioButtonsNoImagesV > .form-check:first-child .form-check-input[type=radio]:not([name="R"]) {
+    border-radius: 6rem !important;
+}

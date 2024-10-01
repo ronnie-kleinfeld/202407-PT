@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:schema xmlns="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenRequest" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.fnx.co.il" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s4="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenResponse" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s2="http://www.fnx.co.il/Fnx.ESB.Infra.Schemas" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s3="http://www.fnx.co.il/ESB" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenRequest" targetNamespace="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenRequest">
+  <xs:element name="PaymentToken">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Request">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mpiTransactionId" type="xs:string" />
+              <xs:element name="mid" type="xs:string" />
+              <xs:element name="terminalNumber" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</s:schema>

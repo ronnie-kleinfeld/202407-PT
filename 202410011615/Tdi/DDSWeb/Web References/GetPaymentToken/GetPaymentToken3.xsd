@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s3="http://www.fnx.co.il/ESB" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.fnx.co.il" xmlns:s1="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenRequest" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:s4="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenResponse" xmlns:s2="http://www.fnx.co.il/Fnx.ESB.Infra.Schemas" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.fnx.co.il">
+  <xs:import schemaLocation="GetPaymentToken.asmx.xsd2.xsd" namespace="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenRequest" />
+  <xs:import schemaLocation="GetPaymentToken.asmx.xsd4.xsd" namespace="http://FNX.ESB.CGCreditCard.Schemas.GetPaymentTokenResponse" />
+  <xs:import schemaLocation="GetPaymentToken.asmx.xsd3.xsd" namespace="http://www.fnx.co.il/Fnx.ESB.Infra.Schemas" />
+  <xs:import schemaLocation="GetPaymentToken.asmx.xsd5.xsd" namespace="http://www.fnx.co.il/ESB" />
+  <xs:element name="GetPaymentToken_ReqResSvc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="s1:PaymentToken" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="s2:ESBServiceRequestMetadata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPaymentToken_ReqResSvcResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="s4:PaymentToken" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="s3:ESBServiceResponseMetadata" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</s:schema>

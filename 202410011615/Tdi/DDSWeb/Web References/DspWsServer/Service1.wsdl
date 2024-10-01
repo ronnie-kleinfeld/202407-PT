@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://comtec.co.il/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://comtec.co.il/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://comtec.co.il/">
+      <s:element name="As400">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCheckCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSystem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="As400Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="As400Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Result">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearMq">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCheckCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sComputer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMask" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nDaysToSave" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearMqResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearMqResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="As400SoapIn">
+    <wsdl:part name="parameters" element="tns:As400" />
+  </wsdl:message>
+  <wsdl:message name="As400SoapOut">
+    <wsdl:part name="parameters" element="tns:As400Response" />
+  </wsdl:message>
+  <wsdl:message name="ResultSoapIn">
+    <wsdl:part name="parameters" element="tns:Result" />
+  </wsdl:message>
+  <wsdl:message name="ResultSoapOut">
+    <wsdl:part name="parameters" element="tns:ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearMqSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearMq" />
+  </wsdl:message>
+  <wsdl:message name="ClearMqSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearMqResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="As400">
+      <wsdl:input message="tns:As400SoapIn" />
+      <wsdl:output message="tns:As400SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Result">
+      <wsdl:input message="tns:ResultSoapIn" />
+      <wsdl:output message="tns:ResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearMq">
+      <wsdl:input message="tns:ClearMqSoapIn" />
+      <wsdl:output message="tns:ClearMqSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="As400">
+      <soap:operation soapAction="http://comtec.co.il/As400" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Result">
+      <soap:operation soapAction="http://comtec.co.il/Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearMq">
+      <soap:operation soapAction="http://comtec.co.il/ClearMq" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="As400">
+      <soap12:operation soapAction="http://comtec.co.il/As400" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Result">
+      <soap12:operation soapAction="http://comtec.co.il/Result" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearMq">
+      <soap12:operation soapAction="http://comtec.co.il/ClearMq" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost/DspWs/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost/DspWs/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

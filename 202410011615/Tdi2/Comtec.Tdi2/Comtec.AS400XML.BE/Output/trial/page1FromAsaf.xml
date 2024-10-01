@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<screen>
+    <s fil="HFFLNAV2FM" rec="GENERAL_DF" fpc="0001" flib="CRM449    " cli="155" fsid="M" ver="003" fnn="1  1                   1  " adr="R" strc="3"/>
+
+    <cmd>
+        <c fk="24" ft="F24 =הרימש אלל האיצי          " len="00025"/>
+        <c fk="01" ft="F1  =ךשמה              " len="00018"/>
+        <c fk="OR" ft="Ovrheb       " cgr="1A" len="00013"/>
+    </cmd>
+    <folder>
+        <l lk="51" ltr="Y" lon="Y" ln="        העצה ךסמ-סולפ םוה"/>
+        <l lk="52" ltr="N" lon="Y" ln="   םיגורדשו םייוסיכ תריחב"/>
+        <l lk="53" ltr="N" lon="Y" ln="   תוימותיח תורהצהו תולאש"/>
+        <l lk="54" ltr="N" lon="Y" ln="     םיטרפ תמלשה-סולפ םוה"/>
+        <l lk="80" ltr="N" lon="Y" ln="           תויוליעפ תמישר"/>
+    </folder>
+    <rct>
+        <r rx1="001" ry1="02" rx2="080" ry2="05" rcl="000"/>
+        <r rx1="001" ry1="06" rx2="080" ry2="10" rcl="000"/>
+        <r rx1="001" ry1="11" rx2="080" ry2="13" rcl="000"/>
+        <r rx1="001" ry1="14" rx2="080" ry2="17" rcl="000"/>
+        <r rx1="001" ry1="18" rx2="080" ry2="22" rcl="000"/>
+    </rct>
+    <fields>
+        <f num="KHEVRA    " lin="01" col="052" typ="A" len="00028" phi="Y" val="COMINFSTC             סקינפה"/>
+        <f num="KPEILT    " lin="01" col="031" typ="A" len="00020" phi="Y" val="ה ק פ ה   ת כ ר ע מ "/>
+        <f num="KDATE     " lin="01" col="002" typ="A" len="00028" phi="Y" val=" 1/09/2024        D1094533AP"/>
+        <f num="$000003175" lin="08" col="050" typ="A" len="00012" rtp="Y" val=" חוטיב תליחת"/>
+        <f num="DMYSTR    " lin="08" col="050" typ="B" len="00008" inp="I" ind="0001" per="Y" tab="08590" val="01092024"/>
+        <f num="TXT       " lin="08" col="047" typ="A" len="00033" rtp="Y" pht="01" val="(םוי 365) 31/08/2025 -  1/09/2024"/>
+        <f num="$000003182" lin="06" col="068" typ="A" len="00012" rtp="Y" val="ןכוס יטרפ   "/>
+        <f num="SOCA      " lin="07" col="070" typ="N" len="00006" inp="I" ind="0002" per="Y" tab="08490" alias="ןכוס רפסמ" val="000000"/>
+        <f num="SSOCA     " lin="07" col="060" typ="A" len="00030" inp="P" alias="ןכוס םש" val="                              "/>
+        <f num="$000003183" lin="11" col="070" typ="A" len="00011" rtp="Y" val="חטובמה יטרפ"/>
+        <f num="$000003185" lin="12" col="070" typ="A" len="00012" rtp="Y" val="יוהיז גוס   "/>
+        <f num="ZKOD      " lin="12" col="070" typ="A" len="00001" inp="I" ind="0003" per="Y" pf4="C" tab="12890" wd="015" val=" ">
+            <b op="ת" nm="     תוהז תדועת"/>
+            <b op="ד" nm="          ןוכרד"/>
+            <b op="ח" nm="           הרבח"/>
+        </f>
+        <f num="$000003184" lin="12" col="060" typ="A" len="00011" rtp="Y" val=" יוהיז רפסמ"/>
+        <f num="ZNO       " lin="12" col="060" typ="N" len="00009" inp="I" ind="0004" per="Y" tab="12900" val="000000000"/>
+        <f num="$000003188" lin="13" col="070" typ="A" len="00012" rtp="Y" val="    החפשמ םש"/>
+        <f num="MISHP     " lin="13" col="070" typ="A" len="00020" inp="I" ind="0005" tab="12970" val="                    "/>
+        <f num="$000003186" lin="13" col="060" typ="A" len="00009" rtp="Y" val="  יטרפ םש"/>
+        <f num="PRATI     " lin="13" col="060" typ="A" len="00020" inp="I" ind="0006" tab="12980" val="                    "/>
+        <f num="$000003190" lin="14" col="064" typ="A" len="00016" rtp="Y" val="חטובמ שוכר תבותכ"/>
+        <f num="$000003191" lin="15" col="070" typ="A" len="00012" rtp="Y" val="        בושי"/>
+        <f num="KODYESHUV " lin="15" col="062" typ="A" len="00005" inp="I" ind="0007" prl="N" apr="1C" pf4="Y" tab="17138" val="     "/>
+        <f num="NMYESHUV  " lin="15" col="070" typ="A" len="00015" inp="I" ind="0008" apr="1N" pf4="Y" tab="17130" val="               "/>
+        <f num="$000003194" lin="15" col="060" typ="A" len="00012" rtp="Y" val="        בוחר"/>
+        <f num="KODSTREET " lin="15" col="060" typ="A" len="00005" inp="I" ind="0009" prl="N" apr="1S" pf4="Y" tab="17140" val="     "/>
+        <f num="NMSTREET  " lin="15" col="060" typ="A" len="00015" inp="I" ind="0010" apr="1T" pf4="Y" tab="17140" val="               "/>
+        <f num="$000003193" lin="16" col="070" typ="A" len="00004" rtp="Y" val=" תיב"/>
+        <f num="ALFA11    " lin="16" col="070" typ="A" len="00004" inp="I" ind="0011" per="Y" prl="N" tab="17210" val="    "/>
+        <f num="$000003192" lin="16" col="060" typ="A" len="00005" rtp="Y" val=" הריד"/>
+        <f num="ALFA17    " lin="16" col="060" typ="A" len="00005" inp="I" ind="0012" prl="N" tab="17220" val="     "/>
+        <f num="$000003195" lin="17" col="070" typ="A" len="00006" rtp="Y" val=" דוקימ"/>
+        <f num="NUM02     " lin="17" col="070" typ="N" len="00005" inp="P" val="00000"/>
+        <f num="$000003197" lin="22" col="068" typ="A" len="00012" phi="Y" rtp="Y" val="    סכנ יטרפ"/>
+        <f num="ASK04     " lin="18" col="070" typ="N" len="00001" inp="I" ind="0013" per="Y" pxk="01" pxn="203" pxm="K" pf4="R" psl="G" tab="21370" wd="015" alias="סכנה גוס" val="0"/>
+        <f num="$000003202" lin="20" col="070" typ="A" len="00012" rtp="Y" val="   הרידה חטש"/>
+        <f num="NUM04     " lin="20" col="070" typ="N" len="00005" inp="I" ind="0014" tab="21530" val="00000"/>
+        <f num="$000005432" lin="21" col="070" typ="A" len="00015" rtp="Y" val="  ?דממ םייק םאה"/>
+        <f num="ASK90     " lin="21" col="070" typ="N" len="00001" inp="I" ind="0015" pxk="01" pxn="916" pxm="K" pf4="R" psl="G" tab="21610" wd="015" val="0"/>
+        <f num="$000005435" lin="20" col="060" typ="A" len="00012" rtp="Y" val="  תושפנ רפסמ"/>
+        <f num="TBL13     " lin="20" col="060" typ="N" len="00003" inp="I" ind="0016" tab="21540" val="000"/>
+    </fields>
+</screen>

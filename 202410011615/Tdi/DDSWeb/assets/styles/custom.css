@@ -1,0 +1,98 @@
+        main {
+            min-height: 90vh;
+        }
+        
+        .page {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -ms-flex-pack: center;
+            justify-content: center;
+            min-height: 100%;
+        }
+        
+        .header {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            background: #fff;
+            border-bottom: 1px solid rgba(0, 40, 100, 0.12);
+        }
+        
+        .header-brand-img {
+            height: 2rem;
+            line-height: 2rem;
+            vertical-align: bottom;
+            margin-right: .5rem;
+            width: auto;
+        }
+        
+        @media (max-width: 960px) {
+            .tableOnMobile {
+                width: 230%;
+            }
+        }
+        
+        @media (max-width: 560px) {
+            .tableOnMobile {
+                width: 320%;
+            }
+        }
+        
+        pre {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        code {
+            direction: ltr;
+            display: inline-block;
+            overflow-x: auto;
+            position: relative;
+            bottom: -8px;
+        }
+        
+        pre code {
+            background-color: #eee;
+            border: 1px solid #999;
+            display: block;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .nav-item>a {
+            border-radius: 0;
+        }
+        
+        .nav-tabs .nav-link {
+			/* font-weight: bolder; */
+			border: none;
+            border-radius: 0;
+        }
+        
+        .nav-item {
+            position: relative;
+            /* padding-right: 1rem; */
+            /* padding-left: 1rem; */
+        }
+        
+       /* .nav-item:before { */
+            /* content: ""; */
+            /* position: absolute; */
+            /* height: 70%; */
+            /* width: 1px; */
+            /* background-color: lightblue; */
+            /* transform: translateY(-50%); */
+            /* top: 50%; */
+            /* right: 0; */
+        /* } */
+
+        .nav-tabs .nav-item:hover {
+		 background: rgba( 70, 127, 207, 0.1);
+        }
+ 
+     .imp{
+         border:1px solid red;
+         box-shadow: 0px 0px 15px -6px red;
+     }
+        

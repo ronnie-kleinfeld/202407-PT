@@ -1,0 +1,97 @@
+.header,
+.header .badgeScreenName {
+    background-color: #14008E !important;
+    color: #fff;
+}
+
+body,
+.accordion-body {
+    background-color: #F7F8FF !important;
+}
+
+.nav-item.active, .nav-item:focus {
+    background-color: #F7F8FF !important;
+}
+
+.nav-item:not(.active) .nav-link:hover {
+    background-color: #F7F8FF !important;
+    color: #232873 !important;
+}
+
+#offcanvas {
+    background-color: #E8EDFF !important;
+}
+
+body {
+    background-color: #F7F8FF !important;
+    color: #232873;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E8EDFF !important;
+}
+
+.form-control {
+    border-radius: 6px;
+    color: #6b6e77;
+    background-color:transparent; /*#fff; ntg 28.06.23*/
+}
+
+.form-control::placeholder {
+    color: rgba(0,0,0,.42) !important;
+}
+
+.form-control::-moz-placeholder {
+    color: rgba(0,0,0,.42) !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(0,0,0,.42) !important;
+}
+
+.form-control:-ms-input-placeholder {
+    color: rgba(0,0,0,.42) !important;
+}
+
+.form-control label {
+    color: #14008e;
+    font-size: 1.25rem;
+}
+
+.nav-item, 
+.nav-link {
+    color: #232873 !important;
+}
+
+.nav-item:before {
+    display: none;
+}
+
+.nav-item.active {
+    background-color: #F7F8FF !important;
+    color: #232873;  
+}
+
+.accordion .accordion-item:not(:first-child) {
+    margin-top: 3rem !important;
+}
+
+.btn-primary,
+.footerButton,
+.duet-date__toggle {
+    background-color: #06d79d;
+    color: #232873;
+}
+
+.btn-primary:hover,
+.duet-date__toggle:hover {
+    background-color: #04b885;
+}
+
+.sortable th {
+    background: #8796FA !important;
+}
+
+.page-title {
+    color: #18048c;
+}

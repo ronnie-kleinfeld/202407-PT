@@ -1,0 +1,297 @@
+﻿<color id="001" name="acqua" />
+<color id="002" name="black" />
+<color id="003" name="blue" />
+<color id="004" name="gray" />
+<color id="005" name="green" />
+<color id="006" name="lime" />
+<color id="007" name="maroon" />
+<color id="008" name="navy" />
+<color id="009" name="olive" />
+<color id="010" name="purple" />
+<color id="011" name="red" />
+<color id="012" name="silver" />
+<color id="013" name="teal" />
+<color id="014" name="white" />
+<color id="015" name="FFCC66" />
+<color id="016" name="fuchsia" />
+<color id="017" name="darkorchid" />
+<color id="018" name="rosybrown" />
+<color id="019" name="mediumseagreen" />
+<color id="020" name="steelblue" />
+<color id="021" name="slateblue" />
+<color id="022" name="skyblue" />
+<color id="023" name="royalblue" />
+<color id="024" name="lightblue" />
+<color id="025" name="lavender" />
+<color id="026" name="deepskyblue" />
+<color id="027" name="lightpurple" />
+<color id="028" name="lightviolet" />
+<color id="029" name="violetgray" />
+<color id="030" name="lightazure" />
+<color id="031" name="lightorange" />
+<color id="032" name="bluegray" />
+<color id="033" name="30638F" />
+
+<bg id="000" bck_ground=""        code="AlphaImageLoader(src=pics/df.jpg,sizingmethod=scale)" />
+<bg id="001" bck_ground="skyblue" code="Alpha(style=3,opacity=25,finishOpacity=100)" />
+<bg id="003" bck_ground="8E98AD"  code="Glow(color=#8E98AD,strength=3)" />
+<bg id="005" bck_ground=""        code="Gradient(gradientType=0,startColorStr=#FFFFFF,endColorStr=#8E98AD)" />
+<bg id="031" bck_ground="aliceblue" />
+<bg id="032" bck_ground="azure" />
+<bg id="033" bck_ground="beige" />
+<bg id="034" bck_ground="cornsilk" />
+<bg id="035" bck_ground="powderblue" />
+<bg id="036" bck_ground="skyblue" />
+<bg id="037" bck_ground="silver" />
+<bg id="038" bck_ground="snow" />
+<bg id="039" bck_ground="whitesmoke" />
+<bg id="040" bck_ground="steelblue" />
+<bg id="041" bck_ground="slateblue" />
+<bg id="042" bck_ground="skyblue" />
+<bg id="043" bck_ground="royalblue" />
+<bg id="044" bck_ground="lightblue" />
+<bg id="045" bck_ground="lavender" />
+<bg id="046" bck_ground="deepskyblue" />
+<bg id="047" bck_ground="#CCCCFF" />
+<bg id="048" bck_ground="#9999FF" />
+<bg id="049" bck_ground="#9999CC" />
+<bg id="050" bck_ground=""        code="AlphaImageLoader(src=pics/df_inv.jpg,sizingmethod=scale)" />
+<bg id="051" bck_ground=""        code="AlphaImageLoader(src=pics/df_dark.jpg,sizingmethod=scale)" />
+<bg id="052" bck_ground=""        code="AlphaImageLoader(src=pics/df_brht.jpg,sizingmethod=scale)" />
+<bg id="053" bck_ground="#99CCFF" />
+<bg id="054" bck_ground="#FFCC99" />
+<bg id="055" bck_ground="#6699CC" />
+<bg id="056" bck_ground="red" />
+<bg id="057" bck_ground="#6B9EB5" />
+<bg id="058" bck_ground="#BDD3DE" />
+<bg id="059" bck_ground="#D9E9F6" />
+<bg id="060" bck_ground=""        code="AlphaImageLoader(src=pics/df_chess.jpg,sizingmethod=crop)" />
+<bg id="061" bck_ground="#B7C9C1" />
+<bg id="081" bck_ground="skyblue" code="Alpha(style=0,opacity=25)" />
+<bg id="082" bck_ground="skyblue" code="Alpha(style=1,opacity=25,finishOpacity=100,startX=0,finishX=100,startY=100,finishY=0)" />
+<bg id="083" bck_ground="skyblue" code="Alpha(style=2,opacity=25,finishOpacity=100)" />
+<bg id="084" bck_ground="skyblue" code="Alpha(style=3,opacity=25,finishOpacity=100)" />
+<bg id="085" bck_ground="skyblue" code="AlphaImageLoader(src=pics/transparent.gif,sizingmethod=crop)" />
+<bg id="086" bck_ground="skyblue" code="BasicImage(Rotation=0,Mirror=0,Invert=0,XRay=0,Grayscale=0,Opacity=1.00)" />
+<bg id="087" bck_ground=""        code="Blur(PixelRadius=5,MakeShadow=false)" />
+<bg id="088" bck_ground="skyblue" code="Chroma(Color=#FFFFFF)" />
+<bg id="089" bck_ground=""        code="dropShadow(Color=999999,offX=5,offY=5,positive=true)" />
+<bg id="090" bck_ground="skyblue" code="Emboss()" />
+<bg id="091" bck_ground="skyblue" code="Engrave()" />
+<bg id="092" bck_ground="skyblue" code="Glow(color=#ff00ff,strength=5)" />
+<bg id="093" bck_ground="skyblue" code="Gradient(gradientType=0,startColorStr=#ff00ff,endColorStr=#00ff99)" />
+<bg id="094" bck_ground="skyblue" code="MotionBlur(direction=0,strength=5)" />
+<bg id="095" bck_ground="skyblue" code="Pixelate(maxsquare=10)" />
+<bg id="096" bck_ground="skyblue" code="Shadow(direction=0,color=#ff00ff,strength=5)" />
+<bg id="097" bck_ground="skyblue" code="Wave(freq=1,LightStrength=10,Phase=10,Strength=5)" />
+<bg id="098" bck_ground="white" />
+
+<opt_color id="1" normal="rosybrown"      blink="FFF8D6" />
+<opt_color id="2" normal="008000"         blink="90EE90" />
+<opt_color id="3" normal="fuchsia"        blink="FFBCC1" />
+<opt_color id="4" normal="red"            blink="FFA07A" />
+<opt_color id="5" normal="blue"           blink="000080" />
+<opt_color id="6" normal="darkorchid"     blink="C0C0C0" />
+<opt_color id="7" normal="mediumseagreen" blink="FFFFE0" />
+
+<font id="001" name="Aharoni" />
+<font id="002" name="Arial" />
+<font id="003" name="Verdana" />
+<font id="004" name="David" />
+<font id="005" name="Miriam" />
+<font id="006" name="Miriam Fixed" />
+<font id="007" name="Tahoma" />
+<font id="008" name="Courier New" />
+<font id="009" name="PoalimM,Arial Unicode MS" />
+<font id="010" name="PoalimB,Arial Unicode MS" />
+<font id="011" name="PoalimL,Arial Unicode MS" />
+
+<element id="047001" tag="embed src=c:\047001.avi controller=false autoplay=true" />
+<element id="051001" tag="img src=Pics/001.gif" />
+<element id="051002" tag="img src=Pics/002.gif" />
+<element id="051003" tag="img src=Pics/003.gif" />
+<element id="051004" tag="img src=Pics/004.gif" />
+<element id="051005" tag="img src=Pics/005.gif" />
+<element id="057011" tag="img src=Pics/11.jpg" />
+<element id="057012" tag="img src=Pics/12.jpg" />
+
+<graphics id="050" name="CenterMutual.jpg" w="45" h="5" />
+<graphics id="056" name="explorerlogo.gif" w="60" h="5" />
+<graphics id="05101" name="01.jpg" w="60" h="12" />
+<graphics id="051qq" name="qq.jpg" w="40" h="3" />
+<graphics id="051stamp1" name="StampXxx.htm" w="20" h="3" page="1" l="30" t="20" />
+<graphics id="051stamp2" name="StampXxx.htm" w="20" h="3" page="1" l="20" t="25" />
+
+<graphics id="052_22_stamp1_H" name="StampPdfNewKopel.htm" w="35" h="6" page="1" l="00" t="38" />
+<graphics id="052_22_stamp2_H" name="StampPdfNewKopel.htm" w="35" h="6" page="1" l="00" t="59" />
+
+<graphics id="052stamp1_H" name="StampPdfNewKopel.htm" w="35" h="6" page="1" l="03" t="37" />
+<graphics id="052stamp2_H" name="StampPdfNewKopel.htm" w="35" h="6" page="1" l="03" t="58" />
+<graphics id="052stamp1_C" name="StampPdfNewKopelC.htm" w="30" h="3" page="1" l="30" t="20" />
+<graphics id="052stamp2_C" name="StampPdfNewKopelC.htm" w="30" h="3" page="1" l="20" t="25" />
+
+<graphics id="057stamp1_H" name="StampPdfMenora.htm" w="30" h="6" page="1" l="1" t="39" />
+<graphics id="057stamp2_H" name="StampPdfMenora.htm" w="30" h="6" page="1" l="1" t="60" />
+<graphics id="057stamp1_C" name="StampPdfMenoraC.htm" w="30" h="6" page="1" l="1" t="39" />
+<graphics id="057stamp2_C" name="StampPdfMenoraC.htm" w="30" h="6" page="1" l="1" t="60" />
+<graphics id="004stamp1_H" name="StampPdfHH.htm" w="25" h="10" page="1" l="01" t="37" />
+<graphics id="000xxx" name="xxx.jpg" w="15" h="5" />
+<graphics id="060sig" name="sig.jpg" w="10" h="8" />
+<graphics id="060sig§" name="sig.jpg" w="10" h="8" />
+
+<scale id="xxx" name="width:50px;" />
+
+<buttonhtml id="047001" name="047001.htm" />
+<buttonhtml id="047002" name="047002.htm" />
+<buttonhtml id="047003" name="047003.htm" />
+<buttonhtml id="047004" name="047004.htm" />
+<buttonhtml id="047005" name="047005.htm" />
+<buttonhtml id="047006" name="047006.htm" />
+<buttonhtml id="047007" name="047007.htm" />
+<buttonhtml id="047008" name="047008.htm" />
+<buttonhtml id="047009" name="047009.htm" />
+<buttonhtml id="047010" name="047010.htm" />
+<buttonhtml id="047011" name="047011.htm" />
+<buttonhtml id="047012" name="047012.htm" />
+<buttonhtml id="047013" name="047013.htm" />
+
+<preprinthtml id="035001" name="FormShomera.htm" />
+<preprinthtml id="035002" name="FormShomDira.htm" />
+<preprinthtml id="035003" name="FormShomGnet.htm" />
+<preprinthtml id="035004" name="FormShomE.htm" />
+<preprinthtml id="035005" name="FormShomMinuyShamay.htm" />
+<preprinthtml id="035006" name="FormShomGiluyNaot.htm" />
+<preprinthtml id="035007" name="FormShomAz.htm" />
+<preprinthtml id="035008" name="FormShomLa.htm" />
+<preprinthtml id="035009" name="FormShomZ.htm" />
+<preprinthtml id="035010" name="FormShomCat.htm" />
+<preprinthtml id="035011" name="FormShomB.htm" />
+<preprinthtml id="037010" name="Arch.htm" />
+<preprinthtml id="039001" name="ClalitJoin.htm" />
+<preprinthtml id="050001" name="Fami001.htm" />
+<preprinthtml id="050002" name="Fami002.htm" />
+<preprinthtml id="050003" name="Fami003.htm" />
+<preprinthtml id="050P011001" name="CmicP011024.htm" />
+<preprinthtml id="050P011002" name="CmicP011124.htm" />
+<preprinthtml id="050P011024" name="CmicP011024.htm" />
+<preprinthtml id="050P011041" name="CmicP011041.htm" />
+<preprinthtml id="050P011124" name="CmicP011124.htm" />
+<preprinthtml id="050P016024" name="CmicP016024.htm" />
+<preprinthtml id="050P016124" name="CmicP016124.htm" />
+<preprinthtml id="050P018024" name="CmicP018024.htm" />
+<preprinthtml id="050P018124" name="CmicP018124.htm" />
+<preprinthtml id="050P018400" name="CmicP018400.htm" />
+<preprinthtml id="050P021005" name="CmicP021005.htm" />
+<preprinthtml id="050P021040" name="CmicP021040.htm" />
+<preprinthtml id="050P022065" name="CmicP022065.htm" />
+<preprinthtml id="050P099940" name="CmicP099940.htm" />
+<preprinthtml id="050P999001" name="CmicP999001.htm" />
+<preprinthtml id="050P999003" name="CmicP999003.htm" />
+<preprinthtml id="050P999004" name="CmicP999004.htm" />
+<preprinthtml id="051001" name="Fami001.htm" />
+<preprinthtml id="051002" name="Fami002.htm" />
+<preprinthtml id="051003" name="Fami003.htm" />
+<preprinthtml id="051005" name="Lex005.htm" />
+<preprinthtml id="051006" name="Guard006.htm" />
+<preprinthtml id="051007" name="Lititz007.htm" />
+<preprinthtml id="051010" name="Lex010.htm" />
+<preprinthtml id="051011" name="Utrin011.htm" />
+<preprinthtml id="051020" name="Lex020.htm" />
+<preprinthtml id="051021" name="Lex021.htm" />
+<preprinthtml id="051022" name="Lex022.htm" />
+<preprinthtml id="051023" name="Lex023.htm" />
+<preprinthtml id="051024" name="Lex024.htm" />
+<preprinthtml id="051025" name="Lex025.htm" />
+<preprinthtml id="051026" name="Lex026.htm" />
+<preprinthtml id="051027" name="Lex027.htm" />
+<preprinthtml id="051028" name="Lex028.htm" />
+<preprinthtml id="051029" name="Lex029.htm" />
+<preprinthtml id="051030" name="Lex030.htm" />
+<preprinthtml id="051031" name="Lex031.htm" />
+<preprinthtml id="051032" name="Lex032.htm" />
+<preprinthtml id="051033" name="Lex033.htm" />
+<preprinthtml id="051034" name="Lex034.htm" />
+<preprinthtml id="051035" name="Lex035.htm" />
+<preprinthtml id="051036" name="Lmic036.htm" />
+<preprinthtml id="051037" name="Lmic037.htm" />
+<preprinthtml id="051038" name="Thie038.htm" />
+<preprinthtml id="051039" name="Thie039.htm" />
+<preprinthtml id="051040" name="Lex040.htm" />
+<preprinthtml id="052001" name="NewKopelTest.htm" />
+<preprinthtml id="052002" name="NewKopelPP.htm" />
+<preprinthtml id="053TVIA001" name="PoolTVIA001.htm" />
+<preprinthtml id="057002" name="Biya002.htm" />
+<preprinthtml id="057010" name="Biya010.htm" />
+
+<Icon id="1" name="fa-regular fa-info"/>
+<Icon id="2" name="fa-regular fa-truck-pickup"/>
+<Icon id="3" name="fa-regular fa-car-side"/>
+<Icon id="4" name="fa-regular fa-car-burst"/>
+<Icon id="5" name="fa-regular fa-door-open"/>
+<Icon id="6" name="fa-regular fa-magnifying-glass"/>
+<Icon id="7" name="fa-regular fa-pen-to-square"/>
+<Icon id="8" name="fa-regular fa-credit-card"/>
+<Icon id="9" name="fa-regular fa-print" fk="21"/>
+<Icon id="10" name="fa-regular fa-dog"/>
+<Icon id="11" name="fa-regular fa-street-view"/>
+<Icon id="12" name="fa-solid fa-circle-user"/>
+<Icon id="13" name="fa-solid fa-user-pen" />
+<Icon id="14" name="fa-regular fa-bell"/>
+<Icon id="15" name="fa-regular fa-plane" />
+<Icon id="16" name="fa-regular fa-arrow-left-long" fk="1"/>
+<Icon id="17" name="fa-regular fa-check" fk="2"/>
+<Icon id="18" name="fa-regular fa-flag-checkered"/>
+<Icon id="19" name="fa-regular fa-ellipsis-vertical" fk="4"/>
+<Icon id="20" name="fa-regular fa-magnifying-glass-plus" fk="5"/>
+<Icon id="21" name="fa-regular fa-magnifying-glass-minus"/>
+<Icon id="22" name="fa-regular fa-clipboard-list-check" />
+<Icon id="23" name="fa-regular fa-arrows-rotate"/>
+<Icon id="24" name="fa-regular fa-rectangle-history-circle-plus"/>
+<Icon id="25" name="fa-regular fa-link-horizontal"/>
+<Icon id="26" name="fa-regular fa-arrow-right-from-line"  fk="7"/>
+<Icon id="27" name="fa-regular fa-arrow-left-from-line"  fk="8"/>
+<Icon id="28" name="fa-regular fa-file-contract"/>
+<Icon id="29" name= "fa-regular fa-users" fk="18"/>
+<Icon id="30" name="fa-regular fa-calculator" fk="13"/>
+<Icon id="31" name="fa-regular fa-file-circle-question"/>
+<Icon id="32" name="fa-regular fa-angles-right" />
+<Icon id="33" name="fa-regular fa-angles-left" />
+<Icon id="34" name="fa-regular fa-rotate-right"  fk="22"/>
+<Icon id="35" name="fa-regular fa-file-circle-xmark" fk="24"/>
+<Icon id="36" name="fa-regular fa-angles-up"/>
+<Icon id="37" name="fa-regular fa-angles-down"/>
+<Icon id="38" name="fa-solid fa-building-circle-check"/>
+<Icon id="39" name="fa-regular fa-file-circle-info" />
+<Icon id="40" name="fa-regular fa-table-list" fk="6"/>
+<Icon id="41" name="fa-regular fa-arrow-right-long" fk="17"/>
+<Icon id="42" name="fa-regular fa-f" fk="11"/>
+<Icon id="43" name="fa-regular fa-input-text" fk="14"/>
+<Icon id="44" name="fa-arrow-right-long"/>
+<Icon id="45" name="fa-regular fa-arrow-left-from-line" />
+<Icon id="46" name="fa-regular fa-arrow-right-from-line"/>
+<Icon id="47" name="fa-regular fa-rotate-left" />
+<Icon id="48" name="far fa-times-circle" fk="12"/>
+<Icon id="49" name="fa-regular fa-house-user" />
+<Icon id="50" name="fa-regular fa-building-columns"/>
+<Icon id="51" name="fa-light fa-ballot-check"/>
+<Icon id="52" name="fa-regular fa-filter-list" />
+<Icon id="53" name="fa-regular fa-copy"/>
+<Icon id="54" name="fa-regular fa-eye" />
+<Icon id="55" name="fa-regular fa-arrows-repeat" />
+<Icon id="56" name="fa-regular fa-envelope" />
+<Icon id="57" name="fa-solid fa-bullhorn fa-flip-horizontal" />
+<Icon id="58" name="fa-solid fa-check" />
+
+<ImageFile id="1" name="yes_image.svg" />
+<ImageFile id="2" name="no_image.svg" />
+<ImageFile id="3" name="man.svg" />
+<ImageFile id="4" name="Woman.svg" />
+<ImageFile id="5" name="Car_city_driver.svg" />
+<ImageFile id="6" name="coming_home.svg" />
+<ImageFile id="7" name="chargingStationComtec.svg" />
+<ImageFile id="8" name="car.svg" />
+<ImageFile id="901" name="continue.svg" />
+<ImageFile id="902" name="logout.svg" />
+<ImageFile id="903" name="settings.svg" />
+<ImageFile id="904" name="return.svg" />
+<ImageFile id="905" name="calculator.svg" />

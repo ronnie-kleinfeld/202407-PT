@@ -1,0 +1,2 @@
+#-------------------- Environment Section ------------------------
+AppVersion=Ver 10.04.07

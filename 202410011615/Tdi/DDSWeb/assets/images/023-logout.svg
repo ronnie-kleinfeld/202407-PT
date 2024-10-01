@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g>
+    <g xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd" fill-rule="evenodd">
+      <ellipse cx="256" cy="256" fill="#0cb0ff" rx="240" ry="240" transform="matrix(.707 -.707 .707 .707 -106.039 256)" data-original="#ff5a54" class=""/>
+      <path d="m487.01 321.279c-28.007 99.306-118.324 172.482-226.071 174.659l-102.437-102.438v-275h125.73z" fill="#0092d8" data-original="#db3a3c" class=""/>
+      <path d="m336.643 273.188h-112.46v-34.375h112.46v-39.068l66.858 56.255-66.858 56.256zm-52.411-120.312v-34.376h-125.73v275h125.73v-34.375h-91.355v-206.25h91.355z" fill="#ffffff" data-original="#ffffff"/>
+    </g>
+  </g>
+</svg>

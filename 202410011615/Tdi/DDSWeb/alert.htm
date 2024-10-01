@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href='css/dds.css' rel='stylesheet'>
+    <link href='css/TDI.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/ddsSubmit.js"></script>
+    <script>
+        function onl() {
+
+            var que, dir, yes, no, ok;
+            var but1, but2, but3;
+            if (location.search != "") {
+
+                var srch = location.search.substring(1).split("&");
+                for (var param in srch) {
+                    var pair = srch[param].split("=");
+                    var v = decodeURI(pair[1]);
+                    switch (pair[0]) {
+                        case "que": que = v; break;
+                        case "dir": dir = v; break;
+                        case "yes": yes = v; break;
+                        case "no": no = v; break;
+                        case "ok": ok = v; break;
+                        case "1": but1 = v; break;
+                        case "2": but2 = v; break;
+                        case "3": but3 = v; break;
+                    }
+                }
+            }
+            document.getElementById("AlertTextSpan").innerText = parent.document.getElementById("Htext").value;
+            document.body.dir = dir;
+
+            if (que == "true") {
+                // 2 buttons
+                document.getElementById("pic").src = "Pics/iconQue64.png";
+
+                window.parent.$("#CancelButton").show();
+                window.parent.$("#OkButton").show();
+
+                window.parent.$("#OkButton").value = yes;
+                window.parent.$("#CancelButton").value = no;
+
+            } else if (que == "3") {
+                // 3 buttons
+                document.getElementById("pic").src = "Pics/iconQue64_3.png";
+                document.getElementById("but1").value = but1;
+                document.getElementById("but2").value = but2;
+                document.getElementById("but3").value = but3;
+                document.getElementById("but1").focus();
+            }
+            else // Only one button
+            {
+                if (que == "ok")
+                    document.getElementById("pic").src = "Pics/iconOk48_2.png";
+                <!--else
+                    <!--document.getElementById("pic").src = "Pics/iconExcl.gif"; /*ntg 10.07.23 was .png by mistake ---- ntg 14.11.23 it looked old so i removed it*/-->-->
+
+                window.parent.$("#CancelButton").hide();
+                window.parent.$("#OkButton").show();
+
+                window.parent.$("#OkButton").value = ok;
+            }
+        }
+    </script>
+
+</head>
+
+<body dir="rtl" style="overflow: hidden; padding: 0.5rem; text-align: center; background-color: white !important; " onload="onl();">
+    <span id="AlertTextSpan" class="AlertTextSpan" style="margin-left: 0.2rem; margin-right: 0.2rem;"></span>
+    <img id="pic" style="float: left; width: 1.5rem;">
+</body>
+</html>

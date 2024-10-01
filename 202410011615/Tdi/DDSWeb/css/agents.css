@@ -1,0 +1,53 @@
+/********** TEXT STYLES ************************************************************/
+TABLE{FONT-SIZE: 13px;COLOR: #000000;FONT-FAMILY: Arial, Verdana;}
+
+.header{FONT-SIZE: 11px;COLOR: #027BC3;FONT-FAMILY: Arial, Verdana;font-weight: bold;}
+
+.title{FONT-SIZE: 16px;COLOR: #015A9E;FONT-FAMILY: Arial, Verdana;font-weight: bold;}
+
+.smallBlue{FONT-SIZE: 11px;COLOR: #003371;FONT-FAMILY: Arial, Verdana;}
+.Red{FONT-SIZE: 12px;COLOR: #CC2200;FONT-FAMILY: Arial, Verdana;}
+
+.copyright{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+/********** LINKS ************************************************************/
+
+A:link{COLOR: #003371}
+A:active{COLOR: #003371}
+A:visited{COLOR: #003371}
+A:hover{COLOR: #CC2200}
+
+a.small:link{color:#003371;font-size:11px;}
+a.small:visited{color:#003371;font-size:11px;}
+a.small:hover{color:#CC2200;font-size:11px;}
+
+a.level0:link{color:#015A9E;font-size:14px;font-weight: bold;font-family: Arial;text-decoration:none;}
+a.level0:visited{color:#015A9E;font-size:14px;font-weight: bold;font-family: Arial;text-decoration:none;}
+a.level0:hover{color:#146EAB;font-size:14px;font-weight: bold;font-family: Arial;text-decoration:underline;}
+
+a.level1:link{color:#2C5F23;font-size:13px;font-weight: bold;font-family: Arial;text-decoration:none;}
+a.level1:visited{color:#2C5F23;font-size:13px;font-weight: bold;font-family: Arial;text-decoration:none;}
+a.level1:hover{color:#397A2E;font-size:13px;font-weight: bold;font-family: Arial;text-decoration:underline;}
+
+a.level2:link{color:#B66D00;font-size:13px;font-weight: bold;font-family: Arial;text-decoration:none;}
+a.level2:visited{color:#B66D00;font-size:13px;font-weight: bold;font-family: Arial;text-decoration:none;}
+a.level2:hover{color:#D58000;font-size:13px;font-weight: bold;font-family: Arial;text-decoration:underline;}
+
+
+/********** BACKGROUNDS ************************************************************/
+
+.bgColor{BACKGROUND-COLOR: #BFC6CA;}
+.bgMainColor{BACKGROUND-COLOR: #F5F5F5;}/**BACKGROUND-IMAGE: url(../images/bgRightSide.gif);**/
+
+
+/********** FORM ************************************************************/
+
+INPUT {BORDER-TOP:    #003371 1px outset; 
+	   BORDER-LEFT:   #003371 1px outset; 
+	   BORDER-BOTTOM: #003371 1px inset; 
+	   BORDER-RIGHT:  #003371 1px inset;
+	   background-color:#FFFFFF;
+	   FONT-SIZE: 12px;COLOR: #000000;FONT-FAMILY: Arial;
+	   }
+	   
+.button{COLOR: #FFFFFF;FONT-FAMILY: Arial;BACKGROUND-COLOR: #218ACA;cursor: pointer;BACKGROUND-IMAGE: url(images/bgBut.gif);BORDER-RIGHT: #015A9E 1px inset;BORDER-TOP: #B1DFFC 1px outset;BORDER-LEFT: #87C0E3 1px outset;BORDER-BOTTOM: #015A9E 1px inset;text-align:center;}

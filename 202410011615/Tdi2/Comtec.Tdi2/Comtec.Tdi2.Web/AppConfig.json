@@ -1,0 +1,26 @@
+{
+  "ApplicationName": "Tdi2",
+  "Version": "11.0.0",
+  "SiteConfig": {
+    "ClientName": "Vanilla",
+    "SiteId": "Vanilla",
+    "AssetsDirectory": "Vanilla"
+  },
+  "Log": {
+    "LogToConsole": true,
+    "LogToFile": false,
+    "LogFileDirectory": "log",
+    "LogFileName": "log.txt",
+    "RollingInterval": 3,
+    "LogEventLevel": 1
+  },
+  "DL": {
+    "ConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AS400XMLDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;"
+  },
+  "AS400Xml": {
+    "ValidateAllowedData": false,
+    "WriteToDatabase": true,
+    "ConnectionString": "Data Source=test-tis;Initial Catalog=AS400XmlFileDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;",
+    "DeleteInvalidFiles": false
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:schema xmlns="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdResponseURL" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.fnx.co.il" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s1="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdRequestURL" xmlns:s2="http://www.fnx.co.il/Fnx.ESB.Infra.Schemas" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s3="http://www.fnx.co.il/ESB" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s4="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdResponseURL" xmlns:s="http://www.w3.org/2001/XMLSchema" targetNamespace="http://FNX.ESB.CGCreditCard.Schemas.CreditGurdResponseURL">
+  <xs:element name="ashrait">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="response">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="result" type="xs:string" />
+              <xs:element name="message" type="xs:string" />
+              <xs:element name="doDeal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="token" type="xs:string" />
+                    <xs:element name="mpiHostedPageUrl" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</s:schema>

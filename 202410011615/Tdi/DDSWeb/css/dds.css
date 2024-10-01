@@ -1,0 +1,549 @@
+/*
+.KioskButton
+{
+FONT-SIZE:33px;
+FONT-FAMILY:'Arial Unicode MS';
+background-color:#BDD3DE;
+text-align:center;
+cursor:default;
+color:white;
+height:50;
+width:100;
+}
+
+.KioskKbdButton
+{
+FONT-SIZE:33px;
+FONT-FAMILY:'PoalimM,Arial (Hebrew)';
+background-color:#BDD3DE;
+text-align:center;
+cursor:default;
+color:black;
+height:50;
+width:100;
+}
+
+.KioskLeftButton
+{
+FONT-FAMILY:'PoalimM,Arial (Hebrew)';
+text-align:center;
+cursor:default;
+color:0;
+height:120;
+width:150;
+font-size:33px;
+}
+*/
+
+.InsideWindow1
+{
+position:absolute;
+border:2px solid;
+border-color:#C0C8D0 white white #C0C8D0;
+background-color:transparent;
+z-index:-2;
+}
+
+.InsideWindow2
+{
+position:absolute;
+height:100%;
+width:100%;
+border:2px solid;
+border-color:white #C0C8D0 #C0C8D0 white;
+background-color:transparent;
+z-index:-2;
+}
+
+.InsideWindow3
+{
+position:absolute;
+border:1px solid;
+border-color:#D6D3CE #424142 #424142 #424142; /*#D6D3CE;*/
+background-color:transparent;
+z-index:-2;
+}
+
+.InsideWindow4
+{
+position:absolute;
+height:100%;
+width:100%;
+border:1px solid;
+border-color:white #848284 #848284 #848284; /*white;*/
+/* border-color:white #424142 #424142 #848284; */
+background-color:transparent;
+z-index:-2;
+}
+
+.InsideWindow5
+{
+position:absolute;
+height:100%;
+width:100%;
+border:1px solid #D6D3CE;
+/*border-color:#D6D3CE #424142 #424142 #D6D3CE; */
+/*background-color:transparent;*/
+z-index:-2;
+}
+
+.DrawingCaption
+{
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+/*filter:progid:DXImageTransform.Microsoft.Gradient
+(GradientType=1, StartColorStr=#08246B, EndColorStr=#A5CBF7);*/
+background:linear-gradient(to right, #08246B,#A5CBF7);
+/* background:black; */
+}
+
+.Msg
+{
+FONT-SIZE:12pt;
+COLOR:red;
+FONT-FAMILY:'Arial';
+font-weight:bold;
+}
+
+.copyright
+{
+FONT-SIZE:8pt;
+COLOR:black;
+FONT-FAMILY:'Arial';
+font-weight:bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prompt
+{
+FONT-SIZE:13px;
+BACKGROUND-COLOR:#FFF8DC;
+COLOR:#000000;
+border:1px solid #C0C0C0;
+FONT-FAMILY:'Courier New';
+padding:0,0,0,0;
+line-height:14px;
+height:14px;
+z-index:10;
+}
+
+.TDShadow
+{
+  width:100%;
+  height:36px;
+  /*filter:progid:DXImageTransform.Microsoft.Gradient
+  (GradientType=0, StartColorStr='#8E96AE', EndColorStr='#F5F5F5');*/
+  background:linear-gradient(to right, #8E96AE,#F5F5F5);
+  font-size:13px;
+  font-family:'Verdana, Tahoma, Arial';
+  text-align:center;
+  font-weight:bold;
+  cursor:default;
+}
+.IconDiv
+{
+	position:absolute;
+	z-index:50;
+	top:10px;
+	left:5px;
+	border:3px solid #3272A2;
+	background-color:#FFFFFF;
+	text-align:center;
+	cursor:default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.IconRightDiv
+{
+	position:absolute;
+	z-index:50;
+	top:10px;
+	right:5px;
+	border:3px solid #3272A2;
+	background-color:#FFFFFF;
+	text-align:center;
+	cursor:default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.IconImg
+{
+	margin-top:1mm;
+	margin-left:1mm;
+	margin-right:1mm;
+	margin-bottom:0mm;
+}
+.MainContentTable
+{
+	width:100%;
+	height:100%;
+}
+.TRMain1
+{
+	width:100%;
+	height:20px;
+}
+.TRMain2
+{
+	width:100%;
+	height:100%;
+}
+.TRMain3
+{
+	width:100%;
+	height:36px;
+}
+.TDMainSide
+{
+	width:6mm;
+	background-color:#C1C9CB;
+    border:1px solid #C1C9CB;
+}
+.TDMainCenter
+{
+	width:100%;
+	background-color:#C1C9CB;
+    border:1px solid #C1C9CB;
+	text-align:center;
+}
+.TDMainContent
+{
+	width:100%;
+	border:3px solid #3272A2;
+	/*text-align:center;*/
+}
+.TDMainContent table tr
+{
+     border-bottom:1px solid #f5f5f5;
+}
+.TRContent
+{
+	width:100%;
+	height:100%;
+}
+.TDContent
+{
+	width:100%;
+	height:100%;
+	/*text-align:center;*/
+}
+.TRButtons
+{
+	width:100%;
+	height:36;
+}
+.OutBigButton
+{
+   width:115;
+   height:24;
+   font-size:12;
+   font-family:'Verdana, Tahoma, Arial';
+   text-align:center;
+   color:#000000;
+   font-weight:bold;
+
+   cursor:default;
+   border-top:1px solid #FFFFFF;
+   border-left:1px solid silver;
+   border-bottom:1px solid gray;
+   border-right:1px solid gray;
+   /*filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FFFFFF', EndColorStr='#ADB6C6');*/
+   background:linear-gradient(to right, #FFFFFF,#ADB6C6);
+}
+
+.OutBigButton:hover
+{
+   width:115;
+   height:24;
+   font-size:12;
+   font-family:'Verdana, Tahoma, Arial';
+   text-align:center;
+   color:#000000;
+   font-weight:bold;
+
+   cursor:default;
+   border-top:1px solid #FFFFFF;
+   border-left:1px solid silver;
+   border-bottom:1px solid gray;
+   border-right:1px solid gray;
+   /*filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ADB6C6', EndColorStr='#FFFFFF');*/
+   background:linear-gradient(to right, #ADB6C6,#FFFFFF);
+}
+.PageTitle
+{
+	height:52;
+	width:100%;
+	font-size:24pt;
+	font-family:'Verdana, Tahoma, Arial';
+	text-align:center;
+	color:#000080;
+	font-weight:bold;
+	text-decoration:underline;
+	cursor:default;
+}
+.TDText
+{
+	font-size:11pt;
+	font-family:'Verdana, Tahoma, Arial';
+	color:#000080;
+	font-weight:bold;
+	cursor:default;
+}
+.InputStyle
+{
+   border:1px solid #C0C0C0;
+   background-color:#FFFFFF;
+   WIDTH:150px;  
+   TEXT-ALIGN:center  
+}  
+.InputStyle:focus  
+{  
+   border:1px solid #FF1818;
+   outline:none;
+}
+.submit1 {
+	BORDER-TOP-WIDTH: 0px;
+	PADDING-LEFT: 7px;
+	FONT-WEIGHT: bold;
+	BORDER-LEFT-WIDTH: 0px;
+	FONT-SIZE: 12px;
+	BACKGROUND: url(../Pics/submit1.gif) repeat-x center 50%;
+	BORDER-BOTTOM-WIDTH: 0px;
+	WIDTH: 110px;
+	cursor: pointer;
+	COLOR: #fff;
+	HEIGHT: 20px;
+	TEXT-ALIGN: left;
+	BORDER-RIGHT-WIDTH: 0px
+}
+.trays 
+{
+	font-family: Arial;
+	font-size: 12;
+	border: 1px solid #C0C0C0;
+}
+.trays td
+{
+	border: 1px solid #C0C0C0;
+}
+.trays th
+{
+	border: 1px solid #C0C0C0;
+}
+.traystitle
+{
+	font-size: 16;
+	background-color: #B7C9E1;
+}
+.trays1
+{
+	background-color: #F5F5ED;
+}
+.trays2
+{
+	background-color: #D4D0C8;
+}
+.BtnCom:disabled
+{
+color:gray;
+text-shadow:0 1px 0 #FFFFFF;
+}
+.BtnFolder:disabled
+{
+color:gray;
+text-shadow:0 1px 0 #FFFFFF;
+}
+.BtnField:disabled
+{
+color:gray;
+text-shadow:0 1px 0 #FFFFFF;
+}
+.InpCom
+{
+border:  1px solid #C0C0C0;
+padding:0;
+position:absolute;
+}
+.InpCom4
+{
+cursor: pointer;
+padding:0;
+position:absolute;
+}
+.InpCom:focus
+{
+border: 1px solid #FF0000;
+outline:none;
+padding:0;
+position:absolute;
+}
+.InpCom4:focus
+{
+border: 1px solid #FF0000;
+outline:none;
+cursor: pointer;
+padding:0;
+position:absolute;
+}
+.InpComSL:focus, .InpComSL:checked
+{
+border: 0px solid #FF0000;
+box-shadow: 0 0 0 2px red;
+padding:0;
+position:absolute;
+}
+.InpProtCond
+{
+border: 1px solid #C0C0C0;
+cursor: default;
+padding:0;
+position:absolute;
+white-space:nowrap;
+}
+.InpProt
+{
+border: 1px solid #C0C0C0;
+cursor: default;
+padding:0;
+position:absolute;
+white-space:nowrap;
+}
+.InpProtNB
+{
+border: 0px solid #C0C0C0;
+cursor: default;
+padding:0;
+position:absolute;
+white-space:nowrap;
+}
+.InpProtCombo
+{
+border: 1px solid #C0C0C0;
+cursor: default;
+padding:0;
+position:absolute;
+white-space:nowrap;
+}
+.OutCom
+{
+font-weight: normal;
+cursor: default;
+white-space: nowrap;
+}
+.OutComUsual
+{
+font-weight: normal;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComBold
+{
+font-weight: bold;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComSize2
+{
+font-weight: normal;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComSize3
+{
+font-weight: normal;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComHalf
+{
+font-weight: normal;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComBold_Underline
+{
+text-decoration: underline;
+font-weight: bold;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComSize2_Underline
+{
+text-decoration: underline;
+font-weight: normal;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.OutComUnderline
+{
+text-decoration: underline;
+font-weight: normal;
+border:0px none;
+overflow:visible;
+background-color:transparent;
+cursor: default;
+white-space: nowrap;
+}
+.TblSel
+{
+padding:0;
+}
+.InpComSL
+{
+padding:0;
+position:absolute;
+}
+.gridT
+{
+position:absolute;
+}
+.gridS
+{
+position:absolute;
+}
+.gridL1
+{
+position:absolute;
+}
+.gridL2
+{
+position:absolute;
+}
+.gridLF
+{
+position:absolute;
+}
+.OutTable
+{
+position:absolute;
+}
